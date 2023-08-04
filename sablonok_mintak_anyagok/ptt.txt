@@ -1,0 +1,15 @@
+Informatikai és távközlési alapok I. => 14-22
+Informatikai és távközlési alapok II. => 23-30
+Programozási alapok => 31-40
+Asztali alkalmazások fejlesztése => 53-58
+Adatbázis-kezelés I. => 59-61
+Adatbázis-kezelés II. => 62-63
+Asztali és mobil alkalmazások fejlesztése és tesztelése => 64-68
+Szoftvertesztelés => 69-71
+Webprogramozás => 72-74
+Frontend programozás és tesztelés => 75-77
+Backend programozás és tesztelés => 78-81
+
+----------------------------------------------------------
+IKT projektmunka I. => 41-46
+IKT projektmunka II. => 47-52

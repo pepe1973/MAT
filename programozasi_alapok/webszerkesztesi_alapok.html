@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../stilus.css" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <base target="_blank" />
+        <title>Webszerkesztési alapok</title>
+    </head>
+    <body>
+        <div class="felgomb">
+            <a href="#fel" target="_self">
+                <span class="material-symbols-outlined"> arrow_circle_up </span>
+            </a>
+        </div>
+        <div class="fo-nav" id="fel">
+            <div class="bal">
+                <a href="./index.html" target="_self">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_left
+                    </span>
+                    <h1>Főoldal</h1>
+                </a>
+            </div>
+            <h1>Webszerkesztési alapok</h1>
+            <div class="jobb">
+                <a
+                    href="./feladatok/webszerkesztesi_alapok.html"
+                    target="_self"
+                >
+                    <h1>Feladatok</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="fo-container">
+            <p>
+                A témakör célja, hogy a tanuló képessé váljon egyszerűbb
+                weboldalak létrehozására és szerkesztésére online és helyi
+                telepítésű fejlesztőeszközökkel.
+            </p>
+            <ol>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mi az online (integrált) fejlesztői környezet?</li>
+                    </div>
+                    <div class="valasz">
+                        <ul>
+                            <li id="online">
+                                <span class="kiemelt">online</span>: Az
+                                <i>online</i> (vagy <i>on-line</i>) kifejezés
+                                jelentése <b>rendszerhez</b>,
+                                <b>hálózathoz kapcsolt</b>, ott elérhető,
+                                illetve ott történő. Leggyakrabban arra
+                                használják, ha valami
+                                <b>megtalálható az interneten</b>, vagy valaki
+                                <b>fel van kapcsolódva az internetre</b>.
+                                <div>
+                                    <span class="forras">Forrás</span>:
+                                    <a href="https://lexiq.hu/online">Lexiq</a>
+                                </div>
+                            </li>
+                            <li id="ide">
+                                <span class="kiemelt"
+                                    >(integrált) fejlesztői környezet
+                                    (IDE)</span
+                                >: Az
+                                <i>Integrált Fejlesztői Környezetek</i> (IDE-k,
+                                <i>Integrated Development Environment</i>)
+                                olyan,
+                                <b>szoftverfejlesztésre létrehozott programok</b
+                                >, illetve <b>megoldáscsomagok</b>, amik a
+                                szigorú értelemben vett kódszerkesztő mellé
+                                számos kiegészítő funkciót is
+                                <b>egyetlen környezetbe integrálnak</b>.
+                                <div>
+                                    <span class="forras">Forrás</span>:
+                                    <a
+                                        href="https://prog.hu/szotar/Integr%C3%A1lt+Fejleszt%C5%91k%C3%B6rnyezet"
+                                        >prog.hu</a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Milyen online (integrált) fejlesztői környezetek
+                            vannak? Nézzünk meg néhányat!
+                        </li>
+                    </div>
+                    <div class="kepek">
+                        <div class="kep-4">
+                            <a href="https://codepen.io/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/codepen.png"
+                                    alt="codepen"
+                                    title="codepen"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://stackblitz.com/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/stackblitz.png"
+                                    alt="stackblitz"
+                                    title="stackblitz"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://jsbin.com/?html,output"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/jsfiddle.png"
+                                    alt="jsfiddle"
+                                    title="jsfiddle"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://jsfiddle.net/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/jsbin.png"
+                                    alt="jsbin"
+                                    title="jsbin"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://replit.com/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/replit.png"
+                                    alt="replit"
+                                    title="replit"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://plnkr.co/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/plunker.png"
+                                    alt="plunker"
+                                    title="plunker"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://codesandbox.io/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/codesandbox.png"
+                                    alt="codesandbox"
+                                    title="codesandbox"
+                            /></a>
+                        </div>
+                        <div class="kep-4">
+                            <a href="https://codesandbox.io/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/codesanywhere.png"
+                                    alt="codesanywhere"
+                                    title="codesanywhere"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Milyen számítógépekre telepíthető (integrált)
+                            fejlesztői környezetek vannak? Nézzünk meg néhányat!
+                        </li>
+                    </div>
+                    <div class="kepek">
+                        <div class="kep-3">
+                            <a href="https://code.visualstudio.com/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/visualstudiocode.png"
+                                    alt="visualstudiocode"
+                                    title="visualstudiocode"
+                            /></a>
+                        </div>
+                        <div class="kep-3">
+                            <a href="https://notepad-plus-plus.org/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/notepad++.png"
+                                    alt="notepad++"
+                                    title="notepad++"
+                            /></a>
+                        </div>
+                        <div class="kep-3">
+                            <a href="https://brackets.io/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/brackets.png"
+                                    alt="brackets"
+                                    title="brackets"
+                            /></a>
+                        </div>
+                        <div class="kep-3">
+                            <a href="https://www.jetbrains.com/pycharm/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/pycharm.png"
+                                    alt="pycharm"
+                                    title="pycharm"
+                            /></a>
+                        </div>
+                        <div class="kep-3">
+                            <a href="https://eclipseide.org/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/eclipse.png"
+                                    alt="eclipse"
+                                    title="eclipse"
+                            /></a>
+                        </div>
+                        <div class="kep-3">
+                            <a href="https://netbeans.apache.org/"
+                                ><img
+                                    src="./images/webszerkesztesi_alapok/netbeans.png"
+                                    alt="netbeans"
+                                    title="netbeans"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Hogyan tudjuk letölteni és telepíteni a Visual
+                            Studio Code-ot?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Számos videó található az interneten ebben a
+                            témában. A következőt javaslom megtekintésre. Vegyük
+                            figyelembe, hogy időről-időre megváltoztatják a
+                            szerkesztő felépítését, kivesznek valamit belőle,
+                            valamit beletesznek. Javasolt időnként frissíteni a
+                            szoftvert!
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=HbXkaJ8UedE"
+                                >Visual Studio Code letöltése</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Hogyan tudjuk használni a Visual Studio Code-ot?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Számos videó található az interneten ebben a témában
+                            is. Attól függően, hogy mire szeretnénk használni a
+                            szerkesztőt, például webfejlesztés, python
+                            programozás esetleg C# programozás, más-más
+                            beállítások ajánlatosak. De néhány alap funkció
+                            minden esetben ugyanaz. Nézzük melyek ezek!
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=yjeHLSrhPao"
+                                >Visual Studio Code használata</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.youtube.com/watch?v=WPqXP_kLzpo&t=1228s"
+                                >Visual Studio Code profibb használata</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="extension">
+                            Milyen hasznos kiterjesztések (extension) vannak a
+                            Visual Studio Code-ban? Nézzünk meg néhányat,
+                            amelyeket telepíthetünk (install), ha már van egy
+                            működőképes szerkesztőnk a gépen!
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        Itt is elmondható, hogy időnként ajánlott megnézni a
+                        <b>kiterjesztés</b>einket (<i>extension</i>). Néhányat
+                        törölni, néhányat fríssiteni és néhány újat telepíteni
+                        kell!
+                    </div>
+                    <div class="kepek">
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/autoclosetag.png"
+                                alt="autoclosetag"
+                                title="autoclosetag"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/autorenametag.png"
+                                alt="autorenametag"
+                                title="autorenametag"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/htmltagwrap.png"
+                                alt="htmltagwrap"
+                                title="htmltagwrap"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/livepreview.png"
+                                alt="livepreview"
+                                title="livepreview"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/liveserver.png"
+                                alt="liveserver"
+                                title="liveserver"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/loremipsum.png"
+                                alt="loremipsum"
+                                title="loremipsum"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/materialicon.png"
+                                alt="materialicon"
+                                title="materialicon"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/openinbrowser.png"
+                                alt="openinbrowser"
+                                title="openinbrowser"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/prettier.png"
+                                alt="prettier"
+                                title="prettier"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/csvtotable.png"
+                                alt="csvtotable"
+                                title="csvtotable"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/htmlcsssupport.png"
+                                alt="htmlcsssupport"
+                                title="htmlcsssupport"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/webszerkesztesi_alapok/vscodepdf.png"
+                                alt="vscodepdf"
+                                title="vscodepdf"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Mire jó a Live Share - Visual Studio Code
+                            kiterjesztés (extension)?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/liveshare.png"
+                                alt="liveshare"
+                                title="liveshare"
+                            />
+                        </div>
+                        <p>
+                            Csoportmunka folyamán nagyon hasznos lehet a
+                            következő <b>kiterjesztés</b> (<i>extension</i>).
+                            Lehetővé teszi a kódban való egyidejű és kölcsönösen
+                            nyomonkövethető változtatást több szerkesztő által.
+                            Íme egy videó arról hogyan működik.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=A2ceblXTBBc"
+                                >Visual Studio Code</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="seo">
+                            Mi az a keresőmotor optimalizálás (SEO - Seach
+                            Engine Optimization)?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt"
+                                >keresőmotor optimalizálás</span
+                            >: A keresőoptimalizálás jelentése, olyan
+                            tevékenységek összessége, melyeknek célja az hogy
+                            <b>
+                                honlapunk minél jobb helyezést kapjon a
+                                keresőoldalakon a találati listában </b
+                            >. Ennek a célja pedig az, hogy minél több látogató
+                            érkezzen a weboldalunkra.
+                        </p>
+                        <p>
+                            A keresőoptimalizálás egy több stratégiát, technikát
+                            és taktikát magába foglaló tevékenység, célja pedig
+                            hogy
+                            <b>
+                                hogy egy webhely a keresőmotorok találati
+                                oldalain (<i>SERP - Search Engine Result Page</i
+                                >) minél magasabb helyezést érjen el hogy </b
+                            >, és így nagyobb látogatóforgalomra tehessen szert.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://matebalazs.hu/seo.html">SEO - 1</a
+                            ><br />
+                            <a
+                                href="https://honlaprafel.hu/keresooptimalizalas/keresomotor-optimalizalas/"
+                                >SEO - 2</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mi a HTML? Hogyan épül fel egy HTML elem?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A HTML a
+                            <b>HyperText Markup Language</b> (Hiperszöveg
+                            Jelölőnyelv) rövidítése.
+                        </p>
+                        <ul>
+                            <li id="hiperszoveg">
+                                <span class="kiemelt">Hiperszöveg</span>: sima
+                                szöveg más oldalakra mutató hivatkozásokkal
+                                (<i>link</i>)
+                            </li>
+                            <li id="jelolo">
+                                <span class="kiemelt">Jelölőnyelv</span>: a
+                                szöveg részeit elemekbe (<i>element</i>), címkék
+                                (<i>tag</i>) közé csomagoljuk
+                            </li>
+                        </ul>
+                        <p>Hogyan épül fel egy elem:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/element.png"
+                                alt="HTML elem"
+                                title="HTML elem"
+                            />
+                        </div>
+                        <p>
+                            Van néhány elem, melynek csak nyitó címkéje (<i
+                                >opening tag</i
+                            >) van. Ezeket <b>üres elem</b>eknek (<i
+                                >void, empty element</i
+                            >) hívjuk. Az üres elemnek nincs tartalma
+                            (<i>content</i>). A HTML-ben nem kötelező lezárni
+                            ezeket az elemeket a nyitó címkében, de vannak olyan
+                            nyelvek (pl. XML, XHTML) ahol kötelező. Ezért zárjuk
+                            le őket ha tehetjük, bajt nem okozunk vele. (A
+                            Visual Studio Code - Prettier kiterjesztése úgyis
+                            lezárja!)
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_002.png"
+                                alt="üres (void) elem"
+                                title="üres (void) elem"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_002.png"
+                                alt="üres (void) elem"
+                                title="üres (void) elem"
+                            />
+                        </div>
+                        <p>
+                            <b>Az elemek egymásba ágyazhatóak</b>. Ekkor
+                            vigyázni kell arra, hogy szabályosan ágyazódjanak
+                            be. Tehát egy belső elem mindkét címkéje a külső
+                            elem címkéi között szerepeljen.
+                        </p>
+                        <p>
+                            A címkék nem kis- és nagybetű érzékenyek:
+                            <span class="h-elem"> &lt;P&gt;=&lt;p&gt;</span>.
+                            Azonban javasolt a kisbetű használata a szigorúbb
+                            nyelvek miatt (pl. XHTML).
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_003.png"
+                                alt="egymásba ágyazott elemek"
+                                title="egymásba ágyazott elemek"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_003.png"
+                                alt="egymásba ágyazott elemek"
+                                title="egymásba ágyazott elemek"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_intro.asp"
+                                >w3schools html intro</a
+                            ><br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/mi-az-a-html-a-html-bemutatasa/"
+                                >webiskola html intro</a
+                            ><br />
+                            <a
+                                href="https://www.w3schools.com/html/html_elements.asp"
+                                >w3schools html elemek</a
+                            ><br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/mi-az-a-html-tag/"
+                                >webiskola html elemek</a
+                            ><br />
+                            <a href="https://www.ditig.com/html-void-elements"
+                                >Üres elemek</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="attribute">
+                            Mik azok az attribútumok, jellemzők (attribute) és
+                            mire használjuk őket?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Az <b>attribútum</b>ok módosítják és kiegészítő
+                            információkkal látják el a HTML elemeket. Bármely
+                            HTML elemnek lehetnek attribútumai!
+                            <b>Mindig az elem nyitó címkéjében található!</b> A
+                            következő alakban szerepel -
+                            <b class="fontos">név="érték"</b>:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/attribute.png"
+                                alt="attribútum"
+                                title="attribútum"
+                            />
+                        </div>
+                        <p class="alahuzott">
+                            Legismertebb, legtöbbször használt attribútumok:
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_004.png"
+                                alt="példák attribútumra"
+                                title="példák attribútumra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_004.png"
+                                alt="példák attribútumra"
+                                title="példák attribútumra"
+                            />
+                        </div>
+                        <p>
+                            Figyeljük meg a <i>lang="hu"</i> attribútumot a
+                            <i>html</i>
+                            elem nyitó címkéjében (lásd következő feladat).
+                            Ennek a szerepe a SEO-nál van.
+                        </p>
+                        <p>
+                            Fontosak még a <i>charset</i> és
+                            <i>name</i> attribútumok is. Az előbbi felel az
+                            oldal <b>karakterkódolás</b>áért, az utóbbi
+                            segítségével tudjuk megadni
+                            <b>a <i>meta</i> elemeket</b>
+                            (lásd következő feladat).
+                        </p>
+                        <p>
+                            Az attribútumok nevei nem kis- és nagybetű
+                            érzékenyek:
+                            <span class="h-elem"
+                                >&lt;p title=""&gt;=&lt;p TITLE=""&gt;</span
+                            >. Azonban javasolt a kisbetű használata a szigorúbb
+                            nyelvek miatt (pl. XHTML).
+                        </p>
+                        <p>
+                            <b
+                                >Kötelező az attribútumok értékét idézőjelek
+                                vagy aposztrófok közé rakni.</b
+                            >
+                            Ha nem tesszük meg, akkor a több szóból álló érték
+                            szétesik úgynevezett <i>boolean attribute</i>-mokra.
+                            Mivel ebből csak néhány értelmezett a HTML-ben,
+                            ezért az ezeken kívüli értékeket a böngésző nem
+                            fogja feldolgozni.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_005.png"
+                                alt="boolean attribútum"
+                                title="boolean attribútum"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_005.png"
+                                alt="boolean attribútum"
+                                title="boolean attribútum"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_attributes.asp"
+                                >w3schools html attribútumok</a
+                            >
+                            <br />
+                            <a
+                                href="https://gist.github.com/samme/82133b9849a8d6851104e070b56e0ed3"
+                                >boolean attribute</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="komment">Mi a kommentek szerepe a HTML-ben?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A kommentek <b>tartalmát nem jeleníti meg</b> a
+                            böngésző. Kettős szerepet játszanak:
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Megjegyzéseket, emlékeztetőket helyezhetünk el
+                            bennük, hogy mások (vagy mi később) tisztában
+                            legyenek a kód feladatával.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Hibakeresés során tesztelésre kikapcsolhatunk
+                            sorokat a kódból, és megnézhetjük, hogyan működik
+                            nélkülük.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_012.png"
+                                alt="kommentek"
+                                title="kommentek"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_012.png"
+                                alt="kommentek"
+                                title="kommentek"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_comments.asp"
+                                >w3schools html comment</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-komment-megjegyzes/"
+                                >webiskola komment</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Hogy néz ki egy alap HTML oldal?</li>
+                    </div>
+                    <div class="valasz">
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_001.png"
+                                alt="alap HTML"
+                                title="alap HTML"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_001.png"
+                                alt="alap HTML"
+                                title="alap HTML"
+                            />
+                        </div>
+                        <p>
+                            Egy alap HTML oldal felépítését láthatjuk a fenti
+                            képen. Egy kicsit több elem szerepel rajta, mint
+                            alapvetően szükséges lenne (<i>html</i>,
+                            <i>head</i>, <i>body</i>, <i>title</i>), de a
+                            <b>meta</b> elemek közül is kell néhány az oldal
+                            helyes müködéséhez.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_intro.asp"
+                                >w3schools html oldal</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/tags/tag_meta.asp"
+                                >w3schools meta elem</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-oldal-felepitese-strukturaja/"
+                                >webiskola html oldal</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-head-fej/"
+                                >webiskola head elem</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Mit nevezünk blokkszintű (block), beágyazott
+                            (inline) és beágyazott-blokkszintű (inline-block)
+                            elemnek?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <ul>
+                            <li id="blokk">
+                                <span class="kiemelt">blokkszintű elem</span>:
+                                <b>Blokkszintű elem</b>nek (<i>block</i>)
+                                nevezzük azokat a <i>body</i>-beli elemeket,
+                                amelyek:
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Mindig új sort kezdenek!
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Elfoglalják az egész rendelkezésre álló
+                                    szélességet.
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >A böngésző tesz egy kis margót elé és
+                                    utána.
+                                </p>
+                                <p class="alahuzott">
+                                    Íme néhány többet használt blokkszintű elem:
+                                </p>
+                                <div class="kep-kod">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/blokk_elem.png"
+                                        alt="blokkszintű elemek"
+                                    />
+                                </div>
+                                <p id="divelem">
+                                    A legtöbbet használt blokkszintű elem a
+                                    <span class="h-elem">&lt;div&gt;</span>
+                                    elem, melyet univerzális tartóelemként,
+                                    konténerként (<i>container</i>) képzelhetünk
+                                    el más elemek egybefogásához.
+                                </p>
+                                <div class="kep-2">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/kod_006.png"
+                                        alt="példa div-elemre"
+                                        title="példa div-elemre"
+                                    />
+                                </div>
+                                <div class="kep-2">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/bongeszo_006.png"
+                                        alt="példa div-elemre"
+                                        title="példa div-elemre"
+                                    />
+                                </div>
+                            </li>
+                            <li id="inline-elem">
+                                <span class="kiemelt">beágyazott elem</span>:
+                                <b>Beágyazott elem</b>nek nevezzük azokat a
+                                <i>body</i>-beli elemeket, amelyek:
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Oda kerülnek beszúrásra a weboldalon, ahol
+                                    a HTML kódban szerepelnek. Általában egy
+                                    másik elemen belül vannak!
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Annyi helyet foglalnak, amennyi feltétlenül
+                                    szükséges.
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Nem állíthatunk be szélességet "width",
+                                    illetve magasságot "height" az elemre!
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Nem állíthatunk be alsó- és felső margót
+                                    "margin", illetve kitöltést "padding" az
+                                    elemre!
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    ><b
+                                        >Nem tartalmazhatnak blokkszintű
+                                        elemeket!</b
+                                    >
+                                </p>
+                                <p class="alahuzott">
+                                    Íme néhány többet használt beágyazott elem:
+                                </p>
+                                <div class="kep-kod">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/inline-elem.png"
+                                        alt="beágyazott elemek"
+                                    />
+                                </div>
+                                <p id="spanelem">
+                                    A legtöbbet használt beágyazott elem a
+                                    <span class="h-elem">&lt;span&gt;</span>
+                                    elem, melyet univerzális tartóelemként,
+                                    konténerként (<i>container</i>) képzelhetünk
+                                    el más elemeken belüli részek kijelöléséhez.
+                                </p>
+                                <div class="kep-2">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/kod_007.png"
+                                        alt="példa span-elemre"
+                                        title="példa span-elemre"
+                                    />
+                                </div>
+                                <div class="kep-2">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/bongeszo_007.png"
+                                        alt="példa span-elemre"
+                                        title="példa span-elemre"
+                                    />
+                                </div>
+                            </li>
+                            <li id="inline-block">
+                                <span class="kiemelt"
+                                    >beágyazott-blokkszintű elem</span
+                                >: Azokat a beágyazott elemeket, amelyekre
+                                beállíthatunk külső és belső margót illeve
+                                kitöltést, szélességet és magasságot, de sort
+                                nem törnek, azokat
+                                <b>beágyazott-blokkszintű elem</b>eknek (<i
+                                    >inline-block element</i
+                                >) nevezzük. Ezeknek a beállítása majd a CSS-en
+                                belül fog megtörténni.
+                            </li>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_blocks.asp"
+                                >w3schools block/inline html</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/css/css_inline-block.asp"
+                                >w3schools inline-block css</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Alapvető HTML-elemek.</li>
+                    </div>
+                    <div class="valasz">
+                        <ul>
+                            <li id="fejlec">
+                                <span class="kiemelt"> fejléc</span>: Az oldal
+                                tartalmának a tagolásához <b>fejléc</b>eket
+                                (<i>heading</i>) használunk. Ezeket használja a
+                                böngésző is, hogy struktúrálja a weboldalt.
+                                Jelölésükre a
+                                <span class="h-elem"
+                                    >&lt;h1&gt;-&lt;h6&gt;</span
+                                >
+                                elemeket használjuk, ahol <i>h1</i> a
+                                legfontosabb, míg <i>h6</i> a legkevesbé fontos.
+                                <p><b>Blokkszintű</b> elem!</p>
+                            </li>
+                            <li id="bekezdes">
+                                <span class="kiemelt">bekezdés, paragrafus</span
+                                >: A weboldal szövegtartalmának bekezdésekre
+                                tagolásához a
+                                <span class="h-elem">&lt;p&gt;</span>
+                                <b>bekezdés, paragrafus</b>
+                                (<i>paragraph</i>) elemet használjuk.
+                                <p><b>Blokkszintű</b> elem!</p>
+                            </li>
+                            <li id="hr">
+                                <span class="kiemelt"
+                                    >vízszintes elválasztás (horizontal rule),
+                                    tematikus váltás</span
+                                >: A weboldal szövegtartalmának elválasztására,
+                                tematikus váltás jelölésére a
+                                <span class="h-elem">&lt;hr&gt;</span>
+                                <b>vízszintes elválasztás</b>
+                                (<i>horizontal rule</i>) elemet használjuk.
+                                <p><b>Blokkszintű, üres</b> elem!</p>
+                            </li>
+                            <li id="br">
+                                <span class="kiemelt"
+                                    >sortörés (line break), sortörés, új sor
+                                    kezdése nélkül</span
+                                >: Ha sort szeretnénk törni, de nem akarunk új
+                                sort kezdeni, akkor a
+                                <span class="h-elem">&lt;br&gt;</span>
+                                <b>sortörés</b>
+                                (<i>line break</i>) elemet használjuk.
+                                <p><b>Beágyazott, üres</b> elem!</p>
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/kod_008.png"
+                                    alt="példa egyszerű elemekre"
+                                    title="példa egyszerű elemekre"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/bongeszo_008.png"
+                                    alt="példa egyszerű elemekre"
+                                    title="példa egyszerű elemekre"
+                                />
+                            </div>
+                            <li id="pre">
+                                <span class="kiemelt"
+                                    >előformált (preformatted) elem</span
+                                >: Mivel a böngésző nem veszi figyelembe a HTML
+                                kódban elhelyezett többlet sorközöket és
+                                sortöréseket, ezért ha szeretnénk
+                                "formázottabban" megjeleníttetni a szöveget,
+                                akkor a <span class="h-elem">&lt;pre&gt;</span>
+                                <b>előformált </b>
+                                (<i>preformatted</i>) elemet használjuk.
+                                <p><b>Blokkszintű</b> elem!</p>
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/kod_009.png"
+                                    alt="előformált szöveg"
+                                    title="előformált szöveg"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/bongeszo_009.png"
+                                    alt="előformált szöveg"
+                                    title="előformált szöveg"
+                                />
+                            </div>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_headings.asp"
+                                >w3schools headings</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/html/html_paragraphs.asp"
+                                >w3schools paragraphs</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-cimsorok/"
+                                >webiskola fejlécek</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-bekezdes-html-p/"
+                                >webiskola bekezdés</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-pre-hasznalata/"
+                                >webiskola pre</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Melyek a formatáló elemek (formatting element)?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <b>Formatáló elem</b>eket (<i>formatting element</i
+                            >) akkor használunk, ha alá kell húzni valamit a
+                            szövegben, esetleg áthúzni, szóval ha a szöveget
+                            valamilyen formában alakítani kell.
+                        </p>
+                        <ul>
+                            <li id="bold">
+                                <span class="kiemelt"
+                                    >félkövér szöveg (bold)</span
+                                >: Értelemszerűen félkövér szedéssel.
+                                <span class="h-elem">&lt;b&gt;</span>
+                                - elem.
+                            </li>
+                            <li id="strong">
+                                <span class="kiemelt"
+                                    >fontos szöveg (strong)</span
+                                >: Félkövér szedéssel. Fontos (important)
+                                szövegrészekhez.
+                                <b
+                                    >Szerepe inkább a CSS-nél és JavaScript-nél
+                                    van</b
+                                >! <span class="h-elem">&lt;strong&gt;</span> -
+                                elem.
+                            </li>
+                            <li id="italic">
+                                <span class="kiemelt">dőlt szöveg (italic)</span
+                                >: Értelemszerűen dőlt szedéssel. Technikai
+                                kifejezésekhez, hajó nevekhez, gondolatokhoz
+                                stb. <span class="h-elem">&lt;i&gt;</span> -
+                                elem.
+                            </li>
+                            <li id="emphasized">
+                                <span class="kiemelt"
+                                    >hangsúlyozott szöveg (emphasized)</span
+                                >: Dőlt szedéssel. A képernyőolvasók
+                                hangsúlyosan mondják ki ezeket a szavakat.
+                                <b
+                                    >Szerepe inkább a CSS-nél és JavaScript-nél
+                                    van</b
+                                >! <span class="h-elem">&lt;em&gt;</span> -
+                                elem.
+                            </li>
+                            <li id="small">
+                                <span class="kiemelt"
+                                    >kisebb szöveg (small)</span
+                                >: A normál szövegtől kisebb szedéssel. Ha
+                                valamit szeretnénk <b>kiemelni</b>, akkor egyik
+                                lehetőség a <b>kisebb betűkkel</b> való írás.
+                                <span class="h-elem">&lt;small&gt;</span> -
+                                elem.
+                            </li>
+                            <li id="mark">
+                                <span class="kiemelt"
+                                    >megjelölt szöveg (marked)</span
+                                >: Színezett háttérrel szedés (általában
+                                sárgával). Ha valamit szeretnénk
+                                <b>kiemelni</b>, akkor egyik lehetőség a
+                                <b>színezett háttérrel</b> szedés.
+                                <span class="h-elem">&lt;mark&gt;</span>
+                                - elem.
+                            </li>
+                            <li id="del">
+                                <span class="kiemelt"
+                                    >törölt szöveg (deleted)</span
+                                >: Áthúzott vonallal szedés. Ha valamit
+                                szeretnénk <b>eldobottnak</b> jelölni, akkor
+                                általában áthúzzuk.
+                                <span class="h-elem">&lt;del&gt;</span> - elem.
+                            </li>
+                            <li id="ins">
+                                <span class="kiemelt"
+                                    >beszúrt szöveg (inserted)</span
+                                >: Aláhúzott vonallal szedés. Ha valamit
+                                szeretnénk <b>újonnan felvettnek</b> jelölni,
+                                akkor általában aláhúzzuk.
+                                <span class="h-elem">&lt;ins&gt;</span> - elem.
+                            </li>
+                            <li id="sub">
+                                <span class="kiemelt"
+                                    >alsóindexált szöveg (subscripted)</span
+                                >: A normál szöveg alatt fél karakterrel, kisebb
+                                betűnagysággal szedés. Kémiai képletekben, stb.
+                                <span class="h-elem">&lt;sub&gt;</span> - elem.
+                            </li>
+                            <li id="sup">
+                                <span class="kiemelt"
+                                    >felsőindexált szöveg (superscripted)</span
+                                >: A normál szöveg felett fél karakterrel,
+                                kisebb betűnagysággal szedés. Matemetikai
+                                képletekben, lábjegyzetek jelölésére stb.
+                                <span class="h-elem">&lt;sup&gt;</span> - elem.
+                            </li>
+                        </ul>
+                        <p>Mindegyik <b>beágyazott</b> elem!</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_010.png"
+                                alt="formatted elements"
+                                title="formatted elements"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_010.png"
+                                alt="formatted elements"
+                                title="formatted elements"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_formatting.asp"
+                                >w3schools formatting elements</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-szovegformazas-css-nelkul/"
+                                >webiskola szövegformázás</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Egyéb hasznos elemek idézetekhez, címekhez,
+                            rövidítésekhez, műalkotások címéhez és az írás
+                            irányához.
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <ul>
+                            <li id="blockquote">
+                                <span class="kiemelt"
+                                    >"hosszú" (long) idézet</span
+                                >: Önálló, behúzott szövegrész, amelybe
+                                máshonnan vett elemeket illesztünk.<b
+                                    >A (<i>cite</i>) attribútumban adjuk meg a
+                                    forrást!</b
+                                >
+                                <span class="h-elem">&lt;blockquote&gt;</span> -
+                                elem.
+                            </li>
+                            <p><b>Blokkszintű</b> elem!</p>
+                            <li id="q">
+                                <span class="kiemelt"
+                                    >"rövid" (short) idézet</span
+                                >: Soron belül elhelyezett idézet, amely köré a
+                                böngésző idézőjelet szokott tenni.<b
+                                    >A (<i>cite</i>) attribútumban adjuk meg a
+                                    forrást!</b
+                                >
+                                <span class="h-elem">&lt;q&gt;</span> - elem.
+                            </li>
+                            <p><b>Beágyazott</b> elem!</p>
+                            <li id="abbr">
+                                <span class="kiemelt"
+                                    >rövidítések, betűszavak:</span
+                                >: A szövegben megjelenő rövidítések, betűszavak
+                                esetén a <i>title</i> attribútum segítségével
+                                információkat adhatunk a böngészőnek,
+                                fordítórendszereknek és keresőmotoroknak.
+                                <span class="h-elem">&lt;abbr&gt;</span> - elem.
+                            </li>
+                            <p><b>Beágyazott</b> elem!</p>
+                            <li id="address">
+                                <span class="kiemelt">cím, elérhetőség:</span>:
+                                A szerző, tulajdonos elérhetőségei illetve címe
+                                (e-mail, fizikai cím stb.). A böngésző sort tör
+                                előtte és utána, valamint dőlt betűvel szedi.
+                                <span class="h-elem">&lt;address&gt;</span> -
+                                elem.
+                            </li>
+                            <p><b>Blokkszintű</b> elem!</p>
+                            <li id="cite">
+                                <span class="kiemelt">alkotásnak a címe:</span>:
+                                Egy műalkotásnak (vers, szobor stb.) a címe.
+                                <b>A szerző nem része!</b>
+                                <span class="h-elem">&lt;cite&gt;</span> - elem.
+                            </li>
+                            <p><b>Beágyazott</b> elem!</p>
+                            <li id="bdo">
+                                <span class="kiemelt">írásnak az iránya:</span>:
+                                Magyarországon általában balról jobbra írunk, de
+                                vannak országok ahol jobbról balra. Ebben segít
+                                ez az elem (<i>bidirectional override</i>). A
+                                <i>dir</i> attribútum mondja meg az irányt (<i
+                                    >ltf</i
+                                >
+                                - left to right, <i>rtl</i> - right to left).
+                                <span class="h-elem">&lt;bdo&gt;</span> - elem.
+                            </li>
+                            <p><b>Beágyazott</b> elem!</p>
+                        </ul>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_011.png"
+                                alt="rövidítés, cím miegymás"
+                                title="rövidítés, cím miegymás"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_011.png"
+                                alt="rövidítés, cím miegymás"
+                                title="rövidítés, cím miegymás"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_quotation_elements.asp"
+                                >w3schools quotation elements</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mi az az állományelérési útvonal (file path)?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Definíció szerint ez írja le az
+                            <b
+                                >adott állomány helyét a weblapot alkotó
+                                mappastruktúrában</b
+                            >.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/path.png"
+                                alt="file path"
+                                title="file path"
+                            />
+                        </div>
+                        <p id="abs-path">
+                            Ehhez azt kell tudni, hogy minden weblap (website)
+                            weboldalakból (webpage) épül fel,
+                            <b>amelyek általában HTML állományok</b>. (Lehetnek
+                            még más típusú állományok is: php, asp, ejs, jsx
+                            stb.) Ezeket a file-okat mappákba csoportosítjuk.
+                            Ennek a struktúrának van egy "belépési pontja",
+                            amelyet <i>domain</i>-nek is hívhatunk. Ez az adott
+                            könyvtárrendszer gyökéreleme (<i>root</i>) is lehet.
+                            <b>Például</b>:
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >https://google.com === https://google.com/
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >http://localhost:3500 === http://localhost:3500/
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >http://127.0.0.1:3500 === http://127.0.0.1:3500/
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Az adott partíciónk gyökere: C:/, D:/ vagy F:/
+                        </p>
+                        <p>
+                            Ettől a ponttól kezdve az egymásba ágyazott mappákat
+                            /-jel tagoljuk, hogy eljussunk egy adott
+                            állományhoz.
+                            <b
+                                >A végcél mindig egy
+                                <span class="fontos">file</span> és nem egy
+                                mappa, ha látszólag nincs is kiterjesztés
+                                (.html) a végén!</b
+                            >
+                            Például:
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >https://google.com/weblapunk/html/index ===
+                            https://google.com/weblapunk/html/index.html
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >http://localhost:3500/weblapunk/html/index ===
+                            http://localhost:3500/weblapunk/html/index.html
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >http://127.0.0.1:3500/weblapunk/html/index ===
+                            http://127.0.0.1:3500/weblapunk/html/index.html
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >F:/weblapunk/html/index ===
+                            F:/weblapunk/html/index.html
+                        </p>
+                        <p>
+                            Ekkor a <i>domain</i>-en belül van egy
+                            <i>weblapunk</i> mappa, azon belül egy
+                            <i>html</i> mappa, és itt található az
+                            <i>index.html</i> állomány, amit a böngésző
+                            megjelenít.
+                        </p>
+                        <p>
+                            <b
+                                >Ezt nevezzük
+                                <span class="fontos"
+                                    >abszolút állományelérési útvonalnak</span
+                                >
+                                (<i>absolute file path</i>)!
+                            </b>
+                        </p>
+                        <p>
+                            Ilyenkor a <i>domain</i> neve el is hagyható, de az
+                            elöl lévő / nem, a böngésző úgy is megtalálja!
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >/weblapunk/html/index ===
+                            /weblapunk/html/index.html
+                        </p>
+                        <p>
+                            Következő fontos kérdés:
+                            <b>Mit tekint a böngésző <i>domain</i>-nek</b>? Ez
+                            attól függ, hogyan és honnan indítod a weblapodat.
+                        </p>
+                        <p class="alahuzott">
+                            Nézzük a következő mappastruktúrát:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/konyvtarstruktura.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Indítsuk az "open in browser" kiterjesztéssel a
+                            <i>F:</i> gyökérmappából. Ekkor az
+                            <b>index.html</b> elérési útja:
+                        </p>
+                        <p class="fontos">
+                            file:///F:/gyakorlas/belso/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_015.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>Ebben az esetben a <i>domain</i>: "file:///F:/"</p>
+                        <p>
+                            Most pedig a "live server", "live preview"
+                            kiterjesztéssel:
+                        </p>
+                        <p class="fontos">
+                            http://127.0.0.1:5500/gyakorlas/belso/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_016.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben a <i>domain</i>:
+                            "http://127.0.0.1:5000:/"
+                        </p>
+                        <p>
+                            Indítsuk az "open in browser" kiterjesztéssel a
+                            <i>gyakorlas</i> mappából. Ekkor az
+                            <b>index.html</b> elérési útja:
+                        </p>
+                        <p class="fontos">
+                            file:///F:/gyakorlas/belso/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben is a <i>domain</i>: "file:///F:/"
+                        </p>
+                        <p>
+                            Most pedig a "live server", "live preview"
+                            kiterjesztéssel:
+                        </p>
+                        <p class="fontos">
+                            http://127.0.0.1:5500/belso/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_014.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben is a <i>domain</i>:
+                            "http://127.0.0.1:5000:/"
+                        </p>
+                        <p>
+                            Indítsuk az "open in browser" kiterjesztéssel a
+                            <i>belso</i> mappából. Ekkor az
+                            <b>index.html</b> elérési útja:
+                        </p>
+                        <p class="fontos">
+                            file:///F:/gyakorlas/belso/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_017.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben is a <i>domain</i>: "file:///F:/"
+                        </p>
+                        <p>
+                            Most pedig a "live server", "live preview"
+                            kiterjesztéssel:
+                        </p>
+                        <p class="fontos">
+                            http://127.0.0.1:5500/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_018.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben is a <i>domain</i>:
+                            "http://127.0.0.1:5000:/"
+                        </p>
+                        <p>
+                            Végül indítsuk az "open in browser" kiterjesztéssel
+                            a
+                            <i>megbelsobb</i> mappából. Ekkor az
+                            <b>index.html</b> elérési útja:
+                        </p>
+                        <p class="fontos">
+                            file:///F:/gyakorlas/belso/megbelsobb/index.html
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_019.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben is a <i>domain</i>: "file:///F:/"
+                        </p>
+                        <p>
+                            Most pedig a "live server", "live preview"
+                            kiterjesztéssel:
+                        </p>
+                        <p class="fontos">http://127.0.0.1:5500/index.html</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_013.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_020.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Ebben az esetben is a <i>domain</i>:
+                            "http://127.0.0.1:5000:/"
+                        </p>
+                        <p>
+                            Összefoglalva az
+                            <b>abszolút állományelérési útvonal</b> esetén:
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"open in browser" kiterjesztés esetén, mintha
+                            manuálisan indítanánk a "file explorer"-ből, a
+                            domain az egész partíció bárhonnan is indítottunk,
+                            és a neve nem változik.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"live server" kiterjesztés esetén, a domain az a
+                            mappa, ahonnan a szervert elindítottuk, bár a név
+                            itt sem változik.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Lehetőség szerint soha ne használjuk ezt a
+                            módszert, mert nem ismerhetjük a teljes "domain"-t
+                            mindig. Az interneten müködő szerverekét meg
+                            abszolúte nem.
+                        </p>
+                        <p id="rel-path">
+                            Amit helyette használhatunk az a
+                            <b class="fontos"
+                                >relatív állományelérési útvonal</b
+                            >
+                            (<b>relative file path</b>). Itt mindig ahhoz az
+                            állományhoz viszonyítunk, ahonnan indítjuk a
+                            keresést.
+                        </p>
+                        <p>
+                            Az előző utolsó példában, most viszonyítsunk az
+                            <b>index.html</b>-hez. Ha abban a mappában keresünk
+                            egy másik állományt, amelyben az
+                            <b>index.html</b> található, akkor csak leírjuk az
+                            állomány nevét. Ekkor mind a két módszer ugyanazt az
+                            eredményt adja.
+                        </p>
+                        <p class="alahuzott">Lehetséges kódok:</p>
+                        <p class="h-elem">&lt;img src='cica.jpg' /&gt;</p>
+                        <p>
+                            Ehhez is szokjunk hozzá, mert később ezt fogjuk
+                            használni többet:
+                        </p>
+                        <p class="h-elem">&lt;img src='./cica.jpg' /&gt;</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_021.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_022.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>Egy mappaszinttel feljebb lépéshez a kód:</p>
+                        <p class="h-elem">&lt;img src='../cica.jpg' /&gt;</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_023.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_024.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Egy mappaszinttel feljebb egy másik mappába lépéshez
+                            a kód:
+                        </p>
+                        <p class="h-elem">
+                            &lt;img
+                            src='../images/webszerkesztesi_alapok/cica.jpg'
+                            /&gt;
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_025.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_026.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Látható, hogy a szerveres megoldás már nem találja a
+                            képet (kikerült a <i>domain</i>-ből)! Lépjünk
+                            feljebb még egy mappaszintet:
+                        </p>
+                        <p class="h-elem">&lt;img src='../../cica.jpg' /&gt;</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_028.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_024.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>És egy másik mappába:</p>
+                        <p class="h-elem">
+                            &lt;img
+                            src='../../images/webszerkesztesi_alapok/cica.jpg'
+                            /&gt;
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_027.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_026.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            A szerveres megoldás megint nem találja a képet. Ha
+                            csak simán lépegetünk felfelé, akkor visszamegy a
+                            <i>domain</i> területére, és ott keresi a képet. Ha
+                            már kilép egy mappába valamelyik szinten, akkor már
+                            nem tud visszamenni!
+                        </p>
+                        <p>
+                            A legfelső szinten, itt már nincs
+                            <i>images</i> mappa:
+                        </p>
+                        <p class="h-elem">
+                            &lt;img src='../../../cica.jpg' /&gt;
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_029.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_024.png"
+                                alt="könyvtárstruktúra"
+                                title="könyvtárstruktúra"
+                            />
+                        </div>
+                        <p>
+                            Hogy használjuk az állományelérési útvonalakat?
+                            <b
+                                >Olyan elemeknél, amelyeknek vagy <i>href</i>,
+                                vagy <i>src</i> attribútumuk van</b
+                            >! Következzen néhány példa a következő pontokban.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_filepaths.asp"
+                                >w3schools file path</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="link">
+                            Mik azok a hivatkozások (link) és mire
+                            használhatóak?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A <i>link</i>-ektől, hivatkozásoktól lesz a HTML
+                            hiperszöveg.
+                            <b
+                                >De hivatkozás nem csak szövegrészlet, hanem
+                                bármely HTML elem lehet</b
+                            >. Legtöbbször általában kép.
+                        </p>
+                        <p><b>Blokkszintű</b> elem!</p>
+                        <p class="alahuzott">Szintaxisa:</p>
+                        <p class="h-elem">
+                            &lt;a href="cím" target="hol"&gt;Látható
+                            rész&lt;/a&gt;
+                        </p>
+                        <p class="sorolas" id="href">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"href": a megnyitandó oldal címe (állományelérési
+                            útvonal)
+                        </p>
+                        <p class="sorolas" id="target">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"target": hol nyíljon meg
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                _self: az adott ablakban, ahol a hivatkozás
+                                található
+                            </li>
+                            <li>
+                                _parent: az adott ablakot tartalmazó szülő
+                                ablakban (lásd majd <i>iframe</i>)
+                            </li>
+                            <li>
+                                _top: a teljes ablakban (lásd majd
+                                <i>iframe</i>)
+                            </li>
+                            <li>_blank: egy új fülön/ablakban</li>
+                        </ul>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_014.png"
+                                alt="kép mint link"
+                                title="kép mint link"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_030.png"
+                                alt="kép mint link"
+                                title="kép mint link"
+                            />
+                        </div>
+                        <p id="mailto">
+                            A <i>href</i> attribútumban megadhatunk egy e-mail
+                            címet a <b>mailto:</b> séma (<i>scheme</i> - előírt
+                            forma) után. Ekkor a böngésző megnyítja a beállított
+                            alapértelmezett levelezőprogramot az adott címmel:
+                        </p>
+                        <p class="h-elem">
+                            &lt;a
+                            href="mailto:cim@gmail.com"&gt;cim@gmail.com&lt;/a&gt;
+                        </p>
+                        <p>Egy hivatkozás állapotai és színei:</p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"unvisited - látogatatlan": kék és aláhúzott
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"visited - látogatott": lila és aláhúzott
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"active - aktív": piros és aláhúzott
+                        </p>
+                        <p id="bookmark">
+                            <span class="kiemelt">könyvjelző - bookmark</span>:
+                            A hivatkozásokat arra is használhatjuk, hogy egy
+                            adott dokumentum egy bizonyos részéhez ugorjunk. Ez
+                            lehet az adott állomány vagy egy teljesen másik:
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_015.png"
+                                alt="link mint könyvjelző"
+                                title="link mint könyvjelző"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_031.png"
+                                alt="link mint könyvjelző"
+                                title="link mint könyvjelző"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_links.asp"
+                                >w3schools links</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-hivatkozasok-linkek-a-href/"
+                                >webiskola linkek</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="kep">
+                            Hogyan tudunk képeket (image) elhelyezni a
+                            weboldalakon?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Képekkel nagymértékben javítani tudjuk egy weboldal
+                            megjelenését a különböző felületeken.
+                        </p>
+                        <p><b>Beágyazott</b> elem!</p>
+                        <p class="alahuzott">Általános szintaktikája:</p>
+                        <p class="h-elem">
+                            &lt;img src="kép forrás" alt="alternatív szöveg"
+                            width="szélesség" height="magasság" /&gt;
+                        </p>
+                        <p class="sorolas" id="src">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"src": a kép forrása (állományelérési útvonal)
+                        </p>
+                        <p class="sorolas" id="alt">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"alt": alternatív szöveg, ha a kép nem jelenne meg
+                        </p>
+                        <p class="sorolas" id="width">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"width": szélesség pixelben
+                        </p>
+                        <p class="sorolas" id="height">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >"height": magasság pixelben
+                        </p>
+                        <p>
+                            <b
+                                >Ezek helyett inkább a <i>style</i> attribútum
+                                használata javasolt</b
+                            >! Nem tudják felülírni a stíluslapok!
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_016.png"
+                                alt="kép az oldalon"
+                                title="kép az oldalon"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_032.png"
+                                alt="kép az oldalon"
+                                title="kép az oldalon"
+                            />
+                        </div>
+                        <p>
+                            <b
+                                >A kép nem kerül beszúrásra a weboldalra, csak
+                                egy területet foglal le az eleme, és ehhez
+                                csatolja (linkeli) a képet</b
+                            >. Nem úgy, mint a Word. Ezért szükséges az
+                            <i>alt</i> attribútum!
+                        </p>
+                        <p>
+                            Külső forrásból származó képek jogvédettek lehetnek.
+                            Ennek mindig nézzünk utána! És hirtelen
+                            megváltozhatnak és el is tűnhetnek.
+                        </p>
+                        <p class="alahuzott">Támogatott képformátumok:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kepformatumok.png"
+                                alt="támogatott képformátumok"
+                                title="támogatott képformátumok"
+                            />
+                        </div>
+                        <ul>
+                            <li id="image-map">
+                                <span class="kiemelt"
+                                    >képtérkép - image map</span
+                                >: Ezt az elemet használjuk ha egy képen
+                                szeretnénk kijelölni kattintható területeket,
+                                ahonnan szeretnénk átnavigálni egy másik
+                                oldalra.
+                                <p><b>Blokkszintű</b> elem!</p>
+                                <p class="alahuzott">A szintaxisa:</p>
+                                <div class="kep-2" id="coords">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/kod_017.png"
+                                        alt="képtérkép"
+                                        title="képtérkép"
+                                    />
+                                </div>
+                                <div class="kep-2">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/bongeszo_033.png"
+                                        alt="képtérkép"
+                                        title="képtérkép"
+                                    />
+                                </div>
+                                <p class="sorolas" id="map-name">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >"name="ferrari"" attribútum hozzáadása az
+                                    "map" elemhez
+                                </p>
+                                <p class="sorolas" id="usemap">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >"usemap="#ferrari"" attribútum hozzáadása
+                                    az "img" elemhez, hogy összekapcsoljuk őket.
+                                    "Fontos a # jel!"
+                                </p>
+                                <p class="sorolas" id="area">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >"area" elemek hozzáadása a "map" elemhez
+                                </p>
+                                <p class="sorolas" id="shape">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >"shape" (rect, circle, poly), "coords",
+                                    "href" attribútumok beállítása
+                                </p>
+                                <p class="sorolas" id="map-download">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >A "download" attribútum csak akkor tölti le
+                                    a képet, ha egy weblaphoz (közös
+                                    "domain"-hez, egy mappastruktúrához)
+                                    tartoznak! Ha a "download" attribútum
+                                    működik, akkor nem nyílik meg új oldalon,
+                                    nincs "target"!
+                                </p>
+                            </li>
+                            <li id="picture">
+                                <span class="kiemelt">kép - picture</span>: Ha a
+                                képernyő szélességének a függvényében, vagy
+                                különböző eszközök esetén különböző képeket
+                                szeretnél beállítani egy elemre akkor használjuk
+                                a <i>picture</i> elemet.
+                                <p><b>Blokkszintű</b> elem!</p>
+                                <p class="alahuzott">Szintaxisa:</p>
+                                <div class="kep-2" id="source-media">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/kod_018.png"
+                                        alt="picture element"
+                                        title="picture element"
+                                    />
+                                </div>
+                                <div class="kep-2" id="srcset">
+                                    <img
+                                        src="./images/webszerkesztesi_alapok/bongeszo_034.png"
+                                        alt="picture element"
+                                        title="picture element"
+                                    />
+                                </div>
+                                <p class="sorolas" id="source">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >"source" elem a különböző nagyságokhoz,
+                                    "media" attribútum a szélesség, "srcset"
+                                    attribútum a forrás megadásához.
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Látható, hogy a nagyságok csökkenő
+                                    sorrendet alkotnak!
+                                </p>
+                                <p class="sorolas">
+                                    <span class="material-symbols-outlined">
+                                        clear_all </span
+                                    >Utolsó elemként kötelező egy "img" elem
+                                    megadása! Ezt használja a böngésző, ha
+                                    valami miatt nem tud választani a fenti
+                                    források közül (például nincs olyan kép,
+                                    rossz a kiterjesztés, a böngésző nem
+                                    támogatja a kiterjesztést stb.).
+                                </p>
+                            </li>
+                            <li id="figure">
+                                <span class="kiemelt" id="figcaption"
+                                    >figure és figcaption</span
+                                >: A <i>figure</i> egy univerzális tartóelem
+                                méditartalmakhoz, köztük képekhez. A
+                                <i>figcaption</i> egy mezőt biztosít a
+                                méditartalmalom címének.
+                            </li>
+                            <p><b>Blokkszintű</b> elemek!</p>
+                            <p class="alahuzott">Szintaxis:</p>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/kod_019.png"
+                                    alt="figure element"
+                                    title="figure element"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/bongeszo_035.png"
+                                    alt="figure element"
+                                    title="figure element"
+                                />
+                            </div>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_images.asp"
+                                >w3schools image elements</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/tags/tag_figure.asp"
+                                >w3schools figure</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-kepek-hasznalata-html-img/"
+                                >webiskola képek</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="title">
+                            Milyen elemek találhatóak a weboldalak fülén (tab)?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p id="favicon">
+                            Általában két elem: a <b>title</b> és a
+                            <b>favicon</b>. Mind a kettőt a
+                            <span class="h-elem">&lt;head&gt;</span> elemben
+                            kell elhelyezni, a következőek szerint:
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_020.png"
+                                alt="cím és favicon"
+                                title="cím és favicon"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/favicon.png"
+                                alt="cím és favicon"
+                                title="cím és favicon"
+                            />
+                        </div>
+                        <p class="alahuzott">
+                            Böngészők által támogatott favicon formátumok:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/webszerkesztesi_alapok/favicon-kiterjesztes.png"
+                                alt="cím és favicon"
+                                title="cím és favicon"
+                            />
+                        </div>
+                        <p class="alahuzott">Miért kell a weblapnak cím?</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>A SEO miatt.</li>
+                            <li>
+                                A böngésző ezt helyezi el a kedvencek
+                                közé/könyjelzősávba.
+                            </li>
+                            <li>Ez látható a böngésző fülén.</li>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_favicon.asp"
+                                >w3schools favicon</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/html/html_page_title.asp"
+                                >w3schools title</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li id="tablazatok">
+                            Mik azok a táblázatok és mire használhatóak?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A <b>táblázatok</b> (<i>table</i>) segítségével
+                            tudjuk az adatokat sorokba és oszlopokba rendezni, a
+                            könnyebb áttekinthetőség, kezelhetőség érdekében.
+                        </p>
+                        <p class="alahuzott">Nézzük a fő részeit:</p>
+                        <ul>
+                            <li id="table">
+                                <span class="kiemelt">table</span>: Ez az az
+                                elem, amely tartalmazni fogja az adatokat.
+                            </li>
+                            <li id="thead">
+                                <span class="kiemelt">thead</span>: Ebben a
+                                gyűjtőelemben fogjuk össze a táblázat fejsorába
+                                tartozó elemeket.
+                            </li>
+                            <li id="tbody">
+                                <span class="kiemelt">tbody</span>: Ebben a
+                                gyűjtőelemben fognak megjelenni a tényleges
+                                adatok sorokba rendezve.
+                            </li>
+                            <li id="tfoot">
+                                <span class="kiemelt">tfoot</span>: Ebben a
+                                gyűjtőelemben fogjuk össze a táblázat lábrészébe
+                                tartozó elemeket.
+                            </li>
+                            <li id="tr">
+                                <span class="kiemelt"
+                                    >táblázat sor - tr (table row)</span
+                                >: Ez az az elem, amelynek segítségével sorokat
+                                tudunk kialakítani az adatok számára.
+                            </li>
+                            <li id="th">
+                                <span class="kiemelt"
+                                    >táblázat fejléccella - th (table
+                                    header)</span
+                                >: Ez az az elem, amely a táblázatban szereplő
+                                adatokat leírja. Általában középrezárva,
+                                félkövéren jelenik meg a tartalma. Nem
+                                feltétlenül az első sor. Lehet bárhol a
+                                táblázatban!
+                            </li>
+                            <li id="td">
+                                <span class="kiemelt"
+                                    >táblázat adatcella - td (table data)</span
+                                >: Ez az az elem, amely a táblázatban szereplő
+                                adatokat tárolja.
+                            </li>
+                        </ul>
+                        <p>Mind <b>blokkszintű</b> elem!</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_021.png"
+                                alt="egyszerű táblázat"
+                                title="egyszerű táblázat"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_036.png"
+                                alt="egyszerű táblázat"
+                                title="egyszerű táblázat"
+                            />
+                        </div>
+                        <p class="alahuzott">
+                            Számos egyéb beállítási lehetőségünk van táblázatok
+                            esetén:
+                        </p>
+                        <ul>
+                            <li id="colspan">
+                                <span class="kiemelt">colspan</span>: Ha
+                                szeretnénk több oszlopbeli egymás mellett
+                                elhelyezkedő cellát összevonni egy cellába,
+                                akkor használjuk ezt az attribútumot az első
+                                cella elemben. Aztán kihagyunk annyi
+                                <i>th</i> vagy <i>td</i> elemet, ahány oszlopot
+                                szeretnénk összevonni!
+                            </li>
+                            <li id="rowspan">
+                                <span class="kiemelt">rowspan</span>: Ha viszont
+                                több sorban szeretnénk egymás alatt elhelyezkedő
+                                elemet összevonni egy cellába, akkor lehet
+                                hasznos ez az attribútum az első cellában. Ekkor
+                                a többi sorból annyi cellát kell elhagyni,
+                                amennyit szeretnénk összevonni.
+                            </li>
+                            <li id="caption">
+                                <span class="kiemelt">felirat - caption</span>:
+                                Címet is adhatunk a táblázatunknak ezzel az
+                                elemmel.
+                                <b
+                                    >Közvetlenül a
+                                    <span class="h-elem">&lt;table&gt;</span>
+                                    címke után szúrjuk be!</b
+                                >
+                            </li>
+                            <p><b>Blokkszintű</b> elem!</p>
+                        </ul>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_022.png"
+                                alt="egyszerű táblázat"
+                                title="egyszerű táblázat"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_037.png"
+                                alt="egyszerű táblázat"
+                                title="egyszerű táblázat"
+                            />
+                        </div>
+                        <p>
+                            Van még két speciális, táblázatokhoz kapcsolódó
+                            elem.
+                        </p>
+                        <ul>
+                            <li id="oszlopcsoport">
+                                <span class="kiemelt"
+                                    >oszlopcsoport - colgroup</span
+                                >: Ha több oszlopot szeretnék összevonni akkor
+                                használhatom ezt az elemet. Majd a stílus
+                                adásnál fog szerepet játszani.
+                            </li>
+                            <p><b>Blokkszintű</b> elem!</p>
+                            <li id="oszlop">
+                                <span class="kiemelt">oszlop - col</span>: Itt
+                                adjuk meg pontosan az összevonandó elemek
+                                számát.
+                            </li>
+                            <p><b>Beágyazott</b> elem!</p>
+                        </ul>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/kod_023.png"
+                                alt="egyszerű táblázat"
+                                title="egyszerű táblázat"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/webszerkesztesi_alapok/bongeszo_038.png"
+                                alt="egyszerű táblázat"
+                                title="egyszerű táblázat"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_tables.asp"
+                                >w3schools table</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html-ismeretek/html-tablazat-keszites-html-table/"
+                                >webiskola táblázat</a
+                            >
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mik a listák? Milyen típusok vannak a HTML-ben?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Egymással kapcsolatban lévő adatok csoportosítására
+                            használt HTML elemek a listák.
+                            <b>A listák egymásba ágyazhatóak!</b>
+                        </p>
+                        <ul>
+                            <li id="li">
+                                <span class="kiemelt"
+                                    >lista elem - (li) list item </span
+                                >: A listaelemek tárolására használt elem.
+                            </li>
+                            <li id="ul">
+                                <span class="kiemelt"
+                                    >rendezettlen lista - (ul) unordered list </span
+                                >: Ebben az esetben lényegtelen az elemek
+                                sorrendje. Néha pontozott (<i>bulleted</i>)
+                                listának is hívják.
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/kod_024.png"
+                                    alt="rendezetlen lista"
+                                    title="rendezetlen lista"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/bongeszo_039.png"
+                                    alt="rendezetlen lista"
+                                    title="rendezetlen lista"
+                                />
+                            </div>
+                            <li id="ol">
+                                <span class="kiemelt"
+                                    >rendezett lista - (ol) ordered list </span
+                                >: Ebben az esetben lényeges az elemek
+                                sorrendje. Néha számozott (<i>numbered</i>)
+                                listának is hívják. A sorrendbe állítás
+                                történhet <b>számokkal</b> vagy <b>betűkkel</b>!
+                                <b
+                                    >Ezt a
+                                    <i id="ol-type" class="fontos">type</i>
+                                    attribútummal tudom megadni!
+                                    Alapértelmezetten latin számokkal történik a
+                                    sorszámozás.</b
+                                >
+                                Meg tudom adni a számozás kezdetét is a
+                                <i class="fontos" id="ol-start">start</i>
+                                attribútum segítségével!
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/kod_025.png"
+                                    alt="rendezett lista"
+                                    title="rendezett lista"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/bongeszo_040.png"
+                                    alt="rendezett lista"
+                                    title="rendezett lista"
+                                />
+                            </div>
+                            <li id="dd">
+                                <span class="kiemelt"
+                                    >leíró lista - (dl) description list </span
+                                >: Ha szeretnénk a lista elemeit leírással
+                                megadni, akkor használjuk ezt a listatípust.
+                            </li>
+                            <li id="dt">
+                                <span class="kiemelt"
+                                    >leírandó kifejezés - (dt) description term </span
+                                >: Ha szeretnénk a lista elemeit leírással
+                                megadni, akkor használjuk ezt a listatípust.
+                            </li>
+                            <li id="dd">
+                                <span class="kiemelt"
+                                    >leíró adat - (dd) description data </span
+                                >: Ebben az elemben dolgozzuk ki a kifejezést.
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/kod_026.png"
+                                    alt="leíró lista"
+                                    title="leíró lista"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/webszerkesztesi_alapok/bongeszo_041.png"
+                                    alt="leíró lista"
+                                    title="leíró lista"
+                                />
+                            </div>
+                        </ul>
+                        <p>Mind <b>blokkszintű</b> elem!</p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/html/html_lists.asp"
+                                >w3schools lists</a
+                            >
+                            <br />
+                            <a
+                                href="https://webiskola.hu/html/html-lista-ol-ul-li/"
+                                >webiskola listák</a
+                            >
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </ol>
+        </div>
+    </body>
+</html>

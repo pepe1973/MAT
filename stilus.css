@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap');
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+    word-break: break-word;
+}
+
+:root {
+    --FEHER: whitesmoke;
+    --FEKETE: black;
+    --KEK: royalblue;
+    --KERDES: red;
+    --KIEMELT: green;
+}
+
+span.h-elem {
+    background-color: var(--KEK);
+    color: var(--FEHER);
+    display: inline-block;
+    padding: 2px;
+}
+
+p.h-elem {
+    background-color: var(--KEK);
+    color: var(--FEHER);
+    padding: 2px;
+}
+
+.fontos {
+    color: var(--KERDES);
+}
+
+.alahuzott {
+    text-decoration: underline;
+}
+
+.sorolas {
+    display: flex;
+    gap: 0.5em;
+}
+
+.felgomb {
+    bottom: 1em;
+    position: fixed;
+    right: 1em;
+}
+
+.felgomb a {
+    color: var(--KEK);
+}
+
+.felgomb .material-symbols-outlined {
+    font-size: 2em;
+}
+
+.fo-nav {
+    background-color: var(--KEK);
+    color: var(--FEHER);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.fo-nav a {
+    align-items: center;
+    color: var(--FEHER);
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+}
+
+.fo-container {
+    margin: auto;
+    padding: 2em;
+    width: 80%;
+}
+
+.fo-container ul {
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.fo-container ol {
+    list-style-position: inside;
+}
+
+.fo-container li {
+    margin-bottom: 1em;
+}
+
+.fo-container ul li a,
+.valasz a {
+    color: var(--KEK);
+    text-decoration: none;
+}
+
+.fo-container .material-symbols-outlined {
+    color: var(--KEK);
+}
+
+.fo-container h2 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.fo-container p {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.kerdesek {
+    border: 1px solid currentColor;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.kerdes {
+    color: var(--KERDES);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.valasz {
+    text-align: justify;
+}
+
+.oszlop {
+    float: left;
+    text-align: left;
+    width: 33%;
+}
+
+.rejtett {
+    display: none;
+}
+
+.kiemelt {
+    color: var(--KIEMELT);
+    font-weight: 700;
+}
+
+.forras {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.kepek {
+    overflow: auto;
+}
+
+.kep-kod img {
+    width: 100%;
+}
+
+.kep-1 img {
+    width: 33%;
+}
+
+.kep-2 {
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 48%;
+}
+
+.kep-3 {
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 32%;
+}
+
+.kep-4 {
+    /* border: 1px solid black; */
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 24%;
+}
+
+.kep-2 img,
+.kep-3 img,
+.kep-4 img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1040px) {
+    .fo-nav {
+        display: block;
+    }
+
+    .oszlop {
+        float: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    .kep-1 img {
+        width: 100%;
+    }
+
+    .kep-2 {
+        display: inline-block;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .kep-3,
+    .kep-4 {
+        display: inline-block;
+        margin-bottom: 1em;
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .fo-nav {
+        display: block;
+        font-size: 0.5em;
+    }
+
+    .fo-container {
+        width: 100%;
+    }
+
+    .kep-1 img {
+        width: 100%;
+    }
+
+    .kep-2,
+    .kep-3,
+    .kep-4 {
+        display: inline-block;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+}
