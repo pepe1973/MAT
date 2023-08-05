@@ -48,7 +48,8 @@
                     </div>
                     <div class="valasz">
                         <p>
-                            A <b>JavaScript</b> egy scriptnyelv, azaz egy
+                            A <b>JavaScript</b> egy
+                            <b>böngészőbeli scriptnyelv</b>, azaz egy
                             interpreter alakítja át gépi kóddá az általunk
                             megírt forráskódot. Ezt az interpretert
                             <b
@@ -79,8 +80,9 @@
                                 >
                             </li>
                         </ul>
+                        <p>A nyelvet Brendan Eich alkotta meg 1995-ben.</p>
                         <p>
-                            A nyelv hivatalos specifikációja és neve:
+                            A nyelv hivatalos specifikációja (1997) és neve:
                             <a href="https://en.wikipedia.org/wiki/ECMAScript"
                                 >ECMAScript</a
                             >
@@ -155,6 +157,7 @@
                                 clear_all </span
                             >Böngészőoldalon adatok tárolása (localStorage).
                         </p>
+                        <p>És ami nem megy alapértelmezetten:</p>
                         <p class="sorolas">
                             <span class="material-symbols-outlined">
                                 clear_all </span
@@ -162,7 +165,7 @@
                             információkhoz, az operációs rendszer függvényeihez,
                             a CPU-hoz. Csak bizonyos műveletek végrehajtása
                             esetén (felhasználó hozzájárulása, drag-and-drop,
-                            &lt;input&gt; címkén kerezztül stb.).
+                            &lt;input&gt; címkén keresztül stb.).
                         </p>
                         <p class="sorolas">
                             <span class="material-symbols-outlined">
@@ -188,6 +191,264 @@
                                 >The Modern JavaScript - intro</a
                             >
                         </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Hogyan tudunk JavaScript kódot elhelyezni egy
+                            weboldalon?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>Erre két lehetőségünk van.</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                A HTML kódban elhelyezett
+                                <span class="h-elem">&lt;script&gt;</span>
+                                elembe csomagolva. Ezt az elemet a
+                                <span class="h-elem">&lt;body&gt;</span> elemen
+                                belül bárhová beszúrhatjuk, és ott kerül
+                                automatikusan feldolgozásra a böngésző által
+                                "sorfolytonosan",
+                                <b
+                                    >de leginkább a
+                                    <span class="h-elem">&lt;body&gt;</span>
+                                    elem legutolsó elemeiként (több is lehet)
+                                    javasolt</b
+                                >!
+                                <b class="fontos"
+                                    >Erre azért van szükség, hogy mire a
+                                    böngésző eljut a script-ig, addig már minden
+                                    olyan elemet ismerjen, amit a script-ben
+                                    található kód használ</b
+                                >!
+                            </li>
+                            <p>
+                                Sok helyen a
+                                <span class="h-elem">&lt;head&gt;</span> elemben
+                                is látható, de ide csak a "harmadik féltől
+                                származó" (<i>third-party</i>) script-állományok
+                                kerüljenek! Ezt nem mi írtuk, hanem valahonnan
+                                betöltjük és használjuk.
+                            </p>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_001.png"
+                                    alt="beágyazott javascript"
+                                    title="beágyazott javascript"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_001.png"
+                                    alt="beágyazott javascript"
+                                    title="beágyazott javascript"
+                                />
+                            </div>
+                            <li>
+                                Külső JavaScript állományokba. Ebben az esetben
+                                is beszúrhatjuk a fentebb említett helyekre, de
+                                itt is a
+                                <span class="h-elem">&lt;body&gt;</span> utolsó
+                                elemeként ajánlott! Ekkor már nem lesz semmi
+                                probléma.
+                            </li>
+                            <p class="alahuzott">Szintaxis:</p>
+                            <p class="h-elem">
+                                &lt;script src='elérés'&gt;&lt;/script&gt;
+                            </p>
+                            <p class="fontos">
+                                <b
+                                    >A JavaScript állományokat a .js
+                                    kiterjesztéssel mentjük el</b
+                                >!
+                            </p>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_002.png"
+                                    alt="külső javascript állomány"
+                                    title="külső javascript állomány"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_002.png"
+                                    alt="külső javascript állomány"
+                                    title="külső javascript állomány"
+                                />
+                            </div>
+                            <p class="fontos">
+                                Külső JavaScript állományt importáló
+                                <span class="h-elem"
+                                    >&lt;script
+                                    src='elérés'&gt;&lt;/script&gt;</span
+                                >
+                                elembe nem lehet JavaScript kódot írni!
+                            </p>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/js/js_whereto.asp"
+                                >w3schools where to</a
+                            >
+                            <br />
+                            <a href="https://javascript.info/intro"
+                                >The Modern JavaScript - intro</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Hogyan tudunk információt közölni a felhasználóval a
+                            JavaScript segítségével?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Mivel a JavaScript alapvetően böngészőre
+                            optimalizált nyelv, ezért az ott rendelkezésére álló
+                            eszközöket használja.
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                Egy HTML elembe való írás. Ehhez a több
+                                beépített függvény is a rendelkezésére áll. Ezek
+                                egyikével már az előző pontban megismerkedtünk.
+                                Itt a
+                                <b>document</b> a böngészőben megjelenő
+                                <span class="h-elem">&lt;body&gt;</span> elem
+                                tartalma.
+                            </li>
+                            <p class="alahuzott">
+                                Nézzük egy másik változatát:
+                            </p>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_003.png"
+                                    alt="html elembe írás"
+                                    title="html elembe írás"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_003.png"
+                                    alt="html elembe írás"
+                                    title="html elembe írás"
+                                />
+                            </div>
+                            <p>
+                                A többi hasonló függvénnyel később fogunk
+                                megismerkedni.
+                            </p>
+                            <li>
+                                A <b>document.write()</b> használata. Vigyázzunk
+                                vele!
+                                <b
+                                    >Ha az oldal betöltődése után hívjuk meg a
+                                    függvényt, akkor törli az oldal teljes
+                                    tartalmát és csak a kiírandó szöveg jelenik
+                                    meg</b
+                                >! Csak tesztelésre használjuk!
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_004.png"
+                                    alt="document.write()"
+                                    title="document.write()"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_004.png"
+                                    alt="document.write()"
+                                    title="document.write()"
+                                />
+                            </div>
+                            <li>
+                                A <b>window.alert()</b> használata. Ez egy
+                                felugró pop-up ablakba írja ki a tartalmát. A
+                                <b>window</b> az
+                                <span class="h-elem">&lt;html&gt;</span> elemnek
+                                feleltethető meg a böngészőben, néhány dologgal
+                                kiegészítve. Erről majd később lesz szó.
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_005.png"
+                                    alt="window.alert()"
+                                    title="window.alert()"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_005.png"
+                                    alt="window.alert()"
+                                    title="window.alert()"
+                                />
+                            </div>
+                            <li>
+                                A <b>console.log()</b> használata. Ez a függvény
+                                a böngészőbe épített
+                                <i>Fejlesztői eszközök</i> konzolját
+                                (<b>console</b>) használja. Ehhez az F12-es gomb
+                                leütésével jutunk. Ezt a függvényt szinte csak
+                                tesztelésre használjuk, mert a sima felhasználó
+                                nem láthatja.
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_006.png"
+                                    alt="console.log()"
+                                    title="console.log()"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_006.png"
+                                    alt="console.log()"
+                                    title="console.log()"
+                                />
+                            </div>
+                            <li>
+                                Érdekességként említsük meg a
+                                <b>window.print()</b> függvényt. Mivel a
+                                JavaScript alapból nem fér hozzá a nyomtatóhoz,
+                                ezért csak felajánlja a nyomtatás lehetőségét.
+                            </li>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/kod_007.png"
+                                    alt="window.print()"
+                                    title="window.print()"
+                                />
+                            </div>
+                            <div class="kep-2">
+                                <img
+                                    src="./images/ismerkedes_a_javascripttel/bongeszo_007.png"
+                                    alt="window.print()"
+                                    title="window.print()"
+                                />
+                            </div>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://www.w3schools.com/js/js_output.asp"
+                                >w3schools output</a
+                            >
+                            <br />
+                            <a href="https://javascript.info/intro"
+                                >The Modern JavaScript - intro</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li></li>
                     </div>
                 </div>
             </ol>
