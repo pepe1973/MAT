@@ -30,7 +30,7 @@
             <h1>Bevezetés a Python programozásba</h1>
             <div class="jobb">
                 <a
-                    href="./feladatok/webszerkesztesi_alapok.html"
+                    href="./feladatok/bevezetes_a_python_programozasba.html"
                     target="_self"
                 >
                     <h1>Feladatok</h1>
@@ -41,10 +41,516 @@
             </div>
         </div>
         <div class="fo-container">
+            <p>
+                A témakör célja, hogy a tanulók megtanulják a Python programozás
+                megkezdéséhez szükséges alapokat, telepítéssel, fejlesztői
+                környezet megismerésével és egyszerű programok készítésével.
+            </p>
             <ol>
                 <div class="kerdesek">
                     <div class="kerdes">
-                        <li>Még nincs semmi!</li>
+                        <li>Mi a számítógépes program?</li>
+                    </div>
+                    <div class="valasz">
+                        <p class="alahuzott">Nézzünk néhány körülírást:</p>
+                        <p>
+                            A
+                            <a
+                                href="https://hu.wikipedia.org/wiki/Program_(informatika)"
+                                >számítógépes program</a
+                            >
+                            azon utasításoknak a sorozata, amelyeket a
+                            számítógépnek egymás után végre kell hajtania
+                            valamely feladat elvégzése céljából, jellemző módon
+                            azt, hogy az adatokkal milyen műveleteket végezzen.
+                        </p>
+                        <p>
+                            A <b>számítógépes program</b> egy programnyelven írt
+                            <a
+                                href="https://hwellkft.hu/marketing-szotar/algoritmus"
+                                >algoritmus</a
+                            >, azaz bizonyos egzakt feltételeket,
+                            követelményeket (előre definiáltság, egyértelmű
+                            végrehajthatóság stb.) kielégítő utasítássorozat.
+                        </p>
+                        <p>
+                            A
+                            <a
+                                href="https://www.britannica.com/technology/computer-program"
+                                >számítógépes program</a
+                            >
+                            egy részletes terv vagy eljárás egy számítógéppel
+                            kapcsolatos probléma megoldására. Pontosabban, egy
+                            ilyen megoldás eléréséhez szükséges számítási
+                            utasítások egyértelmű, rendezett sorozata.
+                        </p>
+                        <p>
+                            A
+                            <b>számítógép memóriájában tárolt programok</b>
+                            lehetővé teszik a számítógép számára, hogy különböző
+                            feladatokat sorban vagy akár szakaszosan hajtson
+                            végre. A belsőleg tárolt program ötletét az 1940-es
+                            évek végén vetette fel a magyar származású
+                            matematikus Neumann János.
+                        </p>
+                        <p>
+                            A <b>számítógépes program</b> úgy készül, hogy
+                            először megfogalmazunk egy feladatot, majd azt egy
+                            megfelelő számítógépes nyelven, feltehetően az
+                            alkalmazásnak megfelelő nyelven megoldjuk. Az így
+                            előállított specifikációt általában több lépésben
+                            lefordítják egy kódolt programmá (<b>gépi kód</b> -
+                            <a
+                                href="https://www.britannica.com/technology/machine-language"
+                                >machine code</a
+                            >), amelyet közvetlenül az a számítógép hajthat
+                            végre, amelyen a feladatot futtatni kell. Az eredeti
+                            feladat megoldására alkalmas nyelvek az úgynevezett
+                            <b>problémaorientált nyelvek</b>. A
+                            problémaorientált nyelvek széles skáláját
+                            fejlesztették ki, az ismertebbek a C, C++ és C#,
+                            Python és Java, JavaScript és php.
+                        </p>
+                        <p>
+                            A
+                            <a
+                                href="https://nekomajin42.github.io/bevinfo/pages/neumann/index.html"
+                                >Neumann-elvek</a
+                            >.
+                        </p>
+                        <p class="alahuzott">Nézzük a következő ábrát:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/applicationarchitecture.jpg"
+                                alt="alkalmazások felépítése"
+                                title="alkalmazások felépítése"
+                            />
+                        </div>
+                        <p>
+                            Látható, hogy egy számítógépes program (alkalmazás)
+                            a következő három rétegből épül fel:
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Adatszerkezeti (Adathozzáférési) Réteg (Data Access
+                            Layer) - itt hozzuk létre és tároljuk azokat az
+                            adatszerkezeteket, amelyekkel dolgozni fogunk
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Üzlet Logika Réteg (Business Logic Layer) - itt
+                            valósítjuk meg az adatok feldolgozását
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Felhasználói Felület Réteg (Presentation Layer) -
+                            itt kérjük be az információkat a felhasználótól, és
+                            itt írjuk ki a lehetséges kimeneteket (User
+                            Interface)
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://hu.wikipedia.org/wiki/Program_(informatika)"
+                                >wikipedia</a
+                            >
+                            <br />
+                            <a
+                                href="https://hwellkft.hu/marketing-szotar/algoritmus"
+                                >hwellkft</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.britannica.com/technology/computer-program"
+                                >bitannica</a
+                            >
+                            <br />
+                            <a
+                                href="https://systems-analysis.net/architecture/introduction.html"
+                                >application architecture overview</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Mi a különbség a fordított és interpretált
+                            programozási nyelvek között?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Miután elkészült a feladatmegoldás algoritmusa,
+                            szükséges annak valamely programozási nyelven
+                            történő megvalósítása. Ezen nyelveket
+                            <a
+                                href="https://prog.hu/szotar/programoz%C3%A1si+nyelv"
+                                >többféleképpen</a
+                            >
+                            is csoportosíthatjuk. Mi most csak a futtatási mód
+                            alapján nézzük meg.
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >interpretált (értelmezett, interpreted)
+                                nyelvek</span
+                            >: Ebben az esetben a forráskódot soronként dolgozza
+                            fel egy <b>értelmező (interpreter) szoftver</b>, és
+                            azonnal futtatja is. Az első hibánál automatikusan
+                            egy hibaüzenettel leáll. Az ilyen nyelveket nevezik
+                            még <b>scriptnyelv</b>-eknek is: Python, JavaScript
+                            és php, valamint a forráskódokat
+                            <b>script</b>-eknek.
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >fordított (compiled) nyelvek</span
+                            >: Ebben az esetben az egész forráskódot egyben
+                            dolgozza fel egy <b>fordító (compiler) szoftver</b>,
+                            és abból előállít egy <b>bytecode</b>-ot egy
+                            <b>.exe</b> kiterjesztésű állományba. Ha hibákat
+                            talál akkor azokat jelzi és nem készít bytecode-t.
+                            Ilyen nyelvek a C, C++, C# és Java.
+                        </p>
+                        <p>
+                            <a
+                                href="https://www.youtube.com/watch?v=e4ax90XmUBc&t=1s"
+                                >Egy kedves kis videó a fenti fogalmakról.</a
+                            >
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://prog.hu/szotar/programoz%C3%A1si+nyelv"
+                                >prog.hu</a
+                            ><br />
+                            <a
+                                href="https://www.guru99.com/difference-compiler-vs-interpreter.html"
+                                >guru99</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Alapvető információk a Python programozási nyelvről.
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A Python egy <b>scriptnyelv</b>, azaz szükséges egy
+                            <b>interpreter</b>, hogy scripteket tudjunk futtatni
+                            a számítógépünkön. Guido van Rossum alkotta meg
+                            1991-ben.
+                        </p>
+                        <p class="alahuzott">Mire tudjuk használni?</p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Szerveroldali támogatás webes fejlesztésekhez.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Szoftverfejlesztésekhez.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Komplex matematikai számításokhoz.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Hálózati szkriptekhez.
+                        </p>
+                        <p>
+                            A Python szinte az összes ismert platformon elfut
+                            (Windows, Linux, Mac, Raspberry Pi stb.). Szintaxisa
+                            hasonló az angol nyelvhez, ezért könnyen tanulható!
+                        </p>
+                        <p class="alahuzott">
+                            Néhány nagyon fontos szabály Python programok
+                            írásához:
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                <b
+                                    >A Python az utasítások lezárásához a
+                                    sortörést használja!</b
+                                >
+                                Tehát minden utasítást új sorban kell kezdeni!
+                            </li>
+                            <li>
+                                <b
+                                    >A Python a hatókörök (<i>scope</i>)
+                                    jelölésére a behúzást (<i>indentation</i>)
+                                    használja!</b
+                                >
+                                Azonos szintre behúzott sorok ugyanahhoz a
+                                hatókörhöz tartoznak!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Mit kell a gépünkre telepíteni, hogy Python-ban
+                            tudjunk programozni?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>Két dolog szükséges hozzá.</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                Maga a Python, amit a
+                                <a href="https://www.python.org/">python.org</a>
+                                honlapról tudunk letölteni.
+                            </li>
+                            <div class="kep-1">
+                                <img
+                                    src="./images/bevezetes_a_python_programozasba/python-letoltes.png"
+                                    alt="python telepítése"
+                                    title="python telepítése"
+                                />
+                            </div>
+                            <li>
+                                Egy IDE, amely lehet a már megismert
+                                <b>Visual Studio Code</b>, csak telepíteni kell
+                                még néhány kiterjesztést (<i>extension</i>).
+                            </li>
+                            <p>
+                                Ha már telepítettük a python-t és elindítottuk a
+                                Visual Studio Code-ot, hozzunk létre benne egy
+                                üres <i>.py</i> állományt és mentsük el.
+                                <b
+                                    >Ekkor alapból felajánlja a gépre telepített
+                                    python-nal kapott
+                                    <i>interpretert</i>
+                                    . Fogadjuk el!</b
+                                >
+                                Ha nem települt volna, akkor állítsuk be a
+                                következőket:
+                            </p>
+                            <div class="kep-3">
+                                <img
+                                    src="./images/bevezetes_a_python_programozasba/extension_01.png"
+                                    alt="python kiterjesztések"
+                                    title="python kiterjesztések"
+                                />
+                            </div>
+                            <div class="kep-3">
+                                <img
+                                    src="./images/bevezetes_a_python_programozasba/extension_02.png"
+                                    alt="python kiterjesztések"
+                                    title="python kiterjesztések"
+                                />
+                            </div>
+                            <div class="kep-3">
+                                <img
+                                    src="./images/bevezetes_a_python_programozasba/extension_03.png"
+                                    alt="python kiterjesztések"
+                                    title="python kiterjesztések"
+                                />
+                            </div>
+                            <li>
+                                Vagy használhatjuk a
+                                <a
+                                    href="https://www.jetbrains.com/pycharm/download/?section=windows"
+                                    >pycharm download community</a
+                                >
+                                oldalról letöltött és beállított
+                                <b>PyCharm</b> fejlesztői környezetet is.
+                                <b
+                                    >Ehhez le kell egy kicsit görgetni a
+                                    weboldalon!</b
+                                >
+                            </li>
+                            <div class="kep-1">
+                                <img
+                                    src="./images/bevezetes_a_python_programozasba/pycharm.png"
+                                    alt="pycharm community telepítése"
+                                    title="pycharm community telepítése"
+                                />
+                            </div>
+                        </ul>
+                        <p class="alahuzott">Néhány videó a beállításokhoz!</p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=FnHxzu3xEoE"
+                                >python és visual studio code</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.youtube.com/watch?v=D5mmP3YfnXA"
+                                >python és pycharm beállítása</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Írjuk meg a "Helló Világ!" programunkat!</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Indítsuk el a PyCharm-ot, és nyissunk egy új
+                            <i>projekt</i>-et <i>elsoProjekt</i> néven. Állítsuk
+                            be azt a mappát, ahová a projektjeinket menteni
+                            fogjuk. Vegyük ki a pipát a <i>main.py</i>-nál! A
+                            fenti videó szerint állítsuk be az
+                            <b>interpreter</b>-t.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/new-projekt_01.png"
+                                alt="helló világ projekt"
+                                title="helló világ projekt"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/new-projekt_02.png"
+                                alt="helló világ projekt"
+                                title="helló világ projekt"
+                            />
+                        </div>
+                        <p>
+                            Hozzuk létre a <i>hello_world.py</i> állományt!
+                            Írjuk be az egyeten sort, majd jobb egérgomb
+                            lenyomása után válasszuk ki a
+                            <b>Run 'hello_world</b> utasítást!
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/new-projekt_03.png"
+                                alt="helló világ projekt"
+                                title="helló világ projekt"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/new-projekt_04.png"
+                                alt="helló világ projekt"
+                                title="helló világ projekt"
+                            />
+                        </div>
+                        <p>
+                            A megnyíló terminálablakban láthatjuk a kimenetet.
+                            Az első sorban az alkalmaztott <i>interpreter</i> és
+                            az állomány neve olvasható. Alatta a megjelenítendő
+                            szöveg található!
+                        </p>
+                        <p>
+                            Ugyanerre az eredményre jutunk, ha a menüsorban
+                            megnyomjuk a kis jobbra mutató zöld nyilat.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/new-projekt_05.png"
+                                alt="helló világ projekt"
+                                title="helló világ projekt"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/new-projekt_06.png"
+                                alt="helló világ projekt"
+                                title="helló világ projekt"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Egyszerű, tipikus programhibák megkeresése és
+                            javítása.
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Programozóként kétfajta hibát tudunk legtöbbször
+                            elkövetni. <b>Szintaktikai és szementikai hibát</b>.
+                            Nézzük meg ezeket egy kicsit közelebbről!
+                        </p>
+                        <p>
+                            <span class="kiemelt">szemantikai hiba</span>: Ebben
+                            az esetben a nyelv szabályai ellen követek el hibát.
+                            Ezt könnyebb felismerni, és a legtöbb fejlesztői
+                            környezet azonnal a tudomásunkra hozza valamilyen
+                            formában. A <b>PyCharm</b> esetén a képernyő
+                            jobboldalán megjelenő
+                            <b
+                                >piros felkiáltó jellel és priros hullámos
+                                aláhuzással</b
+                            >. A felkiáltó jelre kattinva nyílik meg alul a
+                            konzol a lehetséges hibákkal.
+                        </p>
+                        <div class="kep-3">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/kod_001.png"
+                                alt="python szemantikai hiba"
+                                title="python szemantikai hiba"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/ablak_001.png"
+                                alt="python szemantikai hiba"
+                                title="python szemantikai hiba"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/konzol_001.png"
+                                alt="python szemantikai hiba"
+                                title="python szemantikai hiba"
+                            />
+                        </div>
+                        <p class="alahuzott">Hasonló hibák lehetnek:</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>zárójelek elmaradása</li>
+                            <li>behúzás elmaradása</li>
+                            <li>betűk felcserélése</li>
+                        </ul>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/kod_002.png"
+                                alt="python szemantikai hiba"
+                                title="python szemantikai hiba"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_python_programozasba/konzol_002.png"
+                                alt="python szemantikai hiba"
+                                title="python szemantikai hiba"
+                            />
+                        </div>
+                        <p>
+                            <span class="kiemelt">szemantikai hiba</span>: Ezt a
+                            hibatípust nehezebb észrevenni, mert nem jelöli a
+                            fejlesztői környezet. Ekkor a kód jónak tűnik, de
+                            mégsem az elvárt eredményt adja, vagy nem is ad
+                            eredményt.
+                        </p>
+                        <p>
+                            Ekkor lép be az életünkbe a hibakeresés
+                            (<i>debuggolás</i>). Ehhez mellékelek egy
+                            <a
+                                href="https://www.youtube.com/watch?v=76Lu6CfMuGg"
+                                >videót</a
+                            >
+                            egyszerű példákkal.
+                        </p>
                     </div>
                 </div>
             </ol>

@@ -158,7 +158,12 @@ p.h-elem {
 }
 
 .kep-1 img {
+    transition-duration: 1s;
     width: 33%;
+}
+
+.kep-1 img:hover {
+    width: 50%;
 }
 
 .kep-2 {
@@ -200,6 +205,10 @@ p.h-elem {
     }
 
     .kep-1 img {
+        width: 100%;
+    }
+
+    .kep-1 img:hover {
         width: 100%;
     }
 

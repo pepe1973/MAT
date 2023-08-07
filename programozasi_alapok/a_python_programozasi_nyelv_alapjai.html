@@ -30,7 +30,7 @@
             <h1>A Python programozási nyelv alapjai</h1>
             <div class="jobb">
                 <a
-                    href="./feladatok/webszerkesztesi_alapok.html"
+                    href="./feladatok/a_python_programozasi_nyelv_alapjai.html"
                     target="_self"
                 >
                     <h1>Feladatok</h1>
@@ -41,10 +41,145 @@
             </div>
         </div>
         <div class="fo-container">
+            <p>
+                A témakör célja, hogy a tanulók az életből (akár iskolai
+                életből) vett példák alapján egyszerűbb programokat írjanak
+                Python program segítségével, melyekben találkozhatnak a
+                különböző típusú literálokkal, aritmetikai operátorokkal,
+                matematikai függvényekkel, illetve megismerhetik a változók
+                használatát is. A témakör elsajátítása lehetővé teszi, hogy a
+                különböző típusú adatok, összetett adatszerkezetek célszerű
+                választásával képesek legyenek megoldani problémákat, szükség
+                esetén saját függvényeket tudjanak készíteni, használni.
+            </p>
             <ol>
                 <div class="kerdesek">
                     <div class="kerdes">
-                        <li>Még nincs semmi!</li>
+                        <li>Mi az a REPL (Read, Eval, Print, Loop)?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Ha rövid kódrészleteket szeretnénk kipróbálni,
+                            futtatni, akkor használjuk az úgynevezett
+                            <b>REPL</b> szerkesztőt. Ehhez nyissuk meg a
+                            parancssort (<i>command line</i>), majd írjuk be a
+                            <i>python</i> szót azután nyomjunk egy
+                            <i>enter</i>-t. Itt soronként tudjuk beírni az
+                            utasításokat, majd <i>enter</i>-t ütve végrehajtani
+                            azt. Kilépni az <b>exit()</b> utasításal tudunk.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_python_programozasi_nyelv_alapjai/ablak_001.png"
+                                alt="repl"
+                                title="repl"
+                            />
+                        </div>
+                        <p>
+                            Többsoros utasítás beviteléhez használd a
+                            <span class="h-elem">shift + enter</span>
+                            billentyűkombinációt!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_python_programozasi_nyelv_alapjai/ablak_002.png"
+                                alt="repl"
+                                title="repl"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>A print() függvény használatáról.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A Python tanulása során az információkat legtöbbször
+                            a konzolról kérjük be és oda is íratjuk ki. Ez
+                            utóbbihoz a
+                            <b>print()</b> függvényt használjuk. Ez a függvény
+                            csak karakterláncokat (sztring) képes megjeleníteni,
+                            még ha ez néha nem is egyértelmű.
+                        </p>
+                        <p class="alahuzott">Nézzünk néhány példát:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_python_programozasi_nyelv_alapjai/kod_001.png"
+                                alt="print() használata sep és end"
+                                title="print() használata sep és end"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_python_programozasi_nyelv_alapjai/konzol_001.png"
+                                alt="print() használata sep és end"
+                                title="print() használata sep és end"
+                            />
+                        </div>
+                        <p class="alahuzott">Figyeljük meg a következőket:</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>A karakterláncokat ""-jelek közé írjuk.</li>
+                            <li>
+                                A vesszővel elválasztott értékeket
+                                <b>paraméter</b>enek hívjuk. (második, harmadik
+                                példa)
+                            </li>
+                            <li>
+                                A második példában a <b>sep</b> paraméterrel
+                                megadott "+"-karakterrel, az előtte lévő
+                                vesszővel, elválasztott karakterláncokat fűzzük
+                                össze.
+                            </li>
+                            <li>
+                                A harmadik példában az <b>end</b> paraméterrel
+                                megadott "+"-karakterrel, az előtte lévő
+                                vesszővel, elválasztott karakterláncot zárjuk
+                                le.
+                                <b
+                                    >Utána elmarad a soremelés, mert az
+                                    cseréltem ki a +jelre!</b
+                                >
+                            </li>
+                            <li>
+                                Az előbbi kettő természetesen kombinálható
+                                (negyedik példa).
+                            </li>
+                        </ul>
+                        <p>
+                            Karakterlánccá az <b>str()</b> és a
+                            <b>repr()</b> függvénnyel tudunk alakítani dolgokat.
+                            <b>Mi csak az elsőt fogjuk használni!</b>
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_python_programozasi_nyelv_alapjai/kod_002.png"
+                                alt="print() használata str() és repr()"
+                                title="print() használata str() és repr()"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_python_programozasi_nyelv_alapjai/konzol_002.png"
+                                alt="print() használata str() és repr()"
+                                title="print() használata str() és repr()"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mi az a formatált karakterlánc literál?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A későbbiekben szükségünk lesz kívűlről kapott
+                            értékek beillesztésére is a karakterláncba. Ehhez
+                            használjuk a
+                            <b>formatált karakterlánc literált</b> (<i
+                                >formatted string literal</i
+                            >).
+                        </p>
                     </div>
                 </div>
             </ol>
