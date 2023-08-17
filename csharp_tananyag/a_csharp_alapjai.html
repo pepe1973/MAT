@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../stilus.css" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <base target="_blank" />
+        <title>A C# alapjai</title>
+    </head>
+    <body>
+        <div class="felgomb">
+            <a href="#fel" target="_self">
+                <span class="material-symbols-outlined"> arrow_circle_up </span>
+            </a>
+        </div>
+        <div class="fo-nav" id="fel">
+            <div class="bal">
+                <a href="./index.html" target="_self">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_left
+                    </span>
+                    <h1>Főoldal</h1>
+                </a>
+            </div>
+            <h1>A C# alapjai</h1>
+            <div class="bal">
+                <h1>Minden Ami Tananyag</h1>
+            </div>
+            <!-- <div class="jobb">
+                <a href="./feladatok/a_csharp_alapjai.html" target="_self">
+                    <h1>Feladatok</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div> -->
+        </div>
+        <div class="fo-container">
+            <p>A témakör célja, hogy megismerkedjünk a C#-pal.</p>
+            <ol>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Szintaktika szabályok.</li>
+                    </div>
+                    <div class="valasz">
+                        <p class="alahuzott">
+                            A következőkre nagyon figyeljünk:
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                <b
+                                    >Az utasításokat mindig le kell zárni a ;
+                                    karakterrel</b
+                                >!
+                            </li>
+                            <li>
+                                Törekedjünk az "egy sor = egy utasítás" elv
+                                betartására!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>A szabvány "Hello World!" program C# nyelven?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Hozzunk létre egy C# konzolos alkalmazást
+                            <b>Rehearsal</b> néven, majd a megnyíló szerkesztői
+                            ablakba egészítsük ki a kódot:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_csharp_alapjai/ablak_001.png"
+                                alt="create a Hello World! new project"
+                                title="create a Hello World! new project"
+                            />
+                        </div>
+                        <p>
+                            Majd a futtatás után (<b>Start</b>) kapjuk egy
+                            konzolos felületen:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_csharp_alapjai/ablak_02.png"
+                                alt="create a Hello World! new project"
+                                title="create a Hello World! new project"
+                            />
+                        </div>
+                        <p class="alahuzott">
+                            Vizsgáljuk meg a kódot soronként:
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                1-5.sor: a <b>FCL</b>-ből alapból megkapott
+                                névterek (<i>framework</i>). Törölhetünk belőlük
+                                (fogunk is) és felvehetünk újakat. Amire
+                                kezdetben szükségünk van az a
+                                <b>System</b> névtér. Ebben van benne a
+                                <b>Console</b> osztály a szükséges metódusokkal.
+                            </li>
+                            <li>
+                                6.sor: a <b>fehér szóközöket</b> (<i
+                                    >white space</i
+                                >) (szóköz, sortörés, behúzás) a szerkesztő a
+                                fordítás során figyelmen kívűl hagyja. Csak a
+                                kód jobb áttekinthetőségét szolgálják.
+                            </li>
+                            <li>
+                                7.sor: az általunk létrehozandó névtér. A
+                                nevének nem kötelező megegyeznie az állomány
+                                nevével, de nagyon praktikus lesz a későbbi
+                                hívások esetén.
+                                <b
+                                    >A szerkesztő mindig az állomány nevét adja
+                                    neki</b
+                                >. Ez tartalmazza az általunk létrehozott
+                                <b>osztályokat</b> (<i>class</i>). Lesznek még
+                                egyéb konstrukciók is, de most csak erre van
+                                szükségünk.
+                            </li>
+                            <li>
+                                8-17., 10-16. és 12-15.sor: a kódot blokkokba
+                                szervezzük, ehhez használjuk a
+                                <b>{}-kapcsos zárójel párokat</b>. Minden ilyen
+                                blokk egy-egy <b>hatókörnek</b> (<i>scope</i>)
+                                felel meg.
+                            </li>
+                            <li>
+                                9.sor: a programunk lelke, az az osztály, amely
+                                a <b>Main</b> metódust tartalmazza.
+                                <b
+                                    >A szerkesztő mindig a <i>Program</i> nevet
+                                    adja neki</b
+                                >.
+                            </li>
+                            <li>
+                                11.sor: a <b>Main</b> metódus, a program
+                                "belépési pontja". A fordító ezt a metódust
+                                keresi, hogy innen kezdje a feldolgozást. Vannak
+                                előtte úgynevezett <b>módosító szavak</b>, majd
+                                utána a <b>kötelező ()-párban</b> egy paraméter.
+                                Ezt a paramétert is a szerkesztő helyezi ide. Ez
+                                viszont nem kötelező, azaz kitörölhető, ha
+                                zavaró!
+                            </li>
+                            <li>
+                                13-14.sor: maga a C#-kód, amit már mi írtunk.
+                                <b
+                                    >A második sor azért kell, hogy a konzol ne
+                                    zárodjon be a futtatás eredményének
+                                    megmutatása után</b
+                                >!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Szabványos kimenet/kiíratás a konzolra!</li>
+                    </div>
+                    <div class="valasz">
+                        <p>Ehhez a következő utasításokat használjuk:</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                <b>
+                                    System.Console.WriteLine() ===
+                                    Console.WriteLine();
+                                </b>
+                            </li>
+                            <p>
+                                Az első esetben nem importáltuk be a
+                                <b>System</b> névteret! Mindig tegyük meg.
+                            </p>
+                            <p>
+                                Ha nem írunk be semmit a ()-ba, akkor simán sort
+                                emelünk.
+                            </p>
+                            <p>
+                                Ha van valamilyen tartalma, akkor kiírja a
+                                konzolra, és utána emel sort.
+                            </p>
+                            <li>
+                                <b
+                                    >System.Console.Write() ===
+                                    Console.Write();</b
+                                >
+                            </li>
+                            <p>
+                                Ekkor kell valamit tenni (szöveg, változó) a
+                                ()-ba, mert hibát fog jelezni!
+                            </p>
+                            <p>
+                                A kiíratás után nem emel sort, hanem a kurzort a
+                                sor végén hagyja! Erre nagyon figyeljünk!
+                            </p>
+                        </ul>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://www.w3schools.com/cs/cs_output.php"
+                                >w3schools</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </ol>
+        </div>
+    </body>
+</html>

@@ -6,6 +6,7 @@
     font-family: 'Red Hat Mono', monospace;
     margin: 0px;
     padding: 0px;
+    /* user-select: none; */
     word-break: break-word;
 }
 
@@ -65,12 +66,23 @@ p.h-elem {
     padding: 10px 20px;
 }
 
+.fo-nav > h1 {
+    color: rgb(224, 214, 16);
+    text-shadow: 2px 2px 2px rgb(84, 84, 84);
+}
+
 .fo-nav a {
     align-items: center;
     color: var(--FEHER);
     display: flex;
     text-decoration: none;
     width: 100%;
+}
+
+.fo-nav .bal {
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
 }
 
 .fo-container {
@@ -222,7 +234,7 @@ p.h-elem {
     .kep-4 {
         display: inline-block;
         margin-bottom: 1em;
-        width: 48%;
+        width: 100%;
     }
 }
 

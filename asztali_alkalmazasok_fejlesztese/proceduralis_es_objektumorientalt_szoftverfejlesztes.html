@@ -28,7 +28,10 @@
                 </a>
             </div>
             <h1>Procedurális és objektumorientált szoftverfejlesztés</h1>
-            <div class="jobb">
+            <div class="bal">
+                <h1>Minden Ami Tananyag</h1>
+            </div>
+            <!-- <div class="jobb">
                 <a
                     href="./feladatok/proceduralis_es_objektumorientalt_szoftverfejlesztes.html"
                     target="_self"
@@ -38,13 +41,225 @@
                         arrow_circle_right
                     </span>
                 </a>
-            </div>
+            </div> -->
         </div>
         <div class="fo-container">
+            <p>
+                A témakör célja, hogy megadja azt a minimálisan szükséges
+                alapot, amellyel egy C# program fejlesztéséhez neki lehet
+                kezdeni. A témakörök a későbbiekben részletesen tárgyalják még
+                az objektum-orientált szemléletet, itt csak azt az alapot
+                sajátítják el a diákok, amely segítségével megérthetik a
+                programszerkezet és a segédkönyvtárak alapvető működését, és fel
+                tudják azt használni. Saját osztály megírása a későbbi anyagrész
+                feladata lesz.
+            </p>
             <ol>
                 <div class="kerdesek">
                     <div class="kerdes">
-                        <li>Még nincs semmi!</li>
+                        <li>
+                            A procedurális, a funkcionális és az
+                            objektumorientált szemlélet összevetése.
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Programozás során utasításokat adunk a
+                            számítógépnek. Ha csak szimplán egymás alá írjuk az
+                            utasításokat, akkor spagetti-programozásról
+                            beszélünk. Ez rövidebb kódok esetén úgy ahogy
+                            működik, de több száz sor esetén már nem. Ekkor már
+                            struktúrálni kell valahogy a programkódot.
+                        </p>
+                        <p class="alahuzott">
+                            Nézzük meg a három legismertebb és legtöbbet
+                            használt formáját:
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >procedurális programozás (procedural
+                                programming)</span
+                            >: Lényege, hogy a megoldandó programozási feladatot
+                            <b
+                                >kisebb egységekből, avagy eljárásokból
+                                (angolul: <i>procedure</i>)</b
+                            >
+                            építi fel. Ezek az eljárások a programnyelv kódjában
+                            általában
+                            <b>jól körülhatárolt egységek</b> (függvény, rutin,
+                            szubrutin, metódus - az elnevezés az adott
+                            programozási nyelvtől függ), amelyeknek van
+                            elnevezésük és jellemezhetik őket
+                            <b>paraméterek és a visszatérési értékük</b>. A
+                            programok futtatása során gyakorlatilag a
+                            főprogramból ezek az eljárások kerülnek sorozatosan
+                            meghívásra. Meghíváskor meghatározott paraméterek
+                            átadására kerül sor, az eljárás pedig a benne
+                            meghatározott logika eredményeként általában
+                            valamilyen visszatérési értéket ad vissza, aminek
+                            függvényében a főprogram további eljáráshívásokat
+                            végezhet.
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >objektumorientált programozás (object-oriented
+                                programming)</span
+                            >: Az objektumok fogalmán alapuló programozási
+                            paradigma.
+                            <b
+                                >Az objektumok egységbe foglalják az adatokat és
+                                a hozzájuk tartozó műveleteket</b
+                            >. Az adatokat ismerik mezők, attribútumok,
+                            tulajdonságok néven, a műveleteket metódusokként
+                            szokták emlegetni.
+                            <b
+                                >Az objektum által tartalmazott adatokon
+                                általában az objektum metódusai végeznek
+                                műveletet</b
+                            >. A program egymással kommunikáló objektumok
+                            összességéből áll.
+                            <b
+                                >A legtöbb objektumorientált nyelv osztály
+                                alapú, azaz az objektumok osztályok példányai,
+                                és típusuk az osztály</b
+                            >.
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >funkcionális programozás (functional
+                                programming)</span
+                            >: A funkcionális programnyelvek a programozási
+                            feladatot egy
+                            <b>függvény kiértékelésének</b> tekintik. A két fő
+                            eleme az <b>érték és a függvény</b>, nevét is
+                            függvények kitüntetett szerepének köszönheti. Egy
+                            más megfogalmazás szerint, a funkcionális
+                            programozás során a programozó inkább azt
+                            specifikálja programban,
+                            <b
+                                >mit kell kiszámítani, nem azt, hogy hogyan,
+                                milyen lépésekben</b
+                            >. Függvények hívásából és kiértékelésből áll a
+                            program. Nincsenek állapotok, mellékhatások (nem
+                            számít, mikor, csak az melyik függvényt hívjuk).
+                        </p>
+                        <p>
+                            Nézzük meg a következő
+                            <a
+                                href="https://www.youtube.com/watch?v=RFbK3mNM-7I&list=PL6VA7Z5zO0dq-6NWrHzIy7dqLfeZhhhOz&index=30"
+                                >magyar nyelvű</a
+                            >
+                            és
+                            <a
+                                href="https://www.youtube.com/watch?v=aoE-92Ac4zE"
+                                >angol nyelvű</a
+                            >
+                            videókat, ahol szemléletes példákon keresztül
+                            magyarázzák el a különbséget!
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="http://centroszet.hu/tananyag/program/6_programozsi_elvek.html"
+                                >centroszet programozási elvek</a
+                            >
+                            <br />
+                            <a
+                                href="https://people.inf.elte.hu/groberto/elte_am3/eloadas_anyagok/elte_am3_ea01_dia.pdf"
+                                >elte programozás</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Mi az osztály, objektum, member, property,
+                            konstruktor és a példányosítás közötti kapcsolat?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Mivel a C# objektumorientált programnyelv, ezért meg
+                            kell ismerkednünk a címben megadott fogalmakkal.
+                        </p>
+                        <p>
+                            <span class="kiemelt">osztály (class)</span>: A
+                            minket körülvevő világban lévő dolgok bizonyos
+                            feltételeknek felelnek meg. Például a kocsiknak van
+                            típusuk, színűk, évjáratuk, végsebességük,
+                            tulajdonosuk (ideális esetben), el tudnak indulni,
+                            meg tudnak állni (ideális esetben) stb. Az
+                            <i>objektumorientált programozás</i> is felhasználja
+                            ezt a tényt, és létrehoz egy <b>absztrakciót</b>,
+                            amelyben leírja, hogy szerinte egy autónak milyen
+                            tulajdonságokkal kell rendelkeznie. Ezt az
+                            absztrakciót nevezzük <b>osztálynak</b>. Ehhez
+                            kapcsolódóan hallhatjuk még a
+                            <b>prototípus</b> (<i>prototype</i>) kifejezést is.
+                            A két fogalom sokban megegyezik, de az
+                            <i>osztály</i> mélyebb absztrakciót jelent.
+                        </p>
+                        <p>
+                            <span class="kiemelt">objektum (object)</span>: Ha
+                            már létezik egy osztályunk, akkor lehetőségünk van
+                            konkrét dolgokat létrehoznunk belölük. Ezt nevezzük
+                            <b>specifikálásnak</b>, azaz meghatározott, a
+                            feltételeknek megfelelő értékeket adunk a
+                            tulajdonságoknak. Az így létrejött konkrét dolgokat
+                            nevezzük <b>objektumoknak</b>.
+                        </p>
+                        <p>
+                            <span class="kiemelt">member (tag)</span>: Az
+                            objektumok mindig valamilyen
+                            <b>állapotban</b> (<i>state</i>) vannak. A kocsi
+                            esetén van valamilyen színe, típusa, sebessége,
+                            elindul-e, megy-e stb. Ezeket nevezzük azt adott
+                            objektum esetén <b>member-nek</b> (tagoknak). Ezek
+                            adott osztályból készített, de különböző objektumok
+                            esetén eltérőek is lehetnek.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="../asztali_alkalmazasok_fejlesztese/images/proceduralis_es_objektumorientalt_szoftverfejlesztes/member.png"
+                                alt="members"
+                                title="members"
+                            />
+                        </div>
+                        <p>
+                            <span class="kiemelt">property (jellemző)</span>: Ez
+                            egy C# specifikus dolog. Ennek a segítségével
+                            "rejtjük" el az objektumot leíró tulajdonságok
+                            némelyikét (pl. bankszámla jelszó), és állítjuk be
+                            azok értékét a konstruktoron kívül.
+                        </p>
+                        <p>
+                            <span class="kiemelt">konstruktor</span>: Ez egy
+                            speciális metódus az osztályon belül, melynek
+                            segítségével foglalhatjuk le a szükséges
+                            memóriaterületet az adott objektumnak, majd ennek a
+                            címét adjuk oda vissza programnak.
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >példányosítás (instantiation)</span
+                            >: A fentebb leírt specifikációs eljárást nevezzük
+                            <b>példányosításnak</b>.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="../asztali_alkalmazasok_fejlesztese/images/proceduralis_es_objektumorientalt_szoftverfejlesztes/osztaly.png"
+                                alt="osztálydefiníció"
+                                title="osztálydefiníció"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="../asztali_alkalmazasok_fejlesztese/images/proceduralis_es_objektumorientalt_szoftverfejlesztes/osztalyhivas.png"
+                                alt="osztályhívás"
+                                title="osztályhívás"
+                            />
+                        </div>
                     </div>
                 </div>
             </ol>

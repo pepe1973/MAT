@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../stilus.css" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <base target="_blank" />
+        <title>Bevezetés a C#-ba</title>
+    </head>
+    <body>
+        <div class="felgomb">
+            <a href="#fel" target="_self">
+                <span class="material-symbols-outlined"> arrow_circle_up </span>
+            </a>
+        </div>
+        <div class="fo-nav" id="fel">
+            <div class="bal">
+                <a href="./index.html" target="_self">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_left
+                    </span>
+                    <h1>Főoldal</h1>
+                </a>
+            </div>
+            <h1>Bevezetés a C#-ba</h1>
+            <div class="bal">
+                <h1>Minden Ami Tananyag</h1>
+            </div>
+            <!-- <div class="jobb">
+                <a href="./feladatok/bevezetes_a_csharpba.html" target="_self">
+                    <h1>Feladatok</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div> -->
+        </div>
+        <div class="fo-container">
+            <p>
+                A témakör célja, hogy megismerkedjünk a C#-pal. Néhány alapvető
+                fogalommal tisztában legyünk. Megértsük azt, hogy mire jó a .NET
+                keretrendszer (framework). És felfedezzünk néhány olyan
+                internetes felületet, amelyek a későbbiekben nagyon hasznosak
+                lehetnek a számunkra.
+            </p>
+            <ol>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mit lehet tudni alapvetően a C#-ról?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A C# egy
+                            <b>platformfüggetlen</b> (<i>cross-platform</i>),
+                            <b>objektumorientált</b> (<i>object-oriented</i>),
+                            <b>komponensorientált</b>
+                            (<i>component-oriented</i>) és
+                            <b>típusbiztos</b> (<i>type-safe</i>) programozási
+                            nyelv, amely a <b>.NET keretrendszer</b>re
+                            (<i>framework</i>) épül.
+                        </p>
+                        <p class="alahuzott">
+                            Nézzünk említés szintjén néhány fogalmat:
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                <b>munkaterhelés</b> (<i>workload)</i> - a
+                                számítási erőforrások mennyisége és az az idő,
+                                amely egy feladat elvégzéséhez vagy egy eredmény
+                                generálásához szükséges.
+                                <b
+                                    >Minden számítógépen futó alkalmazás vagy
+                                    program munkaterhelésnek tekinthető</b
+                                >.
+                            </li>
+                            <li>
+                                <b>szemétgyűjtés</b> (<i>Garbage Collection</i>)
+                                - memóriakezelés
+                            </li>
+                            <li>
+                                <b>kivételkezelés</b> (<i>Exception Handling</i
+                                >) - felmerülő hibák kezelése
+                            </li>
+                            <li>
+                                <b>nullázható típusok</b> (<i>Nullable Types</i
+                                >) - minden típushoz tartoznia kell
+                                memóriaterületnek, ha más nem akkor a speciális
+                                <b>null</b> érték
+                            </li>
+                            <li>
+                                <b>lambda kifejezés</b> (<i>Lambda Expression</i
+                                >) - funkcionális programozási szemlélethez
+                            </li>
+                            <li>
+                                <b>LINQ</b> (<i>Language Integrated Query</i>) -
+                                adatkezelés bármilyen forrásból
+                            </li>
+                            <li>
+                                <b>aszinkron műveletek</b> (Asynchronous
+                                Operations) - elosztott rendszerek kezelése,
+                                többszálúság
+                            </li>
+                        </ul>
+                        <p>
+                            Minden típus egy <b>object</b> gyökértípusból
+                            öröklődik. A felhasználók is létrehozhatnak új
+                            típusokat.
+                        </p>
+                        <p>
+                            A C# nyelvet a Microsoft fejleszti. Az első verzió
+                            (<b>C# 1</b>) 2002-ben jött ki. A jelenlegi
+                            legfrissebb verzió a <b>C# 11</b> 2022-ben került
+                            használatba.
+                        </p>
+                        <p><b>A C# állományok kiterjesztése ".cs"</b>.</p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/"
+                                >Microsoft</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mire jó a .NET keretrendszer (framework)?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Egy C# program a <b>.NET</b>-en fut, ami alapból egy
+                            <b>közös nyelvi futtatókörnyezet</b>ből (<i
+                                >CLR - Common Language Runtime</i
+                            >) és egy <b>beépített osztálykönyvtár-halmaz</b>ból
+                            (<i>BCL - Basic Class Library</i> vagy
+                            <i>FCL - Framework Class Library</i>) áll.
+                        </p>
+                        <p>
+                            A <i>CLR</i> a Microsoft megvalósítása a
+                            <i>CLI</i>-nek (<i>Common Language Infrastructure</i
+                            >), egy nemzetközi szabványgyűjteménynek, amely
+                            leírja egy futtató- és fejlesztői környezetnek a
+                            felépítését, hogy a hasonló nyelvek és könyvtárak
+                            zökkenőmentesen működhessenek együtt rajta.
+                        </p>
+                        <div class="kep-3">
+                            <img
+                                src="./images/bevezetes_a_csharpba/net_01.png"
+                                alt=".net keretrendszer"
+                                title=".net keretrendszer"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/bevezetes_a_csharpba/net_02.png"
+                                alt=".net keretrendszer"
+                                title=".net keretrendszer"
+                            />
+                        </div>
+                        <div class="kep-3">
+                            <img
+                                src="./images/bevezetes_a_csharpba/net_03.png"
+                                alt=".net keretrendszer"
+                                title=".net keretrendszer"
+                            />
+                        </div>
+                        <p>
+                            A C# forráskód lefordul egy <i>IL</i>-nek (<i
+                                >Intermediate Language</i
+                            >) nevezett kódra, amely megfelel a <i>CLI</i>-nek.
+                            Ez a kód, plusz néhány egyéb információ egy
+                            úgynevezett <b>szerelvény</b>be (<i>assembly</i>)
+                            kerül eltárolásra legtöbbször <b>.dll</b>, vagy
+                            <b>.exe</b> kiterjesztéssel. Ez a szerelvény
+                            tartalmaz egy <b>szerelvényjegyzék</b>et
+                            (<i>manifest</i>) lényeges információkkal a
+                            szerelvény típúsáról, verziójáról és kultúrájáról
+                            (<i>culture</i>).
+                        </p>
+                        <p>
+                            Mikor futtatjuk a C# programot, akkor ezt a
+                            <i>szerelvényt</i> betöltjük a <i>CLR</i>-be, amely
+                            végrehajt rajta egy <b>JIT</b> (<i>Just-In-Time</i>)
+                            fordítást, aminek az eredménye egy natív gépi kód.
+                        </p>
+                        <p>
+                            A <i>CLR</i> mindezek mellet <i>szemétgyűjtést</i>,
+                            <i>kivételkezelést</i> és <b>erőforráskezelés</b>t
+                            (<i>resource management</i>) is biztosít. Az így
+                            létrejött gépi kódot <b>menedzselt kód</b>-nak (<i
+                                >managed code</i
+                            >) is nevezik.
+                        </p>
+                        <p>
+                            A C# forráskódból kapott <i>IL</i> kód eleget tesz a
+                            <b>CTS</b>-nek (<i>Common Type Specification</i>) és
+                            a <b>CLS</b>-nek (<i
+                                >Common Language Specification</i
+                            >). Ennek köszönhetően egy <b>F#</b>-ban,
+                            <b>C++</b>-ban vagy <b>Visual Basic</b>-ben megírt
+                            forráskód <i>IL</i> kódja is belekerülhet ugyanabba
+                            a <i>szerelvénybe</i>. Kötülbelül 20
+                            <i>CTS</i> kompaticilis nyelv létezik.
+                        </p>
+                        <p>
+                            A <i>BCL</i>-ben vagy az <i>FCL</i>-ben lévő nagy
+                            mennyiségű könyvtárakat <b>névterek</b>-be
+                            (<i>namespace</i>) szervezik.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/"
+                                >Microsoft</a
+                            >
+                            <br />
+                            <a
+                                href="https://learn.microsoft.com/en-us/dotnet/standard/common-type-system"
+                                >CTS és CLS</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            A Visual Studio 2019/2022 Community
+                            fejlesztőkörnyezet.
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Most, hogy néhány fogalommal megismerkedtünk a C#
+                            fejlesztés világából, folytassuk az ismerkedést a
+                            legfontosabb területtel, a fejlesztői környezettel
+                            (IDE). Ehhez a
+                            <a
+                                href="https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes"
+                                >Visual Studio 2019 Community Edition</a
+                            >-t fogjuk használni. Kint van már a
+                            <a
+                                href="https://visualstudio.microsoft.com/free-developer-offers/"
+                                >2022-es verzió</a
+                            >
+                            is, de pillanatnyilag nekünk elég lesz csak a
+                            2019-es. Ami ebben megoldható, az megoldható az
+                            újabb verzióban is.
+                        </p>
+                        <p>
+                            <b
+                                >A Visual Studio 2019/2022 Community
+                                használatához érvényes Microsoft fiókkal kell
+                                rendelkezni!</b
+                            >
+                            Mindenki hozzon létre egyet, ha még nincs!
+                        </p>
+                        <p>
+                            A
+                            <a
+                                href="https://www.youtube.com/watch?v=IjDPFy4NPYE"
+                                >mellékelt videó</a
+                            >-hoz kapcsolódóan csak annyit, hogy kezdetben csak
+                            a <b>.NET desktop development</b>-re van szükségünk,
+                            így csak azt jelöljük be, ezzel spórolva a
+                            háttértárral! Ha kell a későbbiekben valami, azt is
+                            könnyen telepíthejük az
+                            <b>Visual Studio Installer</b> segítségével, ami a
+                            szerkesztővel együtt települ a gépünkre.
+                        </p>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Konzolos alkalmazás létrehozása.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Indítsuk el a Visual Studio 2019 alkalmazást. Majd
+                            kattintsunk a <i>Create a new project</i> gombra!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_001.png"
+                                alt="nyitólap"
+                                title="nyitólap"
+                            />
+                        </div>
+                        <p>
+                            Ezután a megnyíló ablakba írjuk be a
+                            <b>console</b> kifejezést a keresőbe és válasszuk ki
+                            a nyelvek közül a <i>C#</i>-ot, és a
+                            <b>.NET Framework</b>-os verziót:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_002.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Adjunk nevet a projektünknek, állítsuk be a mentés
+                            helyét, majd nyomjuk meg a <i>Create</i> gombot!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_003.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Írjuk be a 13-14. sort, majd nyomjuk meg a kis zöld
+                            jobbra mutató háromszöget. A megnyíló konzolon
+                            láthatjuk a kiírást.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_004.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_005.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            A
+                            <span class="h-elem">Console.ReadKey(true);</span>
+                            sorra azért van szükség, hogy a konzol ablaka ne
+                            zárodjon be azonnal.
+                        </p>
+                        <p class="alahuzott">Megjegyzés a forráshoz:</p>
+                        <p>
+                            A <i>.NET Core</i>-t ajánlja a projekthez, de mi
+                            maradjunk a <b>.NET Framework</b>-nél!
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/cs/cs_getstarted.php"
+                                >w3schhols</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Grafikus alkalmazás létrehozása.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Indítsuk el a Visual Studio 2019 alkalmazást. Majd
+                            kattintsunk a <i>Create a new project</i> gombra!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_001.png"
+                                alt="nyitólap"
+                                title="nyitólap"
+                            />
+                        </div>
+                        <p>
+                            Ezután a megnyíló ablakba írjuk be a
+                            <b>windows forms</b> kifejezést a keresőbe és
+                            válasszuk ki a nyelvek közül a <i>C#</i>-ot, és a
+                            <b>.NET Framework</b>-os verziót:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_006.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Adjunk nevet a projektünknek, állítsuk be a mentés
+                            helyét, majd nyomjuk meg a <i>Create</i> gombot!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_003.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Megkapjuk az alap winform-os kezdő űrlapunkat
+                            (form).
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_csharpba/ablak_007.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Elkezdhetjük felpakolni a különböző vezérlőelemeket.
+                        </p>
+                    </div>
+                </div>
+            </ol>
+        </div>
+    </body>
+</html>

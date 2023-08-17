@@ -28,7 +28,10 @@
                 </a>
             </div>
             <h1>Bevezetés a szoftverfejlesztésbe</h1>
-            <div class="jobb">
+            <div class="bal">
+                <h1>Minden Ami Tananyag</h1>
+            </div>
+            <!-- <div class="jobb">
                 <a
                     href="./feladatok/bevezetes_a_szoftverfejlesztesbe.html"
                     target="_self"
@@ -38,13 +41,530 @@
                         arrow_circle_right
                     </span>
                 </a>
-            </div>
+            </div> -->
         </div>
         <div class="fo-container">
+            <p>
+                A témakör célja, hogy átfogó ismeretet adjon a diákoknak a
+                modern szoftverfejlesztés általános lépéseiről, és a C#
+                programozási nyelvnek az iparban világviszonylatban betöltött
+                jelenkori helyzetéről. Feladata továbbá a programozási környezet
+                megismertetése, a projektlétrehozás és egyéb előkészületi
+                feladatok megismertetése, ami szükséges a későbbi, önálló
+                programozási feladatokhoz.
+            </p>
             <ol>
                 <div class="kerdesek">
                     <div class="kerdes">
-                        <li>Még nincs semmi!</li>
+                        <li>Hogyan fejlesszünk szoftvereket?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A szoftverfejlesztésen belül is léteznek
+                            <b>paradigmák</b>, azaz mindenki által elfogadott
+                            módszerek. Ezek is változnak az idővel, és újak is
+                            megjelennek. Nézzünk néhányat!
+                        </p>
+                        <p class="alahuzott">Vízesés modell:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/vizeses.png"
+                                alt="vizesés modell"
+                                title="vizesés modell"
+                            />
+                        </div>
+                        <p class="alahuzott">Spirális modell:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/spiralis.png"
+                                alt="spirális modell"
+                                title="spirális modell"
+                            />
+                        </div>
+                        <p class="alahuzott">Inkrementális modell:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/inkrementalis.png"
+                                alt="inkrementális modell"
+                                title="inkrementális modell"
+                            />
+                        </div>
+                        <p class="alahuzott">Scrum módszer (agilis):</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/scrum.png"
+                                alt="scrum mószer"
+                                title="scrum mószer"
+                            />
+                        </div>
+                        <p>Részletesebb leírás a forrásokban!</p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://users.iit.uni-miskolc.hu/~tompa/Szoftverteszt/2_Modellek.pdf"
+                                >miskolc szoftverfejlesztés</a
+                            >
+                            <br />
+                            <a
+                                href="https://users.iit.uni-miskolc.hu/~mileff/szf/szf_printable_1.pdf"
+                                >szoftverfejlesztés dia</a
+                            >
+                            <br />
+                            <a
+                                href="https://swap.web.elte.hu/2018192_pt2/ea01.pdf"
+                                >szoftverfejlesztés elte ppt</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>A C# nyelv története, kialakulása és fejlődése.</li>
+                    </div>
+                    <div class="valasz">
+                        <p class="alahuzott">Egy kis összefoglaló:</p>
+                        <p>
+                            A C# (ejtsd: szí- sárp) a világ egyik legnépszerűbb
+                            objektumorientált programozási nyelve. Bár kissé
+                            fiatalabb, mint jól ismert társai, a Python, a PHP
+                            vagy a Java, a Windows alkalmazások és szerverek
+                            terén szinte egyeduralma van. Már a története is
+                            érdekes, ugyanis egy óriási informatikai persorozat
+                            eredményeként alkotta meg a nyelvet a Microsoft,
+                            tulajdonképpen dacból.
+                        </p>
+                        <p>
+                            A Microsoft az ezredforduló előtt még a Sun
+                            Microsystems vállalat Java programnyelvét használta
+                            saját operációs rendszeréhez. Majd a 90-es években
+                            gondoltak egyet, és a Javát a Windows-hoz passzoló
+                            függvényekkel és szolgáltatásokkal kezdték el
+                            tuningolni. Csak sajnos engedély nélkül. A kreatív
+                            hack a bíróságon végződött, és végül közel
+                            kétmilliárd dollárjába került Microsoftnak. A
+                            Microsoft erre úgy döntött , hogy nincs szükségük a
+                            Sunra, tudnak ők saját keretrendszert és
+                            programozási nyelvet fejleszteni. Így is lett. Ez a
+                            Microsoft keretrendszer lett a .NET, a hozzá
+                            alkotott nyelv pedig a C#, ami az egyik
+                            legnépszerűbb programnyelvvé nőtte ki magát.
+                        </p>
+                        <p>
+                            Anders Hejlsberg vezette a C# fejlesztését, ő volt
+                            az, aki a Turbo Pascal tervezésében is óriási
+                            szerepet vállalt. 1999-ben alakult meg az a csapat,
+                            amit a .NET programozási nyelvének kidolgozásával
+                            megbíztak. A nyelv kezdetben a COOL (C-like Object
+                            Oriented Language) nevet viselte, végül pedig
+                            2000-ben mutatták be, akkor már C Sharp néven, a PDC
+                            konferencián a .NET-tel és az ASP.NET-tel együtt. A
+                            közönség fogadtatása vegyes volt: sokan úgy
+                            gondolták, a tervezők csupán lemásolták a Java-t,
+                            maga Anders azonban azt nyilatkozta, hogy a C++-hoz
+                            közelebb áll az új programnyelv.
+                        </p>
+                        <p class="alahuzott">Mi jellemzi a C#-ot?</p>
+                        <p>
+                            Ez egy modern, objektumorientált nyelv, ami
+                            rugalmasan használható, akár nagyívű programok
+                            írásához is. Jellemzője, hogy modulokból, vagyis
+                            fordítási egységekből áll, melyek szerkezete azonos.
+                        </p>
+                        <p>
+                            A programnyelvben az utasításokat követően
+                            pontosvesszőt kell tenni, ezzel lehet jelölni a
+                            határokat. Lényeges, hogy a kis és nagybetűk is
+                            jelentőséggel bírnak, a változók az angol ABC betűi
+                            lehetnek, illetve jelek és számok, ékezeteket
+                            azonban tilos használni. A blokkokat kapcsos
+                            zárójellel kell jelölni. Minden blokk nyitánya és
+                            zárása egy kapcsos zárójel.
+                        </p>
+                        <p class="alahuzott">A C#-pal rokon nyelvek:</p>
+                        <p>
+                            A legtöbb más objektumorientált programozási
+                            nyelvhez hasonlóan a
+                            <a
+                                href="https://hu.wikipedia.org/wiki/C_(programoz%C3%A1si_nyelv)"
+                                >C</a
+                            >
+                            nyelvből származik. Ennek továbbfejlesztett
+                            változata a
+                            <a href="https://hu.wikipedia.org/wiki/C%2B%2B"
+                                >C++</a
+                            >
+                            nyelv. Ebbe a körbe sorolható még a
+                            <a href="https://hu.wikipedia.org/wiki/Visual_Basic"
+                                >Visual Basic</a
+                            >
+                            nyelv is.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://hu.wikipedia.org/wiki/C_Sharp"
+                                >wikipedia</a
+                            >
+                            <br />
+                            <a
+                                href="https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
+                                >microsoft c# versions</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.tutorialsteacher.com/csharp/csharp-version-history"
+                                >tutorialsteacher c# versions</a
+                            >
+                            <br />
+                            <a
+                                href="https://codecool.com/hu/blog/c-sharp-c-programozas-a-microsoft-dacbol-szuletett-programnyelve-ami-meghoditotta-a-vilagot/"
+                                >codecool</a
+                            >
+                            <br />
+                            <a
+                                href="https://synerinsoft.com/blog/hirek/miert-olyan-nepszeru-a-c-es-miert-fog-a-kedveltsege-a-jovoben-is-novekedni"
+                                >synerinsoft</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mi az a .NET keretrendszer (framework)?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A C# nyelven írt kódokat <b>.cs</b> kiterjesztésű
+                            állományokba mentjük el.
+                        </p>
+                        <p>
+                            A C# egy
+                            <b>keresztplatformos</b> (platformfüggetlen,
+                            <i>cross-platform</i>) programozási nyelv. Ezt azt
+                            jelenti, hogy a forráskódból készül egy
+                            <b>közbenső nyelven</b> (<i
+                                >Intermediate Language IL</i
+                            >) írt kód. Ezt több más dologgal egy
+                            <b>szerelvény</b>be (<i>assembly</i>) kerül
+                            eltárolásra <b>.exe</b>, vagy legtöbbször
+                            <b>.dll</b> kiterjesztéssel. Ezt adja át a rendszer
+                            a <b>Common Language Runtime</b>-nek (CLR)
+                            futtatásra.
+                            <b
+                                >Ez a CLR a legtöbb operációs rendszerre
+                                feltelepíthető (a Windows-on alapból fent van),
+                                ez adja a platformfüggetlenséget</b
+                            >. Ezután a <i>Just-In-Time fordító</i> (JIT
+                            compiler) elkészíti a gépi kódot, felhasználva a
+                            <i>Base Class Library</i>-ben (BCL) és
+                            <i>Framework Class Library</i>-ben (FCL) lévő
+                            osztályokat.
+                        </p>
+                        <p>
+                            A fentebb felsorolt eszközök mind a
+                            <a
+                                href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/#net-architecture"
+                                >.NET</a
+                            >
+                            keretrendszer (framwork) részei több más dologgal
+                            együtt.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/net.png"
+                                alt=".net framework"
+                                title=".net framework"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp"
+                                >microsoft a tour of c#</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.interviewbit.com/blog/dot-net-framework-architecture/"
+                                >interviewbit</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            A Visual Studio 2019 Community fejlesztőkörnyezet.
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Most, hogy néhány fogalommal megismerkedtünk a C#
+                            fejlesztés világából, folytassuk az ismerkedést a
+                            legfontosabb területtel, a fejlesztői környezettel
+                            (IDE). Ehhez a
+                            <a
+                                href="https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes"
+                                >Visual Studio 2019 Community Edition</a
+                            >-t fogjuk használni. Kint van már a
+                            <a
+                                href="https://visualstudio.microsoft.com/free-developer-offers/"
+                                >2022-es verzió</a
+                            >
+                            is, de pillanatnyilag nekünk elég lesz csak a
+                            2019-es. Ami ebben megoldható, az megoldható az
+                            újabb verzióban is.
+                        </p>
+                        <p>
+                            <b
+                                >A Visual Studio 2019/2022 Community
+                                használatához érvényes Microsoft fiókkal kell
+                                rendelkezni!</b
+                            >
+                            Mindenki hozzon létre egyet, ha még nincs!
+                        </p>
+                        <p>
+                            A
+                            <a
+                                href="https://www.youtube.com/watch?v=IjDPFy4NPYE"
+                                >mellékelt videó</a
+                            >-hoz kapcsolódóan csak annyit, hogy kezdetben csak
+                            a <b>.NET desktop development</b>-re van szükségünk,
+                            így csak azt jelöljük be, ezzel spórolva a
+                            háttértárral! Ha kell a későbbiekben valami, azt is
+                            könnyen telepíthejük az
+                            <b>Visual Studio Installer</b> segítségével, ami a
+                            szerkesztővel együtt települ a gépünkre.
+                        </p>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Konzolos alkalmazás létrehozása.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Indítsuk el a Visual Studio 2019 alkalmazást. Majd
+                            kattintsunk a <i>Create a new project</i> gombra!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_001.png"
+                                alt="nyitólap"
+                                title="nyitólap"
+                            />
+                        </div>
+                        <p>
+                            Ezután a megnyíló ablakba írjuk be a
+                            <b>console</b> kifejezést a keresőbe és válasszuk ki
+                            a nyelvek közül a <i>C#</i>-ot, és a
+                            <b>.NET Framework</b>-os verziót:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_002.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Adjunk nevet a projektünknek, állítsuk be a mentés
+                            helyét, majd nyomjuk meg a <i>Create</i> gombot!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_003.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Írjuk be a 13-14. sort, majd nyomjuk meg a kis zöld
+                            jobbra mutató háromszöget. A megnyíló konzolon
+                            láthatjuk a kiírást.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_004.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_005.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            A
+                            <span class="h-elem">Console.ReadKey(true);</span>
+                            sorra azért van szükség, hogy a konzol ablaka ne
+                            zárodjon be azonnal.
+                        </p>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Grafikus alkalmazás létrehozása.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Indítsuk el a Visual Studio 2019 alkalmazást. Majd
+                            kattintsunk a <i>Create a new project</i> gombra!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_001.png"
+                                alt="nyitólap"
+                                title="nyitólap"
+                            />
+                        </div>
+                        <p>
+                            Ezután a megnyíló ablakba írjuk be a
+                            <b>windows forms</b> kifejezést a keresőbe és
+                            válasszuk ki a nyelvek közül a <i>C#</i>-ot, és a
+                            <b>.NET Framework</b>-os verziót:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_006.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Adjunk nevet a projektünknek, állítsuk be a mentés
+                            helyét, majd nyomjuk meg a <i>Create</i> gombot!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_003.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Megkapjuk az alap winform-os kezdő űrlapunkat
+                            (form).
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/ablak_007.png"
+                                alt="create a new project"
+                                title="create a new project"
+                            />
+                        </div>
+                        <p>
+                            Elkezdhetjük felpakolni a különböző vezérlőelemeket.
+                        </p>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Hibakeresés (debugging), breakpoint, step függvények
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A Python-nál megismert
+                            <a
+                                href="../programozasi_alapok/bevezetes_a_python_programozasba.html#hibak"
+                                >hiba definíciók</a
+                            >
+                            itt is érvényesek. A szintaktikai hibákat a Visual
+                            Studio is azonnal jelzi, míg a szemantikai hibákhoz
+                            ott van a hibakeresés, azaz debuggolás. Ehhez nézzük
+                            meg a következő
+                            <a
+                                href="https://www.youtube.com/watch?v=2KgodnxuRhM&list=PLih2KERbY1HHt2d9vpQRBz_cSl1ZBHG-V&index=22"
+                                >videót</a
+                            >!
+                        </p>
+                        <p>
+                            A szintaktikai hibát <i>piros aláhúzással</i> jelzi
+                            a szerkesztő, valamint alul megjelenik egy
+                            <b>Error List</b> ablak, ahol leírja a hibák helyét
+                            és jellegét. A figyelmeztetéseket (<i>Warnings</i>)
+                            is itt kapjuk meg.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/bevezetes_a_szoftverfejlesztesbe/szintaktika.png"
+                                alt="szintaktikai hiba"
+                                title="szintaktikai hiba"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Hogyan kódoljunk, hogy mások számára is értelmezhető
+                            legyen később is?
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Mint minden más nyelvben a C#-ban is vannak jelölési
+                            konvenciók, amit a Visual Studio keményen be is
+                            tartat velünk:
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Minden utasítást a a pontosvessző ; karakterrel
+                            zárunk le!
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >A kód tömbjeinek jelölésére használjuk a {}
+                            zárójelpárt!
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Hatókörök jelölésére behúzások használata!
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >A változók nevét mindig kisbetűvel kezdjük és utána
+                            a CamelCase-t használjuk, azaz vonjuk össze egy
+                            szóba a több szóból álló neveket és a második szótól
+                            kezdve minden szót nagy kezdőbetűvel írunk. Csak
+                            angol betűket használjunk: almafaVirag,
+                            nagyonSzepAuto, hosszuValtozoNev.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >A metódusok, osztályok nevét nagybetűvel kezdjük,
+                            azután CamelCase-t használunk.
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >A szöveg tagolására használjuk az úgynevezett
+                            "fehér szóköz karaktereket" (white-space
+                            characters): space (' '), tab ('\t'), newline (line
+                            feed) ('\n'), (carriage return, form feed, vertical
+                            tab).
+                        </p>
+                        <p class="sorolas">
+                            <span class="material-symbols-outlined">
+                                clear_all </span
+                            >Minden vezérlési szerkezetnek saját szintaktikája
+                            van.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://arato.inf.unideb.hu/jeszenszky.peter/download/swe/presentations/hu/cleancode.pdf"
+                                >clean code</a
+                            >
+                        </div>
                     </div>
                 </div>
             </ol>
