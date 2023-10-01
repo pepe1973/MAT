@@ -42,6 +42,11 @@
         </div>
         <div class="fo-container">
             <p>A témakör célja, hogy megismerkedjünk a JavaScript-tel.</p>
+            <p>
+                Mivel a JavaScript alapvetően böngészőbeli szkriptnyelv, ezért a
+                legtöbb példa demonstrálásához a böngészőben található konzolt
+                fogjuk használni.
+            </p>
             <ol>
                 <div class="kerdesek">
                     <div class="kerdes">
@@ -502,45 +507,487 @@
                 </div>
                 <div class="kerdesek">
                     <div class="kerdes">
-                        <li>Nyelvek a JavaScript "felett".</li>
+                        <li>A szkriptek alap építőelemei az utasítások</li>
                     </div>
                     <div class="valasz">
                         <p>
-                            A JavaScript a böngésző alapértelmeztt
-                            <b>scriptnyelve</b>, de a különböző igények
-                            kielégítése miatt számos új nyelv született, amely
-                            bizonyos szolgáltatásokkal, nyelvi elemekkel
-                            bővítette a JavaScript-et. Ezek a nyelvek "kétszeres
-                            fordításon"
-                            <b>transzpiláláson</b> (<i>transpilation</i>) esnek
-                            át, hogy futni tudjanak a böngészőben (először
-                            "lefordulnak" JavaScript-re):
+                            Egy számítógép-program 'instrukcióknak' egy
+                            sorozata, amelyet a számítógép hajt végre.
+                        </p>
+                        <p>
+                            <span class="kiemelt">utasítás (statement)</span>:
+                            szintaktikai konstrukció, parancs, 'instrukció'
+                            amellyel végrehajtunk egy cselekvést, műveletet
+                        </p>
+                        <p>
+                            Az <b>utasítások</b> a következőkből tevődhetnek
+                            össze:
+                        </p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>értékek (<i>value</i>)</li>
+                            <li>operátorok (<i>operator</i>)</li>
+                            <li>kifejezések (<i>expression</i>)</li>
+                            <li>kulcsszavak (<i>keyword</i>)</li>
+                            <li>kommentek (<i>comment</i>)</li>
+                        </ul>
+                        <p class="alahuzott">Nézzünk néhány példát:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_01.png"
+                                alt="példák utasításokra"
+                                title="példák utasításokra"
+                            />
+                        </div>
+                        <p>
+                            Az <b>undefined</b> a függvény visszatérési értékére
+                            utal. Erről később lesz szó.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_02.png"
+                                alt="példák utasításokra"
+                                title="példák utasításokra"
+                            />
+                        </div>
+                        <p>
+                            Az <i>áthúzott karika elemmel</i> törölhetjük a
+                            konzolt.
+                        </p>
+                        <p>
+                            A böngésző konzoljába általában egyszerre csak egy
+                            utasítást írunk be, majd az
+                            <b>enter</b> lenyomásával végrehajtatjuk azt.
+                        </p>
+                        <p>
+                            Több utasítás esetén használjuk a
+                            <b>shift+enter</b> billentyűkombinációt. Ez látható
+                            a fenti példában. A végső utasítás után jöhet az
+                            <b>enter</b> és a végrehajtás.
+                        </p>
+                        <p>
+                            Mindig törekedjünk az "egy sor egy utasítás" elv
+                            megvalósítására!
+                        </p>
+                        <p>
+                            A JavaScript-ben az utasításokat<b>;-vel</b> zárjuk
+                            le, bár elterjedt az úgynevezett
+                            <i>Automatic Semicolon Insertion</i> utasítás
+                            lezárás is, amikor rábízzuk a JavaScript motorra az
+                            utasítás végének a meghatározását egy
+                            <b>sortöréssel</b>.
+                        </p>
+                        <p class="alahuzott">
+                            Példa arra, amikor a sortörés nem egy utasítás vége:
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_03.png"
+                                alt="példák utasításokra"
+                                title="példák utasításokra"
+                            />
+                        </div>
+                        <p class="alahuzott">Van amikor nem működik!</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_04.png"
+                                alt="példák utasításokra"
+                                title="példák utasításokra"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://javascript.info/structure"
+                                >The Modern JavaScript</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/js/js_statements.asp"
+                                >w3schools</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Néhány szintaktikai észrevétel.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt">szintaxis (syntax)</span>:
+                            szabályoknak egy halmaza, amely leírja, hogy egy
+                            (JavaScript) program hogyan épüljön fel
                         </p>
                         <ul style="list-style-type: disc; padding-left: 1em">
                             <li>
-                                <a href="https://coffeescript.org/"
-                                    >CoffeeScript</a
-                                >
+                                Pontosvesszővel (<i>semicolon</i>) elválasztva
+                                az utasításokat, néha célszerű egy sorban
+                                elhelyezni őket.
                             </li>
                             <li>
-                                <a href="https://www.typescriptlang.org/"
-                                    >TypeScript</a
-                                >
+                                A JavaScript-ben egy sor hossza
+                                <b>legfeljebb 80 karakter</b> legyen a jobb
+                                olvashatóság miatt. Legideálisabb törési pont az
+                                operátorok után képzelhető el.
                             </li>
-                            <li><a href="https://flow.org/">Flow</a></li>
-                            <li><a href="https://dart.dev/">Dart</a></li>
-                            <li><a href="https://brython.info/">Brython</a></li>
                             <li>
-                                <a
-                                    href="https://kotlinlang.org/docs/js-overview.html"
-                                    >Kotlin</a
-                                >
+                                Érdemes az utasítások "alkotóelemei" köré
+                                szóközöket tenni.
                             </li>
+                            <div class="kep-1">
+                                <img
+                                    src="./images/a_javascript_alapjai/konzol_12.png"
+                                    alt="szintaktika dolgok"
+                                    title="szintaktika dolgok"
+                                />
+                            </div>
+                            <li>
+                                A programon belül utasításokat
+                                "csoportosíthatunk" egybe, melyeket egyben
+                                szeretnénk végrehajtani. Ehhez a
+                                <b>{}-zárójelpárt</b> használjuk, és egy
+                                tabulátornyit behúzzuk a sorokat. Jellemzően
+                                függvények, vezérlési szerkezetek, osztályok
+                                esetén használjuk. Ezekről később lesz szó.
+                            </li>
+                            <div class="kep-1">
+                                <img
+                                    src="./images/a_javascript_alapjai/konzol_13.png"
+                                    alt="szintaktika dolgok"
+                                    title="szintaktika dolgok"
+                                />
+                            </div>
+                            <li>
+                                Kétfajta érték létezik a JavaScript-ben:
+                                <ol style="padding-left: 1em">
+                                    <li>
+                                        fix érték, vagy literál (<i>literal</i>)
+                                    </li>
+                                    <li>
+                                        változó érték, vagy változó
+                                        (<i>variable</i>)
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <p>
+                            A <b>literálok</b> általában az értékadásoknál
+                            szerepelnek az operátor jobboldalán.
+                        </p>
+                        <p>
+                            A <b>számliterálok</b> lehetnek egészek, vagy törtek
+                            és ponttal választjuk el az egész és tizedes
+                            részeket.
+                        </p>
+                        <p>
+                            A <b>szövegliterálokat</b> aposztrófok: 'szöveg',
+                            vagy idézőjelek: "szöveg" közé helyezzük el.
+                        </p>
+                        <p>
+                            <a
+                                href="https://www.w3schools.com/charsets/ref_html_utf8.asp"
+                                >utf-8</a
+                            >
+                            karakterkészlet használata.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://www.w3schools.com/js/js_syntax.asp"
+                                >w3schools</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Változók</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt">változó (variable)</span>:
+                            megcímkézett memóriaterület adatok tárolására
+                        </p>
+                        <p>
+                            A változókat deklarálni kell. Ehhez a JavaScript a
+                            következő kulcsszavak egyikét használja: <b>let</b>,
+                            <b>const</b> vagy <b>var</b>.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_14.png"
+                                alt="változó deklaráció"
+                                title="változó deklaráció"
+                            />
+                        </div>
+                        <p>
+                            A <a href="#use">use strict</a>-nél látni fogjuk,
+                            hogy a régebbi JavaScript verzióknál kulcsszavak
+                            nélkül is deklarálhatunk változókat.
+                            <b>Kerülendő</b>!
+                        </p>
+                        <p>
+                            A <b>var</b> és <b>let</b> kulcsszavak között
+                            különbség van. A <b>var</b> a régebbi és régi
+                            böngészőkre írt szkriptekben ajánlatos használni,
+                            míg 2015-től jelenik meg a <b>let</b>.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://javascript.info/variables"
+                                >The Modern JavaScript</a
+                            >
+                            <br />
+                            <a
+                                href="https://www.w3schools.com/js/js_variables.asp"
+                                >w3schools</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Azonosítók</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt">azonosító (identifier)</span>:
+                            JavaScript nevek, melyekkel felcímkézünk változókat,
+                            kulcsszavakat, függvényeket és osztályokat
+                        </p>
+                        <p>Szabályok:</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>csak betűvel, _-zal vagy $-lel kezdődhet</li>
+                            <li><b>számmal nem kezdődhet</b></li>
+                            <li>ezután csak betű, szám, _ és $ szerepelhet</li>
+                            <li>
+                                kis-, nagybetű érzékenység (<i
+                                    >case sensitivity</i
+                                >): <b>lastName</b> és <b>LastName</b> két
+                                különböző azonosító
+                            </li>
+                            <li>több szóból álló azonosítók esetén</li>
+                            <div class="kep-1">
+                                <img
+                                    src="./images/a_javascript_alapjai/ablak_01.png"
+                                    alt="szintaxis"
+                                    title="szintaxis"
+                                />
+                            </div>
                         </ul>
                         <div>
                             <span class="forras">Forrás</span>:
-                            <a href="https://javascript.info/intro"
+                            <a href="https://www.w3schools.com/js/js_syntax.asp"
+                                >w3schools</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Operátorok</li>
+                    </div>
+                    <div class="valasz"></div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Kifejezések</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt">kifejezés (expression)</span>:
+                            értékekből, változókból és operátorokból
+                            összeállított szintaktikai konstrukció, amely
+                            meghatároz egy értéket. Ezt hívjuk még
+                            <b>kiértékelésnek (evaluation)</b> is.
+                        </p>
+                    </div>
+                    <div class="valasz"></div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Kulcsszavak</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt">kulcsszó (keyword)</span>:
+                            végrehajtandó műveletek azonosítására szolgáló
+                            szavak
+                        </p>
+                        <p class="alahuzott">Például:</p>
+                        <span class="h-elem">let valt = 1973;</span>
+                        <p>
+                            Ebben az esetben a <b>let</b> kulcsszó létrehozat a
+                            böngészővel egy <i>valt</i> nevű változót és
+                            feltölteti 1973-mal.
+                        </p>
+                    </div>
+                    <div class="valasz"></div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Mire jók a kommentek?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Kommenteket minden számítógépes nyelv esetén
+                            használunk. Nem kivétel a JavaScript sem.
+                        </p>
+                        <p class="alahuzott">Mire jók:</p>
+                        <ul style="list-style-type: disc; padding-left: 1em">
+                            <li>
+                                Emlékeztető szövegek elhelyezése a kódban. Mit
+                                csinálunk, mi a célunk a kóddal.
+                            </li>
+                            <li>
+                                Leírás más felhasználóknak illetve magunknak, ha
+                                később átnézzük a kódot.
+                            </li>
+                            <li>
+                                Kódsorok kizárása hibakeresés, tesztelés
+                                céljából.
+                                <b
+                                    >A kommenteket nem dolgozza fel a JavaScript
+                                    motor</b
+                                >!
+                            </li>
+                        </ul>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_05.png"
+                                alt="kommentek"
+                                title="kommentek"
+                            />
+                        </div>
+                        <p>
+                            <b
+                                >Tilos a többsoros kommentek egymásba
+                                ágyazása!</b
+                            >
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_06.png"
+                                alt="kommentek"
+                                title="kommentek"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.w3schools.com/js/js_comments.asp"
+                                >w3schools</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek" id="use">
+                    <div class="kerdes">
+                        <li>Mi az a 'use strict';?</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A JavaScript egy folyamatosan változó nyelv. Új
+                            tulajdonságok kerülnek hozzáadásra, miközben a
+                            régiek nem, vagy csak részben változnak. A régebbi
+                            böngészők csak a korábbi JavaScript verziókkal
+                            tudnak mit kezdeni, az újabbakkal semmit.
+                        </p>
+                        <p>
+                            Ezért alapból minden böngésző az ES5 (ECMAScript 5)
+                            előtti JavaScript-tel dolgozik, és explicit módon
+                            kell "bekapcsolni" az újabb verziókat. Erre jó a
+                            <b>'use strict';</b> vagy
+                            <b>"use strict";</b> szöveg literál (<b
+                                >nem utasítás</b
+                            >)! Az IE9 előtti verziók miatt van rá szükség.
+                        </p>
+                        <p>
+                            A
+                            <b>szkript első sora kell hogy legyen</b>
+                            (csak kommentek előzhetik meg), bár a később
+                            tanulandó függvények első sora is lehet. Ebben az
+                            esetben csak az adott függvényen belül lesz
+                            aktiválva a "modern JavaScript".
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/helyek_27.png"
+                                alt="'use strict'; használata"
+                                title="'use strict'; használata"
+                            />
+                        </div>
+                        <p class="alahuzott">
+                            Példák a 'use strict'; használatára:
+                        </p>
+                        <p>
+                            'Szigorú módban' használat előtt
+                            <b>deklarálni kell a változókat</b>!
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_07.png"
+                                alt="'use strict'; használata"
+                                title="'use strict'; használata"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_09.png"
+                                alt="'use strict'; használata"
+                                title="'use strict'; használata"
+                            />
+                        </div>
+                        <p class="alahuzott">Tilos törölni:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_10.png"
+                                alt="'use strict'; használata"
+                                title="'use strict'; használata"
+                            />
+                        </div>
+                        <p class="alahuzott">Még néhány "kivétel":</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_11.png"
+                                alt="'use strict'; használata"
+                                title="'use strict'; használata"
+                            />
+                        </div>
+                        <p>
+                            <b
+                                >A böngészőbeli konzol alapból nem használja a
+                                'use strict'; módot</b
+                            >! Ott is meg kell adni. Minden egyes oldalfrissítés
+                            esetén újra kell 'aktiválni', mert elfelejti, hogy
+                            'szigorú módban' van!
+                        </p>
+                        <p>
+                            Ez biztosan csak a Chrome és Firefox esetén működik.
+                            A többi böngésző esetén szükség lehet egy
+                            úgynevezett IIFE (<i
+                                >Immediately Invoked Function Expression</i
+                            >) 'csomagolófüggvényre'!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_javascript_alapjai/konzol_08.png"
+                                alt="'use strict'; használata"
+                                title="'use strict'; használata"
+                            />
+                        </div>
+                        <p>
+                            A modern JavaScript által támogatott osztályok
+                            (<i>class</i>) és modulok (<i>module</i>) esetén a
+                            'szigorú mód' alapból adott! Ezekkel később
+                            foglalkozunk.
+                        </p>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a href="https://javascript.info/strict-mode"
                                 >The Modern JavaScript</a
+                            >
+                            <br />
+                            <a href="https://www.w3schools.com/js/js_strict.asp"
+                                >w3schools</a
                             >
                         </div>
                     </div>
