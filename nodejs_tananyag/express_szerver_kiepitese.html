@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../stilus.css" />
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <base target="_blank" />
+        <title>Express szerver kiépítése</title>
+    </head>
+    <body>
+        <div class="felgomb">
+            <a href="#fel" target="_self">
+                <span class="material-symbols-outlined"> arrow_circle_up </span>
+            </a>
+        </div>
+        <div class="fo-nav" id="fel">
+            <div class="bal">
+                <a href="./index.html" target="_self">
+                    <span class="material-symbols-outlined">
+                        arrow_circle_left
+                    </span>
+                    <h1>Főoldal</h1>
+                </a>
+            </div>
+            <h1>Express szerver kiépítése</h1>
+            <div class="bal">
+                <h1>Minden Ami Tananyag</h1>
+            </div>
+            <!-- <div class="jobb">
+                <a href="./feladatok/bevezetes_a_pythonba.html" target="_self">
+                    <h1>Feladatok</h1>
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
+                </a>
+            </div> -->
+        </div>
+        <div class="fo-container">
+            <p>
+                A témakör célja, hogy kiépítsünk és megtanuljunk használni egy
+                Express szervert.
+            </p>
+            <ol>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Első utasítások a server.js-ben.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Miután
+                            <a href="./az_express_alapjai.html"
+                                >beállítottuk a környezetet</a
+                            >
+                            elkezdhetünk dolgozni benne.
+                        </p>
+                        <p>
+                            Írjuk be a <b>server.js</b>-be a következő
+                            utasításokat, majd a Visual Studio Code
+                            termináljában adjuk ki a következő utasítást:
+                            <span class="h-elem">npm run dev</span>. Ennek
+                            hatására a szerver mindig lefrissül, ha történik
+                            valami változtatás:
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_01.png"
+                                alt="express szerver telepítése"
+                                title="express szerver telepítése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_02.png"
+                                alt="express szerver telepítése"
+                                title="express szerver telepítése"
+                            />
+                        </div>
+                        <p>
+                            Mi az a (http)
+                            <a href="https://expressjs.com/en/4x/api.html#req"
+                                >request</a
+                            >? Egy oldalfrissítés a böngészőben, egy űrlap
+                            elküldése, egy e-mail elküldése, egy gombra
+                            kattintás stb. Tehát szeretnénk hozzáférni a szerver
+                            valamelyik <b>erőforrásához</b> (<i>resource</i>):
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_03.png"
+                                alt="express szerver telepítése"
+                                title="express szerver telepítése"
+                            />
+                        </div>
+                        <p>
+                            És mi a (http)
+                            <a href="https://expressjs.com/en/4x/api.html#res"
+                                >response</a
+                            >? Amit a szerver cserébe visszaküld. Ez lehet egy
+                            weboldal html állománya stb., vagy egy hibaüzenet:
+                            <span class="h-elem">Cannot GET /</span>, azaz a
+                            keresett <b>végpont</b> (endpoint) nem küld vissza
+                            semmit.
+                        </p>
+                        <p>Mit lehet ilyenkor tenni?</p>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Root Route beállítása.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>Folytassuk a <b>server.js</b> szerkesztését.</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_04.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_05.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>
+                            Látható, hogy működik a <b>nodemon</b> és
+                            automatikusan frissíti a szervert.
+                        </p>
+                        <p>
+                            A <b>GET</b> (http request method) feladata a
+                            szerver válaszának (<i>response</i>) eljuttatása a
+                            böngészőnek a request-re.
+                        </p>
+                        <p>
+                            A <span class="h-elem">'/'</span> jelöli a végpontot
+                            (endpoint), ahová a lekérdezést (request) küldtük.
+                        </p>
+                        <p>
+                            A válasz (<b>response</b>) általában egy állomány
+                            (html, php, asp, ejs, hbs, css stb.), de lehet
+                            valamilyen adat is (sztring, számok, listák stb.).
+                            Ezt csomagoljuk be a fent megadott arrow
+                            function-be. Ebben megadjuk még a http-hibakódot
+                            (<b>status(200)</b>) és egy metódussal (<b>send</b>)
+                            a választ. Később megismerkedünk ennek a bővített
+                            változaival is.
+                        </p>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>routes és controllers mappa</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Később, amikor már több <b>route</b>-hoz, azaz
+                            <b>végponthoz</b> (<i>endpoint</i>) tartozó
+                            kódállománnyal kell dolgoznunk, akkor célszerű azt
+                            kiszervezni külső állományokba, mappákba.
+                        </p>
+                        <p>
+                            A <b>routes</b> mappába tároljuk el az adot
+                            végponthoz tartozó <b>CRUD</b> műveleteket.
+                        </p>
+                        <p>
+                            A tényleges kódmegvalósítása a műveleteknek a
+                            <b>controllers</b> mappában történik meg.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_06.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_07.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Statikus állományok</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Bár a szerver "dinamikusan" szolgáltat adatokat,
+                            weboldalakat, azok stílusát, felépítését esetlegesen
+                            bizonyos funkcionalitását "statikus" HTML, CSS és JS
+                            állományoktól kapja. Ezeket általában egy
+                            <b>public</b> mappában tároljuk el.
+                        </p>
+                        <p>
+                            Ennek a mappának az eléréséhez szükséges lehet a
+                            <b>path</b> node csomag.
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_08.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>A views mappa és az ejs állományok</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            A weblapok szerveroldali feladatainak megoldásához
+                            ideális választás lehet az <b>ejs</b> állományok
+                            használata. Ezek speciális HTML állományok,
+                            amelyekbe JavaScript kódokat írhatunk, amelyek
+                            kívülről kapott adatokkal tartalmat tudnak
+                            generálni.
+                        </p>
+                        <p>
+                            Ehhez fel kell telepiteni az <i>ejs</i> npm
+                            csomagot.
+                        </p>
+                        <span class="h-elem">npm install ejs</span>
+                        <p>
+                            Az ejs állományokat a <b>views</b> mappában tároljuk
+                            el, amely a <i>controllers</i> mappa mellett az
+                            <b>MVC</b> fogalom egyik eleme.
+                        </p>
+                        <p>
+                            A <i>controllers</i> mappában a
+                            <b>render</b> utasítással hívjuk meg az
+                            <i>ejs</i> állományokat, melyeknek adatokat
+                            JavaScript objektumok formájában tudunk átadni.
+                        </p>
+                        <p>Állítsuk be a "megjelenítő motor"-t:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_09.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>Nézzük az állományokat:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_10.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_11.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>A <b>stilus.css</b> állomány és a végeredmény:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_12.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_13.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            A POST metódus használata űrlap feldolgozás esetén
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Állítsunk be egy űrlapot az
+                            <b>index.js</b> állományban. Van egy kis változtatás
+                            a <b>stilus.css</b>-ben is.
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_14.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_20.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>
+                            Látható, hogy a <i>form</i> elem kezdő címkéjében
+                            nem került beállításra semmi. A feldolgozásért
+                            felelős script-et a <b>feldolgoz.js</b> állományban
+                            találjuk, amely a <i>public</i> mappában lévő
+                            <b>js</b> almappában található. A
+                            <b>preventDefault()</b> függvény megakadályozza,
+                            hogy elküldés után lefrissüljön az oldal!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_15.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>Nézzük az üzleti logikát:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_16.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_17.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>Kattintás után:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_18.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_19.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>404 Not Found</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            Előfordul, hogy a felhasználó olyan oldalt akar
+                            megnyitni, amely nem létezik. Ebben az esetben
+                            célszerű egy 404-es oldal megjelenítése, amely
+                            átirányít egy másik oldalra.
+                        </p>
+                        <p>Hozzunk létre egy <b>404.ejs</b> nevű állományt.</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_21.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <p>
+                            Állítsuk be a <b>server.js</b> állományban a hibás
+                            route-ok kezelését! Lássuk az eredményt:
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_22.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/express_szerver_kiepitese/kep_23.png"
+                                alt="express szerver szerkesztése"
+                                title="express szerver szerkesztése"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </ol>
+        </div>
+    </body>
+</html>

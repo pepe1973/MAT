@@ -308,6 +308,210 @@
                         </div>
                     </div>
                 </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Export és import Node.js-ben.</li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt"
+                                >alapértelmezett export (default export)</span
+                            >: az egyik modul-ból kivitt (exportált) érték
+                            nevének nem kell megegyeznie a másik modulban
+                            meghívott érték nevével.
+                        </p>
+                        <p>
+                            A kivitelhez a <b>module.exports</b> objektumot
+                            használom! Ez a <b>CommonJS</b> megközelítés, ezért
+                            húzza alá a szerkesztő, mert ő meg az <b>ES6</b>-t
+                            támogatja!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_17.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=hvOrwICaEJY&list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY&index=11"
+                                >codevolution</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>
+                            Gondolatok a modulokról 1. (Scope és Module Wrapper)
+                        </li>
+                    </div>
+                    <div class="valasz">
+                        <p>
+                            <span class="kiemelt">modul hatóköre (scope)</span>:
+                            egy modul hatóköre arra az állományra terjed ki,
+                            amelyben megírtuk.
+                        </p>
+                        <p>
+                            <span class="kiemelt"
+                                >modul csomagoló függvénye (wrapper)</span
+                            >: exportálás előtt a Node.js az adott modult
+                            "becsomagolja" egy úgynevezett <b>IIFE</b>-be (<i
+                                >Immediately Invoked Function Expression</i
+                            >). Ennek a függvénynek a lokális hatóköre egyezik
+                            meg a moduléval.
+                        </p>
+                        <p>
+                            Az iief-k segítségével többször is felhasználhatunk
+                            azonosítókat bármilyen konfliktus nélkül a lokális
+                            hatókör miatt!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_18.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <p class="alahuzott">Példák iief-ekre:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_19.png"
+                                alt="iief"
+                                title="iief"
+                            />
+                        </div>
+                        <p class="alahuzott">Module wrapper:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_20.png"
+                                alt="module wrapper"
+                                title="module wrapper"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_21.png"
+                                alt="module wrapper"
+                                title="module wrapper"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_22.png"
+                                alt="module wrapper"
+                                title="module wrapper"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_23.png"
+                                alt="module wrapper"
+                                title="module wrapper"
+                            />
+                        </div>
+                        <p class="alahuzott">
+                            Nézzünk egy példát debuggolással:
+                        </p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_24.png"
+                                alt="module wrapper"
+                                title="module wrapper"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_25.png"
+                                alt="module wrapper"
+                                title="module wrapper"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=RR5zEGU7TqY&list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY&index=11"
+                                >codevolution</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="kerdesek">
+                    <div class="kerdes">
+                        <li>Gondolatok a modulokról 2. (Module Caching)</li>
+                    </div>
+                    <div class="valasz">
+                        <p class="alahuzott">Kezdjük egy példával:</p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_26.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <p>
+                            Hogyan kaphatunk két "Superman" kimenetet, ha egy új
+                            példányt hoztunk létre az osztályból? Mert valójában
+                            csak egy példányt alkottunk meg és azt megjegyezte a
+                            Node.js, <b>cashing</b>-elte!
+                        </p>
+                        <p>
+                            A "második" példányosításkor "emlékezett"
+                            (<b>cashing</b>-elt), hogy neki már van ebből egy
+                            példánya, így ugyanazt a memóriacímet rendelte
+                            hozzá!
+                        </p>
+                        <p class="alahuzott">Debuggoljunk egy kicsit:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_27.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_28.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <p>Folytassuk a hibakeresést:</p>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_29.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <div class="kep-2">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_30.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <p>
+                            Ennek kivédésére exportáljuk ki magát az osztályt!
+                        </p>
+                        <div class="kep-1">
+                            <img
+                                src="./images/a_nodejs_alapjai/kep_31.png"
+                                alt="modulok"
+                                title="modulok"
+                            />
+                        </div>
+                        <div>
+                            <span class="forras">Forrás</span>:
+                            <a
+                                href="https://www.youtube.com/watch?v=JQfOtwfDohY&list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY&index=13"
+                                >codevolution</a
+                            >
+                        </div>
+                    </div>
+                </div>
             </ol>
         </div>
     </body>
