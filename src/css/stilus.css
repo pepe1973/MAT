@@ -1,93 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --alaphatter: #118ab2;
-    --proghatter: #1b1ff5;
-    --nav: #1b1ff5;
-    --tartohatter: #e3fdc1;
-    --gomb: #14591d;
-    --rejtett: #b6f3ff;
+  --alaphatter: #118ab2;
+  --proghatter: #1b1ff5;
+  --inf1hatter: #f51b1b;
+  --inf2hatter: #d10303;
+  --nav: #1b1ff5;
+  --tartohatter: #e3fdc1;
+  --gomb: #14591d;
+  --rejtett: #b6f3ff;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
-    align-items: center;
-    background-color: var(--nav);
-    color: whitesmoke;
-    display: flex;
-    font-weight: 400;
-    font-size: 1.5em;
-    height: 10vh;
-    justify-content: center;
-    padding: 1em;
+  align-items: center;
+  background-color: var(--nav);
+  color: whitesmoke;
+  display: flex;
+  font-weight: 400;
+  font-size: 1.5em;
+  height: 15vh;
+  justify-content: center;
+  padding: 1em;
 }
 
 .tarto {
-    margin: auto;
-    min-height: 90vh;
-    padding: 2em;
-    width: 70%;
+  margin: auto;
+  min-height: 85vh;
+  padding: 2em;
+  width: 70%;
 }
 
 ol {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 ol > li {
-    background-color: white;
-    border: 1px solid var(--nav);
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px var(--nav);
-    margin-bottom: 1em;
-    padding: 0.5em;
+  background-color: white;
+  border: 1px solid var(--nav);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--nav);
+  margin-bottom: 1em;
+  padding: 0.5em;
 }
 
 .rejtett {
-    background-color: var(--rejtett);
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 1em;
-    padding: 1em;
-    display: none;
+  background-color: var(--rejtett);
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 1em;
+  display: none;
 }
 
 .rejtett ul {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 1em;
+  list-style-image: url("../images/bullet4.gif");
+  list-style-position: inside;
+  padding-left: 1em;
+}
+
+.rejtett ul li {
+  border: none;
+  box-shadow: none;
+  color: black;
 }
 
 li {
-    text-align: justify;
+  text-align: justify;
 }
 
 button {
-    background-color: white;
-    border: none;
-    color: var(--gomb);
-    font-size: 1em;
-    font-weight: 400;
+  background-color: white;
+  border: none;
+  color: var(--gomb);
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .elrejt-gomb {
-    display: none;
+  display: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-    .tarto {
-        width: 100%;
-    }
+  .tarto {
+    width: 100%;
+  }
 }
