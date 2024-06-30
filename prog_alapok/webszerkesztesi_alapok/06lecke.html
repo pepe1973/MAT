@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Hatodik lecke - Visual Studio Code beállítása</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Hatodik lecke - Visual Studio Code beállítása</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Honnan tudjuk letölteni a Visual Studio Code-ot?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/vscode.png" />
+                        <ul>
+                            <li>
+                                Látogassunk el a hivatalos oldalára és onnan
+                                töltsük le a megfelelő böngészőhöz az
+                                alkalmazást. Mi csak a Windows-os telepítést
+                                nézzük meg.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://code.visualstudio.com/"
+                                    target="_blank"
+                                    >Visual Studio Code</a
+                                >
+                            </li>
+                        </ul>
+                        <img src="./images/kep_001.png" />
+                    </div>
+                </li>
+
+                <li>
+                    Hogyan telepítsük a Visual Studio Code-ot?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>Fogadjuk el a szerződési feltételeket.</li>
+                        </ul>
+                        <img src="./images/kep_002.png" />
+                        <ul>
+                            <li>Jelöljünk be minden opciót.</li>
+                        </ul>
+                        <img src="./images/kep_003.png" />
+                        <ul>
+                            <li>Indítsuk el a telepítést.</li>
+                        </ul>
+                        <img src="./images/kep_004.png" />
+                    </div>
+                </li>
+                <li>
+                    Milyen kezdeti beállítások javasoltak?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                A lenti példában az látható, miszerint elérhető
+                                az, hogy a Visual Studio Code-on belüli
+                                Explorer-ben a beágyazott mappák nevei egymás
+                                alatt és nem egymás mellett szerepeljenek, amely
+                                elég hasznos tud lenni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_005.png" />
+                        <ul>
+                            <li>
+                                Ehhez nyissuk meg a bel alsó sarokban lévő
+                                fogaskerékre kattintva a Setings-fület.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_006.png" />
+                        <ul>
+                            <li>
+                                Gépeljük be a keresőbe a következőt:
+                                explorer.compact folders. Majd vegyük ki a pipát
+                                a jelzett helyen.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_007.png" />
+                    </div>
+                </li>
+                <li>
+                    Mely Extension-ők segíthetnek a webszerkesztésben?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                Számos kényelmi funkciót, ugynevezett
+                                Extension-t szolgáltat a Visual Studio Code.
+                                Ehhez kattintsuk az ikonjára a baloldalon. Majd
+                                írjuk be az keresett Extension nevét. És
+                                telepítsük.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_008.png" />
+                        <ul>
+                            <li>
+                                Néhány az ismertebbek közül. Olvassuk el, hogy
+                                mit tud az adott Extension.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_009.png" />
+                        <ul>
+                            <li>És íme még néhány.</li>
+                        </ul>
+                        <img src="./images/kep_010.png" />
+                    </div>
+                </li>
+                <li>
+                    Hogyan lehet beállítani a Prettier-t?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                A Prettier azért felelős, hogy ha helyes a kód,
+                                akkor megfelelő módon fogja eltörni, hogy
+                                olvashatóbb legyen. Ehhez ismét nyissuk meg a
+                                Settings-et.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_011.png" />
+                        <ul>
+                            <li>
+                                Majd gépeljük be a formatter szót. Ezután a
+                                legördülő listában keressük meg a Prettier-t.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_012.png" />
+                        <ul>
+                            <li>
+                                Már csak az alatta lévő négyzeteket kell
+                                bejelőlni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_013.png" />
+                    </div>
+                </li>
+                <li>
+                    Mi az az Emmet?
+                    <p>
+                        <button
+                            onclick="felfed(5)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(5)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_014.jpg" />
+                        <ul>
+                            <li>
+                                Az Emmet olyan beépülő modulok készlete
+                                szövegszerkesztőkhöz, amelyek nagy sebességű
+                                kódolást és szerkesztést tesznek lehetővé HTML,
+                                XML, XSLT és más strukturált kódformátumokban a
+                                tartalomsegítő segítségével.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://emmet.io/"
+                                    target="_blank"
+                                    >Emmet</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://code.visualstudio.com/docs/editor/emmet"
+                                    target="_blank"
+                                    >Emmet a Visual Studio Code-ban</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://docs.emmet.io/cheat-sheet/"
+                                    target="_blank"
+                                    >Emmet Cheat Sheet</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mi az a HTML CSS Support?
+                    <p>
+                        <button
+                            onclick="felfed(6)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(6)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_015.png" />
+                        <ul>
+                            <li>Egy Extension a Visual Studio Code-ban.</li>
+                            <li>
+                                Ha a html állományban már létező css osztályokra
+                                akarok hivatkozni, akkor kód kiegészítéssel ezt
+                                megoldhatom.
+                            </li>
+                            <li>
+                                Ehhez a külső vagy belső stíluslapon létrehozom
+                                az osztályt, majd az adott elemben a class=""
+                                attribútumban elkezdem begépelni az
+                                osztálykijelölő nevét, amit aztán a Tab
+                                lenyomásával kiegészíthetek.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_016.png" />
+                        <ul>
+                            <li>Ugyanez igaz elemkijelölők (id) esetén is.</li>
+                        </ul>
+                        <img src="./images/kep_017.png" />
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

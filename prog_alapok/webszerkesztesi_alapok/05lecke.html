@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Ötödik lecke - Integrált fejlesztői környezetek (IDE)</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Ötödik lecke - Integrált fejlesztői környezetek (IDE)</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az az integrált fejlesztői környezet (integrated
+                    development environment - IDE)?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/IDE.jpg" />
+                        <ul>
+                            <li>
+                                Az integrált fejlesztői környezet (IDE) egy
+                                olyan szoftveralkalmazás, amely segít a
+                                programozóknak a szoftverkód hatékony
+                                fejlesztésében. Növeli a fejlesztők
+                                termelékenységét azáltal, hogy egy könnyen
+                                használható alkalmazásban egyesíti az olyan
+                                funkciókat, mint a szoftverszerkesztés, az
+                                építés (building), a tesztelés és a csomagolás
+                                (packaging).
+                            </li>
+                            <li>
+                                Az integrált fejlesztői környezet egy olyan
+                                szoftveralkalmazás, amely átfogó eszközöket
+                                biztosít a számítógépes programozók számára a
+                                szoftverfejlesztéshez. Az IDE általában legalább
+                                egy forráskódszerkesztőből, automatizálási
+                                eszközökből és hibakeresőből áll.
+                            </li>
+                            <li>
+                                Egyes IDE-k, mint például a NetBeans és az
+                                Eclipse, tartalmazzák a szükséges fordítót,
+                                értelmezőt vagy mindkettőt; mások, mint például
+                                a SharpDevelop és a Lazarus, nem.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/Integr%C3%A1lt_fejleszt%C5%91i_k%C3%B6rnyezet"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.codecademy.com/article/what-is-an-ide"
+                                    target="_blank"
+                                    >Codecademy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Milyen ingyenes IDE-k vannak webszerkesztéshez? Visual
+                    Studio Code.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/vscode.png" />
+                        <ul>
+                            <li>
+                                A Visual Studio Code ingyenes, nyílt forráskódú
+                                kódszerkesztő, melyet a Microsoft fejleszt
+                                Windows, Linux és macOS operációs rendszerekhez.
+                                Támogatja a hibakeresőket, valamint beépített
+                                Git támogatással rendelkezik, továbbá képes az
+                                intelligens kódkiegészítésre az IntelliSense
+                                segítségével.
+                            </li>
+                            <li>
+                                A Visual Studio Code egy újradefiniált és modern
+                                webes és felhőalkalmazások létrehozására és
+                                hibakeresésére optimalizált kódszerkesztő.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://code.visualstudio.com/"
+                                    target="_blank"
+                                    >Visual Studio Code</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Milyen ingyenes IDE-k vannak webszerkesztéshez? Brackets.
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <img src="./images/Brackets_Icon.svg.png" />
+                            <li>
+                                A Brackets egy ingyenes és nyílt forráskódú
+                                forráskód-szerkesztő, amely elsősorban a
+                                webfejlesztésre összpontosít.
+                            </li>
+                            <li>
+                                A fókuszált vizuális eszközökkel és az
+                                előfeldolgozó támogatásával a Brackets egy
+                                modern szövegszerkesztő, amely megkönnyíti a
+                                tervezést a böngészőben. Az alapoktól kezdve
+                                webtervezők és front-end fejlesztők számára
+                                készült.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://brackets.io/"
+                                    target="_blank"
+                                    >Brackets</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

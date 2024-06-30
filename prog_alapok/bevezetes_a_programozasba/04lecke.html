@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Negyedik lecke - Online portálok: Khan Academy, Udacity</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Negyedik lecke - Online portálok: Khan Academy, Udacity</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az a Khan Academy?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <img src="./images/KhanAcademy.png" />
+                            <li>
+                                A Khan Academy non-profit szervezetet Salman
+                                Khan hozta létre 2008-ban azzal a céllal, hogy
+                                korszerű, online eszköztárának segítségével
+                                ingyenes, világszínvonalú oktatást biztosítson a
+                                tanulni vágyóknak a világ minden táján.
+                            </li>
+                            <li>
+                                A szervezet mottója: Bármit meg tudsz tanulni!
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.khanacademy.org/"
+                                    target="_blank"
+                                    >Khan Academy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Feladatok megoldása Khan Academy-vel.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+                <li>
+                    Mi az a Udacity?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/udacity-logo.png" />
+                        <ul>
+                            <li>
+                                Az Udacity egy online tanulási platform azok
+                                számára, akik érdeklődnek olyan technológiával
+                                kapcsolatos témák iránt, mint az adatelemzés, a
+                                szoftverfejlesztés, a mesterséges intelligencia
+                                és a webfejlesztés.
+                            </li>
+                            <li>
+                                A kurzusok interaktívak és vizuálisak, és
+                                kvízeket, rövid videókat és projekteket
+                                tartalmaznak, amelyeket a hallgatók
+                                hozzáadhatnak portfóliójukhoz.
+                            </li>
+                            <li>
+                                A Udacity Inc. egy amerikai profitorientált
+                                oktatási szervezet, amelyet Sebastian Thrun ,
+                                David Stavens és Mike Sokolsky alapított, és
+                                amely hatalmas nyílt online kurzusokat kínál .
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.udacity.com/"
+                                    target="_blank"
+                                    >Udacity</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Feladatok megoldása Udacity-vel.
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

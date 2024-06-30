@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>
+            Negyedik lecke - Fejlesztői környezet, Jegyzettömb, Notepad++
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Negyedik lecke - Fejlesztői környezet, Jegyzettömb,
+                Notepad++</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az a fejlesztői környezet (development environment)?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/development-environment.jpg" />
+                        <ul>
+                            <li>
+                                A fejlesztői környezet olyan programozási
+                                eszközök, könyvtárak és beállítások csoportja,
+                                melyekkel a szoftverfejlesztés során a
+                                felhasznált programozási nyelven vagy nyelveken
+                                létrehozott forráskódokat futáskész állapotba
+                                lehet hozni és azt tesztelni.
+                            </li>
+                            <li>
+                                Ez jelentheti a fordítást, vagy nem önálló
+                                programok futtatási környezetbe helyezését.
+                            </li>
+                            <li>
+                                Mindkét esetben a környezet általában
+                                tartalmazza a futtatókörnyezetet is a tesztelés
+                                miatt.
+                            </li>
+                            <li>
+                                A szoftver-, web- és
+                                mobilalkalmazás-fejlesztésben a fejlesztői
+                                környezet olyan munkaterület, amely folyamatokat
+                                és programozási eszközöket tartalmaz , amelyeket
+                                egy alkalmazás vagy szoftvertermék
+                                forráskódjának fejlesztésére használnak .
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/Fejleszt%C5%91i_k%C3%B6rnyezet"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mi az a Jegyzettömb (notepad)?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/what-is-notepad.png" />
+                        <ul>
+                            <li>
+                                A Jegyzettömb (Notepad) egy egyszerű
+                                szövegszerkesztő alkalmazás, ami a Windows 1.0
+                                óta (1985 óta) minden Microsoft Windows
+                                verzióban megtalálható.
+                            </li>
+                            <li>
+                                A jegyzettömb egy egyszerű szövegszerkesztő
+                                alkalmazás, nem dokumentumszerkesztő, tehát nem
+                                támogat semmiféle formázást.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.computerhope.com/jargon/n/notepad.htm"
+                                    target="_blank"
+                                    >Computer Hope - Notepad</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://texttiger.net/what-is-notepad"
+                                    target="_blank"
+                                    >What is Notepad?</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/Jegyzett%C3%B6mb"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mi az a Notepad++?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/Notepad++.svg.png" />
+                        <ul>
+                            <li>
+                                A Notepad++ egy szöveg- és forráskódszerkesztő
+                                Windows platformra.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://notepad-plus-plus.org/"
+                                    target="_blank"
+                                    >Notepad++</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/Notepad%2B%2B"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>
