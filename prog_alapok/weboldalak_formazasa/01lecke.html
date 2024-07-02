@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Első lecke - Stílusok és stíluslapok</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Első lecke - Stílusok és stíluslapok</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az a CSS?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <img src="./images/css.png" />
+                            <li>
+                                A CSS a Cascading StyleSheets (Lépcsőzetes
+                                Stíluslapok) rövidítése.
+                            </li>
+                            <li>
+                                A Scratch készítői egy olyan környezet
+                                megírására vállalkoztak, amelyben a programozás
+                                módja és tárgya a programozással ismerkedők
+                                számára érdekes és látványos.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://scratch.mit.edu/"
+                                    target="_blank"
+                                    >Scratch</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://scratch.elte.hu/"
+                                    target="_blank"
+                                    >Scratch ELTE</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Feladatok megoldása Scratch-csel.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+                <li>
+                    Mi az a Kodu?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kodu.jpg" />
+                        <ul>
+                            <li>
+                                A Kodu Game Lab egy 3D-s játékfejlesztő
+                                környezet, amely alapvető programozási
+                                alapelveket tanít a gyerekeknek.
+                            </li>
+                            <li>
+                                A Kodu lehetővé teszi az alkotók számára, hogy
+                                felépítsék a világ terepet, karakterekkel és
+                                kellékekkel töltsék fel, majd viselkedésüket és
+                                játékszabályaikat testreszabott vizuális
+                                programozási nyelven programozzák.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.kodugamelab.com/"
+                                    target="_blank"
+                                    >Kodu</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Feladatok megoldása Kodu-val.
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+                <li>
+                    Mi az a Minecraft Education?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/minecraft.png" />
+                        <ul>
+                            <li>
+                                A Minecraft Education (korábban Minecraft:
+                                Education Edition) a Minecraft oktatási
+                                platformja, amelyet kifejezetten tantermi
+                                használatra terveztek.
+                            </li>
+                            <li>
+                                Egy játékalapú tanulási platform, amely
+                                felkészíti a diákokat a jövőre azáltal, hogy
+                                elősegíti a kreativitást, az együttműködést és a
+                                kritikus gondolkodást egy magával ragadó
+                                környezetben.
+                            </li>
+                            <li>
+                                Az alapszintű építéstől a blokkokkal való
+                                kódolásig.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://education.minecraft.net/en-us"
+                                    target="_blank"
+                                    >Minecraft Education</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://learn.microsoft.com/hu-hu/training/educator-center/product-guides/minecraft"
+                                    target="_blank"
+                                    >Microsoft - Minecraft Education</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Feladatok megoldása Minecraft Education-nel.
+                    <p>
+                        <button
+                            onclick="felfed(5)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(5)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

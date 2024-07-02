@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Hetedik lecke - HTML alapok</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Hetedik lecke - HTML alapok</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az a HTML?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/html.jpg" />
+                        <ul>
+                            <li>
+                                A HTML a HyperText Markup Language (Hiperszöveg
+                                Jelölőnyelv) rövidítése.
+                            </li>
+                            <li>
+                                Hiperszöveg, mert nem csak sima szövegből áll a
+                                tartalom, hanem más oldalakra mutató
+                                hivatkozásokból (link) is.
+                            </li>
+                            <li>
+                                Jelölőnyelv, mert a tartalmat címkék (tag) közé,
+                                elemekbe (element) csomagolja.
+                            </li>
+                            <li>
+                                A jelölőnyelv egy olyan rendszer, amely
+                                megjegyzésekkel látja el a dokumentumot, hogy
+                                leírja annak szerkezetét és megjelenítését.
+                                Címkék vagy kódok segítségével határoz meg olyan
+                                elemeket, mint a címsorok, bekezdések, listák,
+                                képek, hivatkozások stb.
+                            </li>
+                            <li>
+                                A jelölőnyelv egy szövegkódoló rendszer, amely
+                                meghatározza a dokumentum szerkezetét és
+                                formázását, és potenciálisan a részei közötti
+                                kapcsolatot. A jelölés vezérelheti egy
+                                dokumentum megjelenítését vagy gazdagítja annak
+                                tartalmát az automatizált feldolgozás
+                                megkönnyítése érdekében.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Markup_language"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Mire használjuk a HTML-t?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/html-2.jpg" />
+                        <ul>
+                            <li>A HTML leírja egy weboldal struktúráját.</li>
+                            <li>
+                                A HTML egymásba ágyazott elemekből (element)
+                                áll.
+                            </li>
+                            <li>
+                                Ezek az elemek mondják meg a böngészőnek hogyan
+                                jelenítse meg a tartalmat.
+                            </li>
+                            <li>
+                                Ezekkel az elemekkel "címkézhetjük" a tartalom
+                                egyes részeit.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_intro.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Hogyan épül fel egy alap HTML forráskód?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_018.png" />
+                        <ul>
+                            <li>
+                                A &lt;!DOCTYPE html&gt; elem mondja meg a
+                                böngészőnek, hogy az oldal a HTML 5 szabványt
+                                követi.
+                            </li>
+                            <li>
+                                &lt;html&gt;&lt;/html&gt;, az úgynevezett
+                                gyökérlem (root element).
+                            </li>
+                            <li>
+                                &lt;head&gt;&lt;/head&gt;, az oldalra vonatkozó
+                                metaadatok gyűjtőhelye.
+                            </li>
+                            <li>
+                                &lt;body&gt;&lt;/body&gt;, az oldal láthatónak
+                                tartalmának a tartóeleme.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mik azok a HTML elemek (element)?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_019.png" />
+                        <ul>
+                            <li>
+                                A legtöbb HTML elem három részből áll. A
+                                kezdőcímkéből (start tag, opening tag) a
+                                tartalomból és a zárócímkéből (end tag, closing
+                                tag).
+                            </li>
+                            <li>
+                                A HTML címkék nem kis- és nagybetű érzékenyek
+                                (not case sensitive). De javasolt a kisbetűs
+                                írásmód. Például: &lt;p&gt; = &lt;P&gt;
+                            </li>
+                            <li>
+                                A tartalom bármilyen szöveg és akár egy másik
+                                HTML elem is lehet.
+                            </li>
+                            <li>
+                                MINDIG HASZNÁLJUK A ZÁRÓCÍMKÉT, MERT NEM VÁRT
+                                KELLEMETLENSÉGEKET OKOZHAT A HIÁNYA!
+                            </li>
+                            <li>
+                                Az olyan elemeket, amelyeknek nincs tartalma és
+                                zárócímkéje "üres elemeknek" (empty element,
+                                void element) nevezzük.
+                            </li>
+                            <li>
+                                Az üres elemeket is le szokták zárni a
+                                kezdőcímkében, például: &lt;br /&gt;
+                            </li>
+                            <li>Az üres elemek listája.</li>
+                        </ul>
+                        <img src="./images/kep_020.png" />
+                        <ul>
+                            <li>Az elemek egymásba ágyazhatóak (nest).</li>
+                            <li>
+                                FIGYELJÜNK RÁ, HOGY AZ ELEMEK HELYESEN LEGYENEK
+                                EGYMÁSBA ÁGYAZVA!
+                            </li>
+                        </ul>
+                        <img src="./images/kep_021.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_elements.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_element"
+                                    target="_blank"
+                                    >mdn</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Példák a zárócímke hiányára és a HTML elemek helytelen
+                    egymásba ágyazásra?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+                <li>
+                    Mik azok az attribútumok (attribute)?
+                    <p>
+                        <button
+                            onclick="felfed(5)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(5)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_022.png" />
+                        <ul>
+                            <li>
+                                Az attribútumok plusz információkkal szolgálnak
+                                a HTML elemekről. Ezáltal specializálva azokat.
+                            </li>
+                            <li>
+                                Az attribútumok nem kis- és nagybetű
+                                érzéketlenek (not case sensitive). De javasolt a
+                                kisbetűs írásmód. Például: alt = ALT
+                            </li>
+                            <li>Bármely elemnek lehetnek attribútumai.</li>
+                            <li>
+                                Látható, hogy a HTML kezdőcímkéjében kapnak
+                                helyet.
+                            </li>
+                            <li>Formájuk a következő: név="érték"</li>
+                            <li>
+                                Ismertebbek (részletesebben majd az adott
+                                elemeknél): style, lang, charset, href, src,
+                                width, height, alt, title, target
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_attributes.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#attributes"
+                                    target="_blank"
+                                    >mdn</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Melyiket ' (aposztróf), vagy " (idézőjel) használjuk az
+                    attribútum értékek befoglalására?
+                    <p>
+                        <button
+                            onclick="felfed(6)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(6)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_023.png" />
+                        <ul>
+                            <li>Mind a kettő egyformán használható.</li>
+                            <li>
+                                ÜGYELJÜNK ARRA, HOGY HA EGYMÁSBA VANNAK ÁGYAZVA,
+                                AKKOR MEGFELELŐEN LEGYENEK LEZÁRVA!
+                            </li>
+                            <li>
+                                A zárójelezés hiányában úgynevezett "boolean
+                                attribútumokat" kapunk, amely nem az elvárt
+                                eredményt ad(hat)ja!
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Milyen kiterjesztéssel menthetünk el egy HTML állományt?
+                    <p>
+                        <button
+                            onclick="felfed(7)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(7)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/html-3.jpg" />
+                        <ul>
+                            <li>Egyrészt: index.htm</li>
+                            <li>
+                                Ez a régi filerendszer miatt maradt ránk, amikor
+                                még hárombetűsek voltak a kiterjesztések.
+                            </li>
+                            <li>Másrészt: index.html</li>
+                            <li>A kettő közül bármelyiket lehet használni.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

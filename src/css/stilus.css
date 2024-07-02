@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+    --adat1hatter: #b302aa;
+    --adat2hatter: #800279;
     --alaphatter: #118ab2;
+    --asztalihatter: #fd5c1c;
+    --backhatter: #3a000e;
+    --asztaliesmobilhatter: #cf3b00;
+    --fronthatter: #686bfc;
     --proghatter: #1b1ff5;
+    --ikt1hatter: #017941;
+    --ikt2hatter: #00532c;
     --inf1hatter: #f51b1b;
     --inf2hatter: #d10303;
     --tartohatter: #e3fdc1;
+    --teszteleshatter: #2b007a;
+    --raadas: #4b4b4b;
     --gomb: #14591d;
     --rejtett: #b6f3ff;
+    --webproghatter: #c5b100;
 }
 
 * {
+    /* border: 1px solid black; */
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -56,7 +68,7 @@ ol > li {
     border-radius: 5px;
     margin-bottom: 1em;
     padding: 1em;
-    /* display: none; */
+    display: none;
 }
 
 .rejtett ul {

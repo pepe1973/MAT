@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Kilencedik lecke - html, head, meta, title és body elemek</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Kilencedik lecke - html, head, meta, title és body elemek</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Melyik sorral kell kezdődnie minden HTML állománynak?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_032.png" />
+                        <ul>
+                            <li>
+                                Ezzel a sorral jelezzük a böngészőnek, hogy HTML
+                                5 kódolást fogunk használni.
+                            </li>
+                            <li>Régebben ez sokkal komplexebb volt.</li>
+                        </ul>
+                        <img src="./images/kep_033.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/tags/tag_doctype.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Melyik a következő kötelező elem?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_034.png" />
+                        <ul>
+                            <li>
+                                A &lt;html&gt;&lt;/html&gt; gyökérelem (root
+                                element). Ez feleltethető meg a böngészőben
+                                megjelenő "ablak"-nak, dokumentumnak.
+                            </li>
+                            <li>
+                                A lang="en-US" attribútum az oldal nyelvét adja
+                                meg. Az első két betű a nyelv (en), a második
+                                két betű az ország (US). Magyar nyelv esetén:
+                                lang="hu". Innentől kezdve ezt használjuk.
+                            </li>
+                            <li>
+                                Általában a SEO-nál (Search Engine Optimization
+                                - Keresőmotor optimalizálás) van jelentősége.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Milyen elemek találhatóak a head elemben?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_035.png" />
+                        <ul>
+                            <li>
+                                A html elem első eleme, a
+                                &lt;head&gt;&lt;/head&gt; elem, a metaadatok
+                                (adatok az adatokról) gyűjtőhelye. Hat fajta van
+                                belőlük.
+                            </li>
+                            <li>
+                                A &lt;meta /&gt; elemek általános szöveges
+                                információkat tárolnak el a weboldalról.
+                            </li>
+                            <li>
+                                A &lt;link /&gt; elemek külső stíluslapokra
+                                szoktak általában hivatkozni. Más külső
+                                erőforrásokra (pl. favikon) is, ám az kevésbé
+                                jellemző.
+                            </li>
+                            <li>
+                                A &lt;style&gt;&lt;/style&gt; elemek a belső
+                                stíluslapokat szokták tartalmazni.
+                            </li>
+                            <li>
+                                A &lt;script&gt;&lt;/script&gt; elemek külső
+                                kliens oldali script állományokra szoktak
+                                hivatkozni.
+                            </li>
+                            <li>
+                                A &lt;base /&gt; elem azt a mappát (legyen saját
+                                gépen vagy külső kiszolgálon) adja meg, ahonnan
+                                a hivatkozások és a képek az állományaikat
+                                veszik. Ezért ezt a nevet már nem kell beírni a
+                                href és src attribútumokba. A target="_blank"
+                                azt mondja meg, hogy a hivatkozott oldal új
+                                fülön nyíljon meg. CSAK EGYILYEN ELEM LEHET!
+                            </li>
+                            <li>
+                                A &lt;title&gt;&lt;/title&gt; elem a weboldal
+                                címét tárolja, amely a weboldal fülén (page's
+                                tab) vagy címsorban (title bar), valamint a
+                                könyvjelző sávban jelenik meg a böngészőben.
+                                CSAK SZÖVEG LEHET!
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_head.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Melyek a fontosabb meta elemek?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_036.png" />
+                        <ul>
+                            <li>Az oldal szerzője.</li>
+                            <li>Az oldal leírása a SEO-hoz.</li>
+                            <li>Az oldal kulcsszavai a SEO-hoz.</li>
+                            <li>
+                                A reszponzivitás beállításáért felelős elem.
+                            </li>
+                            <li>Az oldal frissítése.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mi található a body elemben?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_037.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_038.png" />
+                        <ul>
+                            <li>
+                                A body elembe olyan HTML elemek kerülnek,
+                                amelyek a weboldalon megjelenő tartalmat
+                                kezelik. Ezeknek az elemeknek a tartalma fog
+                                megjelenni a kész oldalon.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>
