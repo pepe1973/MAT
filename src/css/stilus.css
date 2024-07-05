@@ -53,6 +53,7 @@ nav {
 
 ol {
     list-style-position: inside;
+    list-style: none;
 }
 
 ol > li {
@@ -68,7 +69,7 @@ ol > li {
     border-radius: 5px;
     margin-bottom: 1em;
     padding: 1em;
-    display: none;
+    /* display: none; */
 }
 
 .rejtett ul {
@@ -108,6 +109,35 @@ img {
     max-width: 50%;
 }
 
+#felso-gombok {
+    display: flex;
+    justify-content: space-between;
+}
+
+#felso-gombok > button {
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+#also-gombok > button {
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+}
+
+#jo-valaszok {
+    display: none;
+}
+
+#jo-valaszok > ul {
+    list-style-position: inside;
+}
+
 @media screen and (max-width: 1200px) {
     .tarto {
         width: 100%;
@@ -121,10 +151,18 @@ img {
     img {
         max-width: 75%;
     }
+
+    #felso-gombok > button {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 800px) {
     img {
         max-width: 100%;
+    }
+
+    #felso-gombok > button {
+        font-size: 1em;
     }
 }

@@ -31,14 +31,16 @@
             href="../../src/images/logo.png"
             type="image/x-icon"
         />
-        <title>Tizedik lecke - Strukturális elemek: div és span</title>
+        <title>
+            Tizedik lecke - Strukturális elemek: p, pre, hr, br, h1...h6
+        </title>
     </head>
     <body>
         <nav>
             <a
                 href="./index.html"
                 style="color: white"
-                >Tizedik lecke - Strukturális elemek: div és span</a
+                >Tizedik lecke - Strukturális elemek: p, pre, hr, br, h1...h6</a
             >
         </nav>
         <div class="tarto">
@@ -58,7 +60,7 @@
             </p>
             <ol>
                 <li>
-                    Mit jelent, hogy HTML elem blokkszintű (block-level)?
+                    Mit lehet tudni a következő HTML elemekről: p, pre?
                     <p>
                         <button
                             onclick="felfed(0)"
@@ -74,25 +76,49 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/inline-block1.jpg" />
+                        <img src="./images/kep_045.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_046.png" />
+                        <ul>
+                            <li>A p-elem blokkszintű elem.</li>
+                            <li>
+                                Általában a dokumentum szövegtartalmának egy
+                                részének eltárolására használjuk.
+                            </li>
+                            <li>Nevezik paragrafusnak és bekezdésnek is.</li>
+                        </ul>
+                        <img src="./images/kep_047.png" />
                         <ul>
                             <li>
-                                A blokkszintű elemek mindig új sort kezdenek,
-                                azaz egymás alá kerülnek, függetlenül attól,
-                                hogy milyen szélesek.
+                                Ha a kódban sok szöközzel vagy extra sorokkal
+                                szeretnénk tagolni a tartalmat, azt a böngésző
+                                figyelmen kívűl hagyja.
                             </li>
-                            <li>
-                                Alapértelmezetten az oldal egész szélességét
-                                használják.
-                            </li>
-                            <li>Tartalmazhatnak más elemeket.</li>
                         </ul>
-                        <img src="./images/kep_033.png" />
+                        <img src="./images/kep_048.png" />
+                        <ul>
+                            <li>
+                                Ilyenkor használjuk a pre-elemet. Amely egy
+                                előformált (preformatted) szöveget használ.
+                            </li>
+                            <li>A pre-elem is blokkszintű.</li>
+                        </ul>
+                        <img src="./images/kep_049.png" />
+                        <ul>
+                            <li>
+                                Megőrzi a szóközöket és plusz sorokat, és így
+                                jeleníti meg az oldalt a böngészőben egy
+                                speciális (courier) betűtípussal.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_050.png" />
                         <ul>
                             <li>
                                 Forrás:
                                 <a
-                                    href="https://www.w3schools.com/tags/tag_doctype.asp"
+                                    href="https://www.w3schools.com/html/html_paragraphs.asp"
                                     target="_blank"
                                     >w3schools</a
                                 >
@@ -102,7 +128,7 @@
                 </li>
 
                 <li>
-                    Melyik a következő kötelező elem?
+                    Mit lehet tudni a következő HTML elemekről: hr, br?
                     <p>
                         <button
                             onclick="felfed(1)"
@@ -118,28 +144,37 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_034.png" />
+                        <img src="./images/kep_051.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_052.png" />
                         <ul>
                             <li>
-                                A &lt;html&gt;&lt;/html&gt; gyökérelem (root
-                                element). Ez feleltethető meg a böngészőben
-                                megjelenő "ablak"-nak, dokumentumnak.
+                                Látható, hogy a hr-elem egy tematikus töltést,
+                                váltást jelent az oldalon, amelyet egy
+                                vízszintes vonal (horizontal rule) jelöl.
                             </li>
                             <li>
-                                A lang="en-US" attribútum az oldal nyelvét adja
-                                meg. Az első két betű a nyelv (en), a második
-                                két betű az ország (US). Magyar nyelv esetén:
-                                lang="hu". Innentől kezdve ezt használjuk.
+                                A hr-elem egyike az üres elemeknek. Emellett
+                                blokkszintű is.
                             </li>
                             <li>
-                                Általában a SEO-nál (Search Engine Optimization
-                                - Keresőmotor optimalizálás) van jelentősége.
+                                A br-elem egy sortörést helyez el egy
+                                blokkszintű elemen belül. Nem csak p-elemre
+                                igaz. Ezt úgy tesz meg, hogy az adott elemet
+                                osztja két részre, úgy hogy nem kezd új sort!
+                            </li>
+                            <li>
+                                A br-elem is üres elem. De se nem blokkszintű se
+                                nem beágyazott elem, mert nincs "fizikai"
+                                kiterjedése.
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    Milyen elemek találhatóak a head elemben?
+                    Mit lehet tudni a következő HTML elemekről: h1...h6?
                     <p>
                         <button
                             onclick="felfed(2)"
@@ -155,53 +190,26 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_035.png" />
+                        <img src="./images/kep_053.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_054.png" />
                         <ul>
                             <li>
-                                A html elem első eleme, a
-                                &lt;head&gt;&lt;/head&gt; elem, a metaadatok
-                                (adatok az adatokról) gyűjtőhelye. Hat fajta van
-                                belőlük.
+                                A HTML dokumentum struktúráját a fejléc
+                                elemekkel tudjuk tagolni nagyobb egységekre. A
+                                SEO-nál is lehet szerepe.
                             </li>
                             <li>
-                                A &lt;meta /&gt; elemek általános szöveges
-                                információkat tárolnak el a weboldalról.
+                                Ezek segítségével tudunk tartalomjegyzéket is
+                                készíteni.
                             </li>
-                            <li>
-                                A &lt;link /&gt; elemek külső stíluslapokra
-                                szoktak általában hivatkozni. Más külső
-                                erőforrásokra (pl. favikon) is, ám az kevésbé
-                                jellemző.
-                            </li>
-                            <li>
-                                A &lt;style&gt;&lt;/style&gt; elemek a belső
-                                stíluslapokat szokták tartalmazni.
-                            </li>
-                            <li>
-                                A &lt;script&gt;&lt;/script&gt; elemek külső
-                                kliens oldali script állományokra szoktak
-                                hivatkozni.
-                            </li>
-                            <li>
-                                A &lt;base /&gt; elem azt a mappát (legyen saját
-                                gépen vagy külső kiszolgálon) adja meg, ahonnan
-                                a hivatkozások és a képek az állományaikat
-                                veszik. Ezért ezt a nevet már nem kell beírni a
-                                href és src attribútumokba. A target="_blank"
-                                azt mondja meg, hogy a hivatkozott oldal új
-                                fülön nyíljon meg. CSAK EGYILYEN ELEM LEHET!
-                            </li>
-                            <li>
-                                A &lt;title&gt;&lt;/title&gt; elem a weboldal
-                                címét tárolja, amely a weboldal fülén (page's
-                                tab) vagy címsorban (title bar), valamint a
-                                könyvjelző sávban jelenik meg a böngészőben.
-                                CSAK SZÖVEG LEHET!
-                            </li>
+                            <li>A h1...h6-elemek is blokkszintűek.</li>
                             <li>
                                 Forrás:
                                 <a
-                                    href="https://www.w3schools.com/html/html_head.asp"
+                                    href="https://www.w3schools.com/html/html_headings.asp"
                                     target="_blank"
                                     >w3schools</a
                                 >
@@ -210,7 +218,12 @@
                     </div>
                 </li>
                 <li>
-                    Melyek a fontosabb meta elemek?
+                    Készítsünk el egy weboldalt valamilyen témában (pl.kutya,
+                    macska, autómárka) a következő szempontokat figyelembevéve!
+                    Vegyünk négy darabot az adott témából és mindegyikhez
+                    készítsünk egy kódegységet, melyek tartalmaznak fejlécet,
+                    bekezdéseket és sortörést. Az egységek legyenek látható
+                    módon elválasztva!
                     <p>
                         <button
                             onclick="felfed(3)"
@@ -225,50 +238,7 @@
                             Elrejt
                         </button>
                     </p>
-                    <div class="rejtett">
-                        <img src="./images/kep_036.png" />
-                        <ul>
-                            <li>Az oldal szerzője.</li>
-                            <li>Az oldal leírása a SEO-hoz.</li>
-                            <li>Az oldal kulcsszavai a SEO-hoz.</li>
-                            <li>
-                                A reszponzivitás beállításáért felelős elem.
-                            </li>
-                            <li>Az oldal frissítése.</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    Mi található a body elemben?
-                    <p>
-                        <button
-                            onclick="felfed(4)"
-                            class="felfed-gomb"
-                        >
-                            Felfed
-                        </button>
-                        <button
-                            onclick="elrejt(4)"
-                            class="elrejt-gomb"
-                        >
-                            Elrejt
-                        </button>
-                    </p>
-                    <div class="rejtett">
-                        <img src="./images/kep_037.png" />
-                        <ul>
-                            <li>A fenti kód eredménye.</li>
-                        </ul>
-                        <img src="./images/kep_038.png" />
-                        <ul>
-                            <li>
-                                A body elembe olyan HTML elemek kerülnek,
-                                amelyek a weboldalon megjelenő tartalmat
-                                kezelik. Ezeknek az elemeknek a tartalma fog
-                                megjelenni a kész oldalon.
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="rejtett"></div>
                 </li>
             </ol>
         </div>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--raadas);
+            }
+
+            ol > li {
+                color: var(--raadas);
+                border: 1px solid var(--raadas);
+                box-shadow: 5px 5px 5px var(--raadas);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Bővítő lecke - Állományelérési útvonal (File Path)</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Bővítő lecke - Állományelérési útvonal (File Path)</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az az állományelérési útvonal (File Path)?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/filepath1.gif" />
+                        <ul>
+                            <li>
+                                Bármilyen állományt (file) szeretnénk használni
+                                az valamilyen szolgáltatón (server) helyezkedik
+                                el. Legyen ez akár a saját gépünk.
+                            </li>
+                            <li>
+                                Ezen a szolgáltatón az állományok(nak) és
+                                mappák(nak), könyvtárak(nak) egy jól
+                                meghatározott struktúrában (fájlrendszer,
+                                könyvtárstruktúra) vannak (kellene lenniük)
+                                elhelyezve. MINDIG TÖREKEDJÜNK ERRE!
+                            </li>
+                            <li>
+                                A fájlok a számítógép merevlemezén tárolt
+                                információk. Ahhoz, hogy a fájlokat a
+                                létrehozásuk után vissza lehessen kérni, a
+                                felhasználóknak pontosan meg kell adniuk, hogy a
+                                merevlemez melyik részén tárolták az
+                                információkat. Ez a fájl elérési útvonalakon
+                                keresztül történik, ami nem más, mint a fájlok
+                                gépen történő rendszerezése, amely az ember
+                                számára is érthető.
+                            </li>
+                            <li>
+                                A fő probléma, amelyet a fájl elérési utak
+                                jelentenek a reprodukálhatóság szempontjából, az
+                                az, hogy minden gépre egyediek. Tehát amikor egy
+                                programozó kódot ír egy fájl betöltéséhez, akkor
+                                a fájl lekéréséhez használt útvonal eltér attól,
+                                amelyet egy másik programozónak használnia kell,
+                                hogy betöltse ugyanazt a kódot egy másik
+                                számítógépre. Ez gyakran azzal jár, hogy a kódot
+                                nem lehet átvinni más gépekre.
+                            </li>
+                            <li>
+                                Az elérési útvonal bizonyos karakterrel
+                                elválasztott komponensekből áll, melyek közül az
+                                utolsó maga a fájl vagy mappa neve, a többi
+                                pedig meghatározza, hogy milyen könyvtárakon át
+                                navigálva található meg.
+                            </li>
+                            <li>
+                                Az elválasztó karakter operációs rendszertől
+                                függően általában a perjel ("/"), a fordított
+                                perjel ("\"), a kettőspont (":"), vagy ritkábban
+                                más karakter.
+                            </li>
+                            <li>
+                                Az elérési utakat az informatikában széles
+                                körben használják a modern operációs
+                                rendszerekben elterjedt könyvtár/fájl
+                                kapcsolatok képviseletére, valamint az URL-ek
+                                szerves tagjai.
+                            </li>
+                            <li>
+                                Megkülönböztetünk abszolút és relatív
+                                útvonalakat.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_filepaths.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/El%C3%A9r%C3%A9si_%C3%BAt"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://dimewiki.worldbank.org/File_path"
+                                    target="_blank"
+                                    >The World Bank</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Mi az abszolút és mi a relatív állományelérési útvonal?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_024.png" />
+                        <ul>
+                            <li>
+                                Az abszolút elérési útvonal (teljes URL) a
+                                fájlrendszeren belül mindig ugyanazt a helyet
+                                jelöli, az aktuális munkakönyvtártól
+                                függetlenül. Ezért a gyökérkönyvtárból indul, és
+                                a fájlig vezető összes könyvtár nevét
+                                tartalmazza.
+                            </li>
+                            <li>
+                                Ezzel szemben a relatív elérési útvonal az
+                                aktuális könyvtárból (egy adott állománytól)
+                                indul, ezért különböző helyzetekben más
+                                állományokat jelölhet. Ennek következtében
+                                önmagában a fájlnév a fájlt tartalmazó
+                                könyvtárból induló relatív útvonalnak
+                                tekinthető.
+                            </li>
+                            <li>
+                                A relatív fájl elérési utak az útvonal elején
+                                pont jelölést használnak, ezt követi az elérési
+                                út elválasztó és a fájl helye. Egy pont (.)
+                                jelzi az aktuális könyvtárat, egy dupla pont
+                                (..) pedig a szülőkönyvtárat. Például ./arra
+                                utasítja a programot, hogy az aktuális
+                                könyvtárban keresse a fájlt, és ../azt mondja a
+                                programnak, hogy menjen fel a szülőkönyvtárba,
+                                mielőtt a fájlt keresné.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.codecademy.com/resources/docs/general/file-paths"
+                                    target="_blank"
+                                    >codecedamy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Hogyan használjuk az állományelérési útvonalat a
+                    webszerkesztésben?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                A következő típusú állományokat szeretnénk
+                                megtalálni: hivatkozás címe, kép forrása,
+                                stíluslapok, javascript állományok
+                            </li>
+                        </ul>
+                        <img src="./images/filepath.png" />
+                        <ul>
+                            <li>
+                                A fenti kép példa az abszolút elérési út a saját
+                                gépünkön.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_028.png" />
+                        <ul>
+                            <li>
+                                A fenti kép példa az abszolút elérési út egy
+                                másik szolgáltatón.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_027.png" />
+                        <ul>
+                            <li>
+                                A fenti kép példa a relatív elérési útakra a
+                                saját gépünkön.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Windows Fájlkezelőből indítva egy weboldal milyen
+                    állományokat lát?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_029.png" />
+                        <ul>
+                            <li>Nézzük a fenti feladatot.</li>
+                        </ul>
+                        <img src="./images/kep_031.png" />
+                        <ul>
+                            <li>
+                                Látható, hogy a harmadik képet nem bírja
+                                megjeleníteni, mert nem tudja értelmezni az
+                                elérési útvonalat.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Most a Visual Studio Code Live Server-ével indítva egy
+                    weboldal milyen állományokat lát?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_029.png" />
+                        <ul>
+                            <li>Nézzük a fenti feladatot.</li>
+                        </ul>
+                        <img src="./images/kep_030.png" />
+                        <ul>
+                            <li>
+                                Látható, hogy most az utolsó két képet nem bírja
+                                megjeleníteni, mert nem tudja értelmezni az
+                                elérési útvonalat.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Feladatok az állományelérési útvonalakra?
+                    <p>
+                        <button
+                            onclick="felfed(5)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(5)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

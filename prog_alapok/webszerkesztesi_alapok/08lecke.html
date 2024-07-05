@@ -12,13 +12,13 @@
         />
         <style>
             nav {
-                background-color: var(--raadas);
+                background-color: var(--proghatter);
             }
 
             ol > li {
-                color: var(--raadas);
-                border: 1px solid var(--raadas);
-                box-shadow: 5px 5px 5px var(--raadas);
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
             }
 
             a {
@@ -31,14 +31,14 @@
             href="../../src/images/logo.png"
             type="image/x-icon"
         />
-        <title>Nyolcadik lecke - Állományelérési útvonal (File Path)</title>
+        <title>Nyolcadik lecke - html, head, meta, title és body elemek</title>
     </head>
     <body>
         <nav>
             <a
                 href="./index.html"
                 style="color: white"
-                >Nyolcadik lecke - Állományelérési útvonal (File Path)</a
+                >Nyolcadik lecke - html, head, meta, title és body elemek</a
             >
         </nav>
         <div class="tarto">
@@ -58,7 +58,7 @@
             </p>
             <ol>
                 <li>
-                    Mi az az állományelérési útvonal (File Path)?
+                    Melyik sorral kell kezdődnie minden HTML állománynak?
                     <p>
                         <button
                             onclick="felfed(0)"
@@ -74,88 +74,22 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/filepath1.gif" />
+                        <img src="./images/kep_032.png" />
                         <ul>
                             <li>
-                                Bármilyen állományt (file) szeretnénk használni
-                                az valamilyen szolgáltatón (server) helyezkedik
-                                el. Legyen ez akár a saját gépünk.
+                                Ezzel a sorral jelezzük a böngészőnek, hogy HTML
+                                5 kódolást fogunk használni.
                             </li>
-                            <li>
-                                Ezen a szolgáltatón az állományok(nak) és
-                                mappák(nak), könyvtárak(nak) egy jól
-                                meghatározott struktúrában (fájlrendszer,
-                                könyvtárstruktúra) vannak (kellene lenniük)
-                                elhelyezve. MINDIG TÖREKEDJÜNK ERRE!
-                            </li>
-                            <li>
-                                A fájlok a számítógép merevlemezén tárolt
-                                információk. Ahhoz, hogy a fájlokat a
-                                létrehozásuk után vissza lehessen kérni, a
-                                felhasználóknak pontosan meg kell adniuk, hogy a
-                                merevlemez melyik részén tárolták az
-                                információkat. Ez a fájl elérési útvonalakon
-                                keresztül történik, ami nem más, mint a fájlok
-                                gépen történő rendszerezése, amely az ember
-                                számára is érthető.
-                            </li>
-                            <li>
-                                A fő probléma, amelyet a fájl elérési utak
-                                jelentenek a reprodukálhatóság szempontjából, az
-                                az, hogy minden gépre egyediek. Tehát amikor egy
-                                programozó kódot ír egy fájl betöltéséhez, akkor
-                                a fájl lekéréséhez használt útvonal eltér attól,
-                                amelyet egy másik programozónak használnia kell,
-                                hogy betöltse ugyanazt a kódot egy másik
-                                számítógépre. Ez gyakran azzal jár, hogy a kódot
-                                nem lehet átvinni más gépekre.
-                            </li>
-                            <li>
-                                Az elérési útvonal bizonyos karakterrel
-                                elválasztott komponensekből áll, melyek közül az
-                                utolsó maga a fájl vagy mappa neve, a többi
-                                pedig meghatározza, hogy milyen könyvtárakon át
-                                navigálva található meg.
-                            </li>
-                            <li>
-                                Az elválasztó karakter operációs rendszertől
-                                függően általában a perjel ("/"), a fordított
-                                perjel ("\"), a kettőspont (":"), vagy ritkábban
-                                más karakter.
-                            </li>
-                            <li>
-                                Az elérési utakat az informatikában széles
-                                körben használják a modern operációs
-                                rendszerekben elterjedt könyvtár/fájl
-                                kapcsolatok képviseletére, valamint az URL-ek
-                                szerves tagjai.
-                            </li>
-                            <li>
-                                Megkülönböztetünk abszolút és relatív
-                                útvonalakat.
-                            </li>
+                            <li>Régebben ez sokkal komplexebb volt.</li>
+                        </ul>
+                        <img src="./images/kep_033.png" />
+                        <ul>
                             <li>
                                 Forrás:
                                 <a
-                                    href="https://www.w3schools.com/html/html_filepaths.asp"
+                                    href="https://www.w3schools.com/tags/tag_doctype.asp"
                                     target="_blank"
                                     >w3schools</a
-                                >
-                            </li>
-                            <li>
-                                Forrás:
-                                <a
-                                    href="https://hu.wikipedia.org/wiki/El%C3%A9r%C3%A9si_%C3%BAt"
-                                    target="_blank"
-                                    >Wikipédia</a
-                                >
-                            </li>
-                            <li>
-                                Forrás:
-                                <a
-                                    href="https://dimewiki.worldbank.org/File_path"
-                                    target="_blank"
-                                    >The World Bank</a
                                 >
                             </li>
                         </ul>
@@ -163,7 +97,7 @@
                 </li>
 
                 <li>
-                    Mi az abszolút és mi a relatív állományelérési útvonal?
+                    Melyik a következő kötelező elem?
                     <p>
                         <button
                             onclick="felfed(1)"
@@ -179,50 +113,28 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_024.png" />
+                        <img src="./images/kep_034.png" />
                         <ul>
                             <li>
-                                Az abszolút elérési útvonal (teljes URL) a
-                                fájlrendszeren belül mindig ugyanazt a helyet
-                                jelöli, az aktuális munkakönyvtártól
-                                függetlenül. Ezért a gyökérkönyvtárból indul, és
-                                a fájlig vezető összes könyvtár nevét
-                                tartalmazza.
+                                A &lt;html&gt;&lt;/html&gt; gyökérelem (root
+                                element). Ez feleltethető meg a böngészőben
+                                megjelenő "ablak"-nak, dokumentumnak.
                             </li>
                             <li>
-                                Ezzel szemben a relatív elérési útvonal az
-                                aktuális könyvtárból (egy adott állománytól)
-                                indul, ezért különböző helyzetekben más
-                                állományokat jelölhet. Ennek következtében
-                                önmagában a fájlnév a fájlt tartalmazó
-                                könyvtárból induló relatív útvonalnak
-                                tekinthető.
+                                A lang="en-US" attribútum az oldal nyelvét adja
+                                meg. Az első két betű a nyelv (en), a második
+                                két betű az ország (US). Magyar nyelv esetén:
+                                lang="hu". Innentől kezdve ezt használjuk.
                             </li>
                             <li>
-                                A relatív fájl elérési utak az útvonal elején
-                                pont jelölést használnak, ezt követi az elérési
-                                út elválasztó és a fájl helye. Egy pont (.)
-                                jelzi az aktuális könyvtárat, egy dupla pont
-                                (..) pedig a szülőkönyvtárat. Például ./arra
-                                utasítja a programot, hogy az aktuális
-                                könyvtárban keresse a fájlt, és ../azt mondja a
-                                programnak, hogy menjen fel a szülőkönyvtárba,
-                                mielőtt a fájlt keresné.
-                            </li>
-                            <li>
-                                Forrás:
-                                <a
-                                    href="https://www.codecademy.com/resources/docs/general/file-paths"
-                                    target="_blank"
-                                    >codecedamy</a
-                                >
+                                Általában a SEO-nál (Search Engine Optimization
+                                - Keresőmotor optimalizálás) van jelentősége.
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    Hogyan használjuk az állományelérési útvonalat a
-                    webszerkesztésben?
+                    Milyen elemek találhatóak a head elemben?
                     <p>
                         <button
                             onclick="felfed(2)"
@@ -238,39 +150,62 @@
                         </button>
                     </p>
                     <div class="rejtett">
+                        <img src="./images/kep_035.png" />
                         <ul>
                             <li>
-                                A következő típusú állományokat szeretnénk
-                                megtalálni: hivatkozás címe, kép forrása,
-                                stíluslapok, javascript állományok
+                                A html elem első eleme, a
+                                &lt;head&gt;&lt;/head&gt; elem, a metaadatok
+                                (adatok az adatokról) gyűjtőhelye. Hat fajta van
+                                belőlük.
                             </li>
-                        </ul>
-                        <img src="./images/filepath.png" />
-                        <ul>
                             <li>
-                                A fenti kép példa az abszolút elérési út a saját
-                                gépünkön.
+                                A &lt;meta /&gt; elemek általános szöveges
+                                információkat tárolnak el a weboldalról.
                             </li>
-                        </ul>
-                        <img src="./images/kep_028.png" />
-                        <ul>
                             <li>
-                                A fenti kép példa az abszolút elérési út egy
-                                másik szolgáltatón.
+                                A &lt;link /&gt; elemek külső stíluslapokra
+                                szoktak általában hivatkozni. Más külső
+                                erőforrásokra (pl. favikon) is, ám az kevésbé
+                                jellemző.
                             </li>
-                        </ul>
-                        <img src="./images/kep_027.png" />
-                        <ul>
                             <li>
-                                A fenti kép példa a relatív elérési útakra a
-                                saját gépünkön.
+                                A &lt;style&gt;&lt;/style&gt; elemek a belső
+                                stíluslapokat szokták tartalmazni.
+                            </li>
+                            <li>
+                                A &lt;script&gt;&lt;/script&gt; elemek külső
+                                kliens oldali script állományokra szoktak
+                                hivatkozni.
+                            </li>
+                            <li>
+                                A &lt;base /&gt; elem azt a mappát (legyen saját
+                                gépen vagy külső kiszolgálon) adja meg, ahonnan
+                                a hivatkozások és a képek az állományaikat
+                                veszik. Ezért ezt a nevet már nem kell beírni a
+                                href és src attribútumokba. A target="_blank"
+                                azt mondja meg, hogy a hivatkozott oldal új
+                                fülön nyíljon meg. CSAK EGYILYEN ELEM LEHET!
+                            </li>
+                            <li>
+                                A &lt;title&gt;&lt;/title&gt; elem a weboldal
+                                címét tárolja, amely a weboldal fülén (page's
+                                tab) vagy címsorban (title bar), valamint a
+                                könyvjelző sávban jelenik meg a böngészőben.
+                                CSAK SZÖVEG LEHET!
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_head.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    Windows Fájlkezelőből indítva egy weboldal milyen
-                    állományokat lát?
+                    Melyek a fontosabb meta elemek?
                     <p>
                         <button
                             onclick="felfed(3)"
@@ -286,23 +221,20 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_029.png" />
+                        <img src="./images/kep_036.png" />
                         <ul>
-                            <li>Nézzük a fenti feladatot.</li>
-                        </ul>
-                        <img src="./images/kep_031.png" />
-                        <ul>
+                            <li>Az oldal szerzője.</li>
+                            <li>Az oldal leírása a SEO-hoz.</li>
+                            <li>Az oldal kulcsszavai a SEO-hoz.</li>
                             <li>
-                                Látható, hogy a harmadik képet nem bírja
-                                megjeleníteni, mert nem tudja értelmezni az
-                                elérési útvonalat.
+                                A reszponzivitás beállításáért felelős elem.
                             </li>
+                            <li>Az oldal frissítése.</li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    Most a Visual Studio Code Live Server-ével indítva egy
-                    weboldal milyen állományokat lát?
+                    Mi található a body elemben?
                     <p>
                         <button
                             onclick="felfed(4)"
@@ -318,37 +250,20 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_029.png" />
+                        <img src="./images/kep_037.png" />
                         <ul>
-                            <li>Nézzük a fenti feladatot.</li>
+                            <li>A fenti kód eredménye.</li>
                         </ul>
-                        <img src="./images/kep_030.png" />
+                        <img src="./images/kep_038.png" />
                         <ul>
                             <li>
-                                Látható, hogy most az utolsó két képet nem bírja
-                                megjeleníteni, mert nem tudja értelmezni az
-                                elérési útvonalat.
+                                A body elembe olyan HTML elemek kerülnek,
+                                amelyek a weboldalon megjelenő tartalmat
+                                kezelik. Ezeknek az elemeknek a tartalma fog
+                                megjelenni a kész oldalon.
                             </li>
                         </ul>
                     </div>
-                </li>
-                <li>
-                    Feladatok az állományelérési útvonalakra?
-                    <p>
-                        <button
-                            onclick="felfed(5)"
-                            class="felfed-gomb"
-                        >
-                            Felfed
-                        </button>
-                        <button
-                            onclick="elrejt(5)"
-                            class="elrejt-gomb"
-                        >
-                            Elrejt
-                        </button>
-                    </p>
-                    <div class="rejtett"></div>
                 </li>
             </ol>
         </div>

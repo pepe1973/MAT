@@ -31,14 +31,14 @@
             href="../../src/images/logo.png"
             type="image/x-icon"
         />
-        <title>Tizenegyedik lecke - Strukturális elemek: div és span</title>
+        <title>Tizenegyedik lecke - Strukturális elemek: img, a</title>
     </head>
     <body>
         <nav>
             <a
                 href="./index.html"
                 style="color: white"
-                >Tizenegyedik lecke - Strukturális elemek: div és span</a
+                >Tizenegyedik lecke - Strukturális elemek: img, a</a
             >
         </nav>
         <div class="tarto">
@@ -58,7 +58,7 @@
             </p>
             <ol>
                 <li>
-                    Mit jelent, hogy HTML elem blokkszintű (block-level)?
+                    Mit lehet tudni a következő HTML elemről: img?
                     <p>
                         <button
                             onclick="felfed(0)"
@@ -74,20 +74,48 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/inline-block1.jpg" />
+                        <img src="./images/kep_065.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_066.png" />
                         <ul>
                             <li>
-                                A blokkszintű elemek mindig új sort kezdenek,
-                                azaz egymás alá kerülnek.
+                                A képek javíthatják a weboldal dizájnját és
+                                megjelenését. Ehhez az img-elemet használjuk.
                             </li>
-                            <li>Régebben ez sokkal komplexebb volt.</li>
+                            <li>
+                                A Word-től eltérően nem ágyazza be a képet az
+                                oldalba. Hanem létrehoz egy tároló elemet és
+                                ehhez kapcsolja a kép forrását!
+                            </li>
+                            <li>Az img-elem beágyazott elem.</li>
+                            <li>
+                                Kötelezően megadandó attribútuma az src. Ebben a
+                                kép forrását tároljuk el. Ez lehet a saját
+                                gépünkön, vagy lehet egy külső kiszolgálon
+                                (server).
+                            </li>
+                            <li>
+                                Kötelezően megadandó másik attribútuma az alt
+                                (alternate text). Ebben olyan szöveget kell
+                                elhelyezni, amely akkor jelenik meg, ha képet
+                                nem lehet valamiért betölteni. Például elírás,
+                                nem létező képre való hivatkozás vagy nagyon
+                                lassú internet kapcsolat miatt.
+                            </li>
                         </ul>
-                        <img src="./images/kep_033.png" />
+                        <img src="./images/kep_067.png" />
                         <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_068.png" />
+                        <ul>
+                            <li>Animált képeket (gif) is használhatunk.</li>
                             <li>
                                 Forrás:
                                 <a
-                                    href="https://www.w3schools.com/tags/tag_doctype.asp"
+                                    href="https://www.w3schools.com/html/html_images.asp"
                                     target="_blank"
                                     >w3schools</a
                                 >
@@ -95,9 +123,8 @@
                         </ul>
                     </div>
                 </li>
-
                 <li>
-                    Melyik a következő kötelező elem?
+                    Hogyan lehet megadni a kép méretét?
                     <p>
                         <button
                             onclick="felfed(1)"
@@ -113,28 +140,34 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_034.png" />
+                        <img src="./images/kep_069.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_070.png" />
                         <ul>
                             <li>
-                                A &lt;html&gt;&lt;/html&gt; gyökérelem (root
-                                element). Ez feleltethető meg a böngészőben
-                                megjelenő "ablak"-nak, dokumentumnak.
+                                Javasolt a style-attribútum használata, mert
+                                külső stílusokkal nem lehet felülírni.
                             </li>
                             <li>
-                                A lang="en-US" attribútum az oldal nyelvét adja
-                                meg. Az első két betű a nyelv (en), a második
-                                két betű az ország (US). Magyar nyelv esetén:
-                                lang="hu". Innentől kezdve ezt használjuk.
+                                Ha a width- és height-attribútumot használjuk
+                                akkor az idézőjelek közé tett értéket pixelben
+                                fogja feldolgozni a böngésző. KÜLSŐ STÍLUSOK
+                                FELÜLÍRHATJÁK!
                             </li>
                             <li>
-                                Általában a SEO-nál (Search Engine Optimization
-                                - Keresőmotor optimalizálás) van jelentősége.
+                                Gyakrabban használt képformátumok, amiket
+                                támogatnak a böngészők.
                             </li>
                         </ul>
+                        <img src="./images/kep_071.png" />
                     </div>
                 </li>
                 <li>
-                    Milyen elemek találhatóak a head elemben?
+                    Az előző lecke végén létrehozott weboldalt töltsük fel
+                    képekkel. Állítsuk be az alternatív szövegeket és a
+                    méreteket használva a style, height és width attribútumokat!
                     <p>
                         <button
                             onclick="felfed(2)"
@@ -149,63 +182,10 @@
                             Elrejt
                         </button>
                     </p>
-                    <div class="rejtett">
-                        <img src="./images/kep_035.png" />
-                        <ul>
-                            <li>
-                                A html elem első eleme, a
-                                &lt;head&gt;&lt;/head&gt; elem, a metaadatok
-                                (adatok az adatokról) gyűjtőhelye. Hat fajta van
-                                belőlük.
-                            </li>
-                            <li>
-                                A &lt;meta /&gt; elemek általános szöveges
-                                információkat tárolnak el a weboldalról.
-                            </li>
-                            <li>
-                                A &lt;link /&gt; elemek külső stíluslapokra
-                                szoktak általában hivatkozni. Más külső
-                                erőforrásokra (pl. favikon) is, ám az kevésbé
-                                jellemző.
-                            </li>
-                            <li>
-                                A &lt;style&gt;&lt;/style&gt; elemek a belső
-                                stíluslapokat szokták tartalmazni.
-                            </li>
-                            <li>
-                                A &lt;script&gt;&lt;/script&gt; elemek külső
-                                kliens oldali script állományokra szoktak
-                                hivatkozni.
-                            </li>
-                            <li>
-                                A &lt;base /&gt; elem azt a mappát (legyen saját
-                                gépen vagy külső kiszolgálon) adja meg, ahonnan
-                                a hivatkozások és a képek az állományaikat
-                                veszik. Ezért ezt a nevet már nem kell beírni a
-                                href és src attribútumokba. A target="_blank"
-                                azt mondja meg, hogy a hivatkozott oldal új
-                                fülön nyíljon meg. CSAK EGYILYEN ELEM LEHET!
-                            </li>
-                            <li>
-                                A &lt;title&gt;&lt;/title&gt; elem a weboldal
-                                címét tárolja, amely a weboldal fülén (page's
-                                tab) vagy címsorban (title bar), valamint a
-                                könyvjelző sávban jelenik meg a böngészőben.
-                                CSAK SZÖVEG LEHET!
-                            </li>
-                            <li>
-                                Forrás:
-                                <a
-                                    href="https://www.w3schools.com/html/html_head.asp"
-                                    target="_blank"
-                                    >w3schools</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="rejtett"></div>
                 </li>
                 <li>
-                    Melyek a fontosabb meta elemek?
+                    Mit lehet tudni a következő HTML elemről: a?
                     <p>
                         <button
                             onclick="felfed(3)"
@@ -221,20 +201,79 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_036.png" />
+                        <img src="./images/kep_078.png" />
                         <ul>
-                            <li>Az oldal szerzője.</li>
-                            <li>Az oldal leírása a SEO-hoz.</li>
-                            <li>Az oldal kulcsszavai a SEO-hoz.</li>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_079.png" />
+                        <ul>
                             <li>
-                                A reszponzivitás beállításáért felelős elem.
+                                A hivatkozások (link) jelölésére használjuk az
+                                a-elemet. Ennék segítségével tudunk egyik
+                                oldalról átnavigálni egy másik. Ezért nevezik
+                                még hiperlinkeknek is őket.
                             </li>
-                            <li>Az oldal frissítése.</li>
+                            <li>Az a-elem beágyazott elem.</li>
+                            <li>
+                                Kötelezően megadandó attribútuma a href. Ebben a
+                                hivatkozás forrását tároljuk el. Ez lehet a
+                                saját gépünkön, vagy lehet egy külső kiszolgálon
+                                (server).
+                            </li>
+                            <li>
+                                Nem kötelezően megadandó másik attribútuma a
+                                target. Ebben azt mondjuk meg a böngészőnek,
+                                hogy hol nyissa meg a linkelt oldalt:
+                                <br />_blank: egy új lapon/fülön, <br />_top:
+                                ezt beágyazott iframe-ek esetén használjuk, hogy
+                                a tartalmazó oldalon nyíljon meg, <br />_parent:
+                                ezt beágyazott iframe-ek esetén használjuk, hogy
+                                a tartalmazó keretben nyíljon meg, <br />egy
+                                (másik) iframe-ben.
+                            </li>
+                            <li>
+                                A link alapból kék és aláhúzott. Miután
+                                meglátogattuk azután lila lesz. Aktív állapotban
+                                piros.
+                            </li>
+                            <li>
+                                Linket nem csak szövegre, de képre is
+                                elhelyezhetünk.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_080.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_081.png" />
+                        <ul>
+                            <li>
+                                Segítségével meg tudjuk nyitni a
+                                levelezőprogramot, hogy e-mail-t tudjunk
+                                küldeni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_082.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_083.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_links.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li>
-                    Mi található a body elemben?
+                    Az előző feladatnál állítsunk be hivatkozásokat mind
+                    szövegekre, mind képekre. A linkek új ablakban nyíljanak
+                    meg!
                     <p>
                         <button
                             onclick="felfed(4)"
@@ -249,21 +288,7 @@
                             Elrejt
                         </button>
                     </p>
-                    <div class="rejtett">
-                        <img src="./images/kep_037.png" />
-                        <ul>
-                            <li>A fenti kód eredménye.</li>
-                        </ul>
-                        <img src="./images/kep_038.png" />
-                        <ul>
-                            <li>
-                                A body elembe olyan HTML elemek kerülnek,
-                                amelyek a weboldalon megjelenő tartalmat
-                                kezelik. Ezeknek az elemeknek a tartalma fog
-                                megjelenni a kész oldalon.
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="rejtett"></div>
                 </li>
             </ol>
         </div>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>
+            Tizenkettedik lecke - Formatáló elemek (Formatting Element)
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Tizenkettedik lecke - Formatáló elemek (Formatting Element)</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: b, strong?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_055.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_056.png" />
+                        <ul>
+                            <li>Mind a kettő beágyazott elem.</li>
+                            <li>
+                                Speciális jelentést adnak a szöveg egy részének.
+                            </li>
+                            <li>
+                                A b-elem félkövér szöveget definiál különösebb
+                                jelentőség nélkül.
+                            </li>
+                            <li>
+                                A strong-elem is félkövér szöveget definiál. A
+                                tartalma különösen fontos. A CSS-nél lesz
+                                jelentősége!
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_formatting.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: i, em?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_057.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_058.png" />
+                        <ul>
+                            <li>Mind a kettő beágyazott elem.</li>
+                            <li>
+                                Speciális jelentést adnak a szöveg egy részének.
+                            </li>
+                            <li>
+                                Az i-elem dőlten szedett szöveget definiál.
+                                Gyakran használják egy szakkifejezés, egy másik
+                                nyelvből származó kifejezés, egy gondolat, egy
+                                hajónév stb. jelzésére.
+                            </li>
+                            <li>
+                                Az em-elem is félkövér, kiemelt (emphasized)
+                                szöveget definiál. A képernyőolvasó (screen
+                                reader) a szavakat hangsúllyal, verbális
+                                hangsúlyozással ejti ki. A CSS-nél lesz
+                                jelentősége!
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_formatting.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: mark, small?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_059.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_060.png" />
+                        <ul>
+                            <li>Mind a kettő beágyazott elem.</li>
+                            <li>
+                                Speciális jelentést adnak a szöveg egy részének.
+                            </li>
+                            <li>
+                                A mark-elem megjelölendő vagy kiemelendő
+                                szöveget definiál. Ehhez a böngészők általában
+                                sárga kiemelést használnak.
+                            </li>
+                            <li>
+                                A small-elem kisebb méretben megadott szöveget
+                                definiál.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_formatting.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: del, ins?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_061.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_062.png" />
+                        <ul>
+                            <li>Mind a kettő beágyazott elem.</li>
+                            <li>
+                                Speciális jelentést adnak a szöveg egy részének.
+                            </li>
+                            <li>
+                                A del-elem egy dokumentumból törölt szöveget
+                                definiál. Ehhez a böngészők általában áthúzást
+                                használnak.
+                            </li>
+                            <li>
+                                Az ins-elem egy dokumentumba beszúrt szöveget
+                                definiál. Ehhez a böngészők általában aláhúzást
+                                használnak.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_formatting.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: sub, sup?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_063.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_064.png" />
+                        <ul>
+                            <li>Mind a kettő beágyazott elem.</li>
+                            <li>
+                                Speciális jelentést adnak a szöveg egy részének.
+                            </li>
+                            <li>
+                                A sub-elem egy alsóindexált szöveget definiál.
+                                Ehhez a böngészők általában kétharmadára veszik
+                                a szöveget és fél sor magassággal letolják.
+                            </li>
+                            <li>
+                                Az alsó index kémiai képletekhez használható,
+                                például H<sub>2</sub>O.
+                            </li>
+                            <li>
+                                A sup-elem egy felsőindexált szöveget definiál.
+                                Ehhez a böngészők általában kétharmadára veszik
+                                a szöveget és fél sor magassággal feltolják.
+                            </li>
+                            <li>
+                                A felső index lábjegyzetekhez használható,
+                                például WWW <sup>[1]</sup>.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_formatting.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    A lorem-extension segítségével egy bekezdésben készítsünk
+                    egy 100 szóból álló szöveget. Mind a 10 fenti elemet
+                    felhasználva emeljük ki a szöveg egyes részeit!
+                    <p>
+                        <button
+                            onclick="felfed(5)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(5)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>
