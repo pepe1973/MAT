@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Bővítő lecke - Színek</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Bővítő lecke - Színek</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Hogyan tudunk színeket adni a weboldalunkhoz? Színek
+                    neveivel.
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_001.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_002.png" />
+                        <ul>
+                            <li>
+                                Ebben az esetben a színek angol neveit
+                                használjuk.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/css/css_colors.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/colors/colors_names.asp"
+                                    target="_blank"
+                                    >w3schools-Colors Names</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Hogyan tudunk színeket adni a weboldalunkhoz? RGB és RGBA
+                    értékekkel.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_003.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_004.png" />
+                        <ul>
+                            <li>
+                                Az első esetben a következő képletet használjuk:
+                                <br />rgb(red, green, blue), ahol a red, green
+                                és blue értékek 0 és 255 között vannak.
+                            </li>
+                            <li>
+                                A második esetben a következő képletet
+                                használjuk:
+                                <br />rgba(red, green, blue, alpha), ahol a red,
+                                green és blue értékek 0 és 255 között vannak,
+                                míg az alpha 0.0 (teljesen átlátszó) és 1.0
+                                (teljesen opálos) közötti.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Hogyan tudunk színeket adni a weboldalunkhoz? HEX
+                    értékekkel.
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_005.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_006.png" />
+                        <ul>
+                            <li>
+                                Ebben esetben a következő képletet használjuk:
+                                <br />#rrggbb, ahol az rr, gg és bb értékek 00
+                                (0) és ff (255) között vannak.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_009.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_010.png" />
+                        <ul>
+                            <li>
+                                Abban az esetben, ha az rr, gg és bb értékeknél
+                                mind a két hexadecimális érték ugyanaz, akkor a
+                                3 hosszú HEX értéket használjuk:
+                                <br />#rgb, ahol az r, g és b értékek 0 (0) és f
+                                (16) között vannak. <br />#rrggbb = #rgb
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Hogyan tudunk színeket adni a weboldalunkhoz? HSL és HSLA
+                    értékekkel.
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_007.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_008.png" />
+                        <ul>
+                            <li>
+                                Az első esetben a következő képletet használjuk:
+                                <br />hsl(hue, saturation, lightness), ahol
+                                <br />-hue (árnyalat) egy fok a színkeréken
+                                (0-360). 0-piros, 120-zöld és 240-kék
+                                <br />-saturation (telítettség) egy százalékos
+                                érték 0%-szürke, 100%-teljes szín
+                                <br />-lightness (fényesség) egy százalékos
+                                érték 0%-fekete és 100%-fehér
+                            </li>
+                            <li>
+                                A második esetben a következő képletet
+                                használjuk:
+                                <br />hsla(hue, saturation, lightness, alpha),
+                                ahol <br />-hue (árnyalat) egy fok a színkeréken
+                                (0-360). 0-piros, 120-zöld és 240-kék
+                                <br />-saturation (telítettség) egy százalékos
+                                érték 0%-szürke, 100%-teljes szín
+                                <br />-lightness (fényesség) egy százalékos
+                                érték 0%-fekete és 100%-fehér <br />-alpha 0.0
+                                (teljesen átlátszó) és 1.0 (teljesen opálos)
+                                közötti érték
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>
+            Tizenharmadik lecke - Strukturális elemek: blockquote, q, abbr,
+            address, cite, bdo
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Tizenharmadik lecke - Strukturális elemek: blockquote, q, abbr,
+                address, cite, bdo</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: blockquote, q?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_099.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_100.png" />
+                        <ul>
+                            <li>A blockquote-elem blokkszintű elem.</li>
+                            <li>A böngészők általában behúzzák.</li>
+                            <li>A q-elem beágyazott elem.</li>
+                            <li>A böngészők idézőjelek közé teszik.</li>
+                            <li>
+                                Egy másik dokumentumból vett idézet eltárolására
+                                használjuk.
+                            </li>
+                            <li>
+                                A cite-attribútumban adjuk meg az idézet helyét.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_quotation_elements.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: abbr, address?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_101.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_102.png" />
+                        <ul>
+                            <li>Az abbr-elem beágyazott elem.</li>
+                            <li>
+                                Mozaikszavak írására használjuk a
+                                title-attribútummal, amely a teljes szavakat
+                                tartalmazza.
+                            </li>
+                            <li>Az address-elem blokkszintű elem.</li>
+                            <li>
+                                Elérhetőség (cím, e-mail, telefonszám stb.)
+                                megjelenítésére használjuk.
+                            </li>
+                            <li>Alapértelmezetten dőlt betűvel szedve.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit lehet tudni a következő HTML elemekről: cite, bdo?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_103.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_104.png" />
+                        <ul>
+                            <li>A cite-elem beágyazott elem.</li>
+                            <li>Műalkotások címének jelölésére használjuk.</li>
+                            <li>Alapértelmezetten dőlt betűvel szedve.</li>
+                            <li>A bdo-elem is beágyazott elem.</li>
+                            <li>
+                                A szöveg írásakor annak irányának a jelölésére
+                                (bi-directional override). <br />
+                                Az irányt a dir-attribútumban adjuk meg.
+                                Például: rtl-right to left (jobbról balra)
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Készítsünk el egy weboldalt amelyben műalkotásokból idézünk
+                    röviden és hosszan. Mutassunk be legalább egy festményt és
+                    egy szobrot képpel, megadva annak a múzeumnak a címét, ahol
+                    találhatóak.
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

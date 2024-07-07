@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>
+            Tizenhatodik lecke - Attribútumok, class és id attribútumok
+        </title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Tizenhatodik lecke - Attribútumok, class és id attribútumok</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit kell alapból tudni az attribútumokról?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                A HTML attribútumok további információkat
+                                nyújtanak a HTML elemekről.
+                            </li>
+                            <li>Minden HTML-elemnek lehetnek attribútumai.</li>
+                            <li>
+                                Az attribútumok további információkat nyújtanak
+                                az elemekről. Tehát specializálják.
+                            </li>
+                            <li>
+                                Az attribútumok mindig a kezdő címkében vannak
+                                megadva.
+                            </li>
+                            <li>
+                                Az attribútumok általában név/érték párban
+                                érkeznek, például: név="érték".
+                            </li>
+                            <li>
+                                Ezekkel az attribútumokkal már foglalkoztunk:
+                                <br />-lang (html-elem) <br />-charset
+                                (meta-elem) <br />-href (a-elem) <br />-target
+                                (a-elem) <br />-src (img-elem) <br />-alt
+                                (img-elem) <br />-width (img-elem) <br />-height
+                                (img-elem) <br />-cite (blockquote-elem)
+                                <br />-colspan (th-elem) <br />-rowspan
+                                (th-elem) <br />és még egy párral...
+                            </li>
+                            <li>Látható, hogy jó sok van.</li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/tags/ref_attributes.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Mit kell tudni a következő attribútumról: title?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_135.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_136.png" />
+                        <ul>
+                            <li>
+                                A title-attribútummal már jópárszor
+                                találkoztunk.
+                            </li>
+                            <li>
+                                Ez az attribútum a beleírt szöveget egy kis
+                                felugró ablakban (tooltip) jeleníti meg, ha az
+                                egeret ráhúzzuk az elemre a böngészőben.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit kell tudni a következő attribútumról: style?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_137.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_138.png" />
+                        <ul>
+                            <li>
+                                A style-attribútummal is már jópárszor
+                                találkoztunk.
+                            </li>
+                            <li>
+                                Ez az attribútum lehetőséget biztosít, hogy egy
+                                HTML-elem teljes stílusát megváltoztassuk.
+                            </li>
+                            <li>
+                                Úgynevezett beágyazott stílus (inline style)
+                                tárolására szolgál.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit kell tudni a következő attribútumról: class?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_139.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_140.png" />
+                        <ul>
+                            <li>EZ A KÉT LEGFONTOSABB ATTRIBÚTUM EGYIKE!</li>
+                            <li>
+                                Bármely HTML-elemnek lehetnek ilyen
+                                attribútumai. Abban az esetben, ha egy elem több
+                                értéket is használ, akkor az ÉRTÉKEKET SZÓKÖZZEL
+                                VÁLASZTJUK EL.
+                            </li>
+                            <li>
+                                UGYANAZT A CLASS-ÉRTÉKET TÖBB ELEM IS
+                                HASZNÁLHATJA!
+                            </li>
+                            <li>
+                                A CSS és a JavaScript fogja intenzíven használni
+                                őket.
+                            </li>
+                            <li>A CSS-ben .ertek-formában hivatkozunk rá.</li>
+                            <li>Kis- és nagybatű érzékeny: alma &ne; ALMA</li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_classes.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mit kell tudni a következő attribútumról: id?
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_141.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_142.png" />
+                        <ul>
+                            <li>EZ A KÉT LEGFONTOSABB ATTRIBÚTUM EGYIKE!</li>
+                            <li>
+                                Bármely HTML-elemnek lehetnek ilyen
+                                attribútumai. DE EGYSZERRE CSAK EGY!
+                            </li>
+                            <li>EGY ID-ÉRTÉKET CSAK EGY ELEM IS HASZNÁLHAT!</li>
+                            <li>
+                                A CSS és a JavaScript fogja intenzíven használni
+                                őket.
+                            </li>
+                            <li>A CSS-ben #ertek-formában hivatkozunk rá.</li>
+                            <li>Kis- és nagybatű érzékeny: alma &ne; ALMA</li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_id.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

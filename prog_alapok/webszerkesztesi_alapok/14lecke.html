@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Tizennegyedik lecke - Táblázatok</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Tizennegyedik lecke - Táblázatok</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit kell alapból tudni a táblázatokról?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_109.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_110.png" />
+                        <ul>
+                            <li>
+                                A HTML-táblázatok (table-elem) segítségével a
+                                webfejlesztők sorokba és oszlopokba rendezhetik
+                                az adatokat. Ezek cellákban kerülnek
+                                eltárolásra.
+                                <br />-tr (table row) elemek tartalmaznak egy
+                                sornyi cellát. <br />-th (table header) elemek a
+                                fejléc adatoknak. Alapból félkövér és középre
+                                zárt szöveggel. <br />-td (table data) elemek a
+                                tényleges adatoknak. <br />Bármilyen HTML elemet
+                                eltárolhatunk a cellákban.
+                            </li>
+                            <li>Függőleges fejléc esetén:</li>
+                        </ul>
+                        <img src="./images/kep_111.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_112.png" />
+                        <ul>
+                            <li>
+                                Adhatunk címet is a táblázatnak a caption-elem
+                                segítségével.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_113.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_114.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_tables.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Mire jók a következő attribútumok: colspan, rowspan?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_115.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_116.png" />
+                        <ul>
+                            <li>
+                                Előfordul, hogy egy cella több oszlopot is
+                                átfog, ekkor használjuk a colspan-attribútumot.
+                                <br />
+                                Az egyenlőségjel után lévő szám jelöli az
+                                átfogott oszlopok számát.
+                                <br />Ügyeljünk rá, hogy elhagyjunk annyi
+                                cellaelemet a sorból, amennyi érték a colspan
+                                után áll - 1.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_117.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_118.png" />
+                        <ul>
+                            <li>
+                                Előfordul, hogy egy cella több sort is átfog,
+                                ekkor használjuk a rowspan-attribútumot.
+                                <br />
+                                Az egyenlőségjel után lévő szám jelöli az
+                                átfogott sorok számát.
+                                <br />Ügyeljünk rá, hogy elhagyjunk annyi
+                                cellaelemet a következő oszlop(ok)ból, amennyi
+                                érték a rowspan után áll - 1.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mire jók a következő HTML-elemek: colgroup, col?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_119.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_120.png" />
+                        <ul>
+                            <li>
+                                A táblázaton belül stílust tudunk adni külön
+                                oszlopoknak, oszlopcsoportoknak. Ehhez
+                                colgroup-elemben a col-elem segítségével tudok
+                                hozzáfogni. <br />
+                                A span-attribútum jelöli, hogy hány oszlop
+                                legyen érintve.
+                                <br />Csak hátteret (background), láthatóságot
+                                (visibility), határolóvonalat (border) és
+                                szélességet (width) tudok beállítani.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_121.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_122.png" />
+                        <ul>
+                            <li>
+                                Ha egy vagy több oszlopra nem akarunk stílust
+                                beállítani, akkor csak a span-attribútumot adjuk
+                                meg.
+                            </li>
+                            <li>
+                                Ha valamit láthatatlanná teszünk, attól még
+                                lefoglalja a helyét az oldalon!
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mire jók a következő HTML-elemek: thead, tbody, tfoot?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_123.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_124.png" />
+                        <ul>
+                            <li>
+                                A thead-elemet a fejléc sorok összefogására
+                                használjuk, egyszerre stílust adni nekik.
+                            </li>
+                            <li>
+                                A tbody-elemet a tartalom sorok összefogására
+                                használjuk, egyszerre stílust adni nekik.
+                            </li>
+                            <li>
+                                A tfoot-elemet a lábléc sorok összefogására
+                                használjuk, egyszerre stílust adni nekik.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

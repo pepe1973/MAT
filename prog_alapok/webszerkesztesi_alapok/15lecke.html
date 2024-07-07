@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Tizenötödik lecke - Listák</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Tizenötödik lecke - Listák</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit kell alapból tudni a listákról?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_125.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_126.png" />
+
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_lists.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    Mit kell alapból tudni a rendezetlen listákról - ul?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_127.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_128.png" />
+                        <ul>
+                            <li>
+                                ul-unordered list (rendezetlen lista, pontozott
+                                lista) <br />
+                                li-list item (lista elem)
+                            </li>
+                            <li>
+                                A list elemek bármilyen más HTML-elemet
+                                eltárolhatnak.
+                            </li>
+                            <li>
+                                A lista elem jelölő alapból négy érték lehet:
+                            </li>
+                        </ul>
+                        <img src="./images/kep_129.png" />
+                    </div>
+                </li>
+                <li>
+                    Mit kell alapból tudni a rendezett listákról - ol?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_130.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_131.png" />
+                        <ul>
+                            <li>
+                                ol-ordered list (rendezetlen lista) <br />
+                                li-list item (lista elem)
+                            </li>
+                            <li>
+                                A list elemek bármilyen más HTML-elemet
+                                eltárolhatnak.
+                            </li>
+                            <li>
+                                A kezdőérték a start-attribútummal állítható be.
+                            </li>
+                            <li>
+                                A lista elem jelölő alapból öt érték lehet. A
+                                beállításhoz a type-attribútumot használjuk:
+                            </li>
+                        </ul>
+                        <img src="./images/kep_132.png" />
+                    </div>
+                </li>
+                <li>
+                    Mit kell alapból tudni a leíró listákról - dl?
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_133.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_134.png" />
+                        <ul>
+                            <li>
+                                dl-description list (leíró lista) <br />
+                                dt-description term (leírandó kifejezés) <br />
+                                dd-describe term (kifejezés leírása)
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

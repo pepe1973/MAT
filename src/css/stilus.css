@@ -69,7 +69,7 @@ ol > li {
     border-radius: 5px;
     margin-bottom: 1em;
     padding: 1em;
-    /* display: none; */
+    display: none;
 }
 
 .rejtett ul {
