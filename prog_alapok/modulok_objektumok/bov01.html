@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--raadas);
+            }
+
+            ol > li {
+                color: var(--raadas);
+                border: 1px solid var(--raadas);
+                box-shadow: 5px 5px 5px var(--raadas);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Bővítő lecke - sys module</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Bővítő lecke - sys module</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit lehet tudni a sys module-ról?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python03.jpg" />
+                        <ul>
+                            <li>
+                                A sys modul a Python futási környezet különböző
+                                részeinek kezeléséhez használható függvényeket
+                                és változókat biztosít..
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/html/html_filepaths.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/El%C3%A9r%C3%A9si_%C3%BAt"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://dimewiki.worldbank.org/File_path"
+                                    target="_blank"
+                                    >The World Bank</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

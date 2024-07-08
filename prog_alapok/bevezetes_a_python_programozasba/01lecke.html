@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Első lecke - Számítógépes program</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Első lecke - Számítógépes program</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az a számítógépes program (computer program)?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/image2.jpg" />
+                        <ul>
+                            <li>
+                                A számítógépes program lényegében olyan
+                                utasítások (instruction) összessége, amelyek
+                                megmondják a számítógépnek, hogy mit kell
+                                tennie. Tekintsd úgy, mint a számítógép által
+                                követendő receptet. Ezek az utasítások egy
+                                programozási nyelven íródnak, amely egy erre a
+                                célra kialakított speciális, ember által
+                                olvasható nyelv.
+                            </li>
+                            <li>
+                                A számítógépes program utasítások sorozata vagy
+                                halmaza egy programozási nyelven , amelyet a
+                                számítógép végrehajthat.
+                            </li>
+                            <li>
+                                Az utasítások a legegyszerűbb formájukban olyan
+                                útmutatások vagy parancsok halmazai, amelyeket
+                                valakinek vagy valaminek adunk egy adott feladat
+                                elvégzésére.
+                            </li>
+                            <li>
+                                Az ember által olvasható formában lévő
+                                számítógépes programot forráskódnak (source
+                                code) nevezzük.
+                            </li>
+                            <li>
+                                A forráskód végrehajtásához egy másik
+                                számítógépes programra van szükség, mert a
+                                számítógépek csak a saját gépi utasításaikat
+                                tudják végrehajtani. <br />
+                                Ezért a forráskód lefordítható gépi utasításokká
+                                a programozási nyelvre írt fordító (compiler)
+                                vagy értelmező (interpreter) segítségével.
+                            </li>
+                            <li>
+                                Az eredményül kapott fájlt futtatható
+                                állománynak (executable) nevezzük.
+                            </li>
+                            <li>
+                                A számítógépes programok úgy működnek, hogy
+                                utasítássorozatot hajtanak végre meghatározott
+                                sorrendben. Ezeket az utasításokat a számítógép
+                                központi feldolgozó egysége (CPU) dolgozza fel,
+                                amely értelmezi és végrehajtja az egyes
+                                parancsokat. A program kölcsönhatásba léphet
+                                adatokkal, a felhasználótól származó
+                                bemenetekkel vagy más programokkal a feladatai
+                                végrehajtása érdekében.
+                            </li>
+                            <li>
+                                A számítógépes programok különféle funkciókat
+                                szolgálhatnak ki , az összetett számításoktól és
+                                adatfeldolgozástól a hardvereszközök vezérléséig
+                                és az olyan alkalmazások futtatásáig, mint a
+                                szövegszerkesztők, webböngészők és játékok.
+                                Lényegében a számítógépes programok lehetővé
+                                teszik a számítógépek számára feladatok
+                                végrehajtását és problémák megoldását.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Computer_program"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.designmatch.io/vocabulary/what-is-a-computer-program/"
+                                    target="_blank"
+                                    >Design Match</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.youtube.com/watch?v=QXjU9qTsYCc"
+                                    target="_blank"
+                                    >YouTube - How do computers read code?</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Mi a különbség a fordított (compiled) és az értelemezett,
+                    interpretált (interpreted) nyelvek között?
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/image6.jpg" />
+                        <ul>
+                            <li>
+                                A fordított (compiled) nyelvek olyan
+                                programozási nyelvek, amelyeket géppel olvasható
+                                utasításokká kell lefordítani fordítóprogramok
+                                (compiler) segítségével, amelyek olyan
+                                programok, amelyek az ember által olvasható
+                                forráskódot konvertálják, mielőtt bármilyen
+                                kódot végrehajtanának. A program egy
+                                végrehajtható fájlt generál, majd a lefordított
+                                programot végrehajtásra átadja a célgépnek.
+                            </li>
+                            <li>
+                                A fordított (compiled) nyelvek közvetlenül gépi
+                                kóddá alakulnak, amelyet a processzor
+                                végrehajthat. Ennek eredményeként általában
+                                gyorsabb és hatékonyabb a végrehajtásuk, mint az
+                                értelmezett nyelveknek. Ezenkívül a
+                                fejlesztőknek nagyobb irányítást biztosít a
+                                hardveres szempontok, például a memóriakezelés
+                                és a CPU-használat felett.
+                            </li>
+                            <li>
+                                A fordított nyelveknek építési (build) lépésre
+                                van szükségük, először manuálisan kell
+                                lefordítani őket. Minden alkalommal újra kell
+                                építeni (rebuild) a programot, amikor valamit
+                                módosítunk rajta.
+                            </li>
+                        </ul>
+                        <img src="./images/image7.jpg" />
+                        <ul>
+                            <li>
+                                Az értelmezett (interpreted) nyelvek olyan
+                                programozási nyelvek, ahol az utasítások
+                                nincsenek előre lefordítva a célgéphez közeli
+                                géppel olvasható formában. Ezeket a nyelveket
+                                inkább egy értelmező segíti. Az interpreter egy
+                                olyan program, amely a magas szintű, ember által
+                                olvasható forráskódot alacsony szintű, géppel
+                                olvasható célkóddá alakítja sorról sorra,
+                                miközben az értelmezett program fut.
+                            </li>
+
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.baeldung.com/cs/compiled-vs-interpreted-languages"
+                                    target="_blank"
+                                    >baeldung</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/"
+                                    target="_blank"
+                                    >freeCodeCamp</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.educative.io/blog/compiled-vs-interpreted-language"
+                                    target="_blank"
+                                    >educative</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://medium.com/@astermanuelg/blurred-lines-is-ruby-an-interpreted-language-2d3d6bca3d37"
+                                    target="_blank"
+                                    >medium</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Keressünk legalább öt példát az interneten mind a fordított,
+                    mind az interpretált nyelvekre!
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

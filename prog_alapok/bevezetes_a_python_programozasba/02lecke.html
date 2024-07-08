@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Második lecke - A Python programozási nyelv alapjai</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Második lecke - A Python programozási nyelv alapjai</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mit lehet alapból tudni a Python programozási nyelvről?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python01.png" />
+                        <ul>
+                            <li>
+                                A Python egy általános célú, nagyon magas szintű
+                                programozási nyelv, melyet Guido van Rossum
+                                holland programozó kezdett el fejleszteni 1989
+                                végén, majd hozott nyilvánosságra 1991-ben.
+                                <br />
+                                A nyelv tervezési filozófiája az olvashatóságot
+                                és a programozói munka megkönnyítését helyezi
+                                előtérbe a futási sebességgel szemben. <br />
+                                Például a behúzások szintaktikailag is fontosak.
+                            </li>
+                            <li>
+                                A Python többek között a funkcionális, az
+                                objektumorientált, az aspektusorientált az
+                                imperatív és a procedurális programozási
+                                paradigmákat támogatja.
+                            </li>
+                            <li>
+                                Dinamikus típusokat és automatikus
+                                memóriakezelést használ, emellett szigorú
+                                típusrendszerrel rendelkezik.
+                            </li>
+                            <li>
+                                A Python úgynevezett interpreteres nyelv, ami
+                                azt jelenti, hogy nincs különválasztva a forrás-
+                                és tárgykód, a megírt program máris futtatható,
+                                ha rendelkezünk a Python értelmezővel. <br />
+                                A Python értelmezőt számos géptípusra és
+                                operációs rendszerre elkészítették, továbbá
+                                számtalan kiegészítő könyvtár készült hozzá, így
+                                rendkívül széles körben használhatóvá vált.
+                            </li>
+                            <li>
+                                A Python, a világ egyik legnépszerűbb
+                                programozási nyelve, a Netflix ajánlási
+                                algoritmusától az önvezető autókat vezérlő
+                                szoftverig mindent megalkotott. <br />
+                                A Python egy általános célú nyelv, ami azt
+                                jelenti, hogy számos alkalmazásban használható,
+                                beleértve az adattudományt, a szoftver- és
+                                webfejlesztést a szerver oldalon, az
+                                automatizálást.
+                            </li>
+                            <li style="text-transform: uppercase">
+                                A Python új sorokat használ a parancs
+                                befejezéséhez, ellentétben más programozási
+                                nyelvekkel, amelyek gyakran pontosvesszőt vagy
+                                zárójelet használnak.
+                            </li>
+                            <li style="text-transform: uppercase">
+                                A Python a behúzásra támaszkodik, szóközt
+                                használva a hatókör meghatározásához; mint
+                                például a hurkok, függvények és osztályok
+                                hatóköre. Más programozási nyelvek gyakran
+                                használnak zárójeleket erre a célra.
+                            </li>
+                            <li>
+                                A PYTHON ÁLLOMÁNYOKAT .PY KITERJESZTÉSSEL
+                                MENTJÜK EL!
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://hu.wikipedia.org/wiki/Python_(programoz%C3%A1si_nyelv)"
+                                    target="_blank"
+                                    >Wikipédia</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_intro.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    A Python telepítése.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python03.jpg" />
+                        <ul>
+                            <li>
+                                Számos számítógépen, főleg a MacOs-es gépeken
+                                alapból telepítve van a Python.
+                            </li>
+                            <li>
+                                Windows-os gépeken először ezt ellenőrizni kell.
+                                Ehhez nyissuk meg a parancssort és gépeljük be a
+                                következőt, bármelyik jó:
+                            </li>
+                        </ul>
+                        <img src="./images/kep_001.png" />
+                        <ul>
+                            <li>
+                                Ha nincs akkor töltsük le a Forrásoknál megadott
+                                címről.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_002.png" />
+                        <ul>
+                            <li>Jelöljünk be mindent és telepítsük.</li>
+                        </ul>
+                        <img src="./images/kep_003.png" />
+                        <ul>
+                            <li>
+                                A Python-nal együtt feltelepült a Python IDLE
+                                szerkesztő környezet. Ebben már komolyabb
+                                szkripteket is meg tudunk írni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_004.png" />
+                        <ul>
+                            <li>
+                                Az IDLE alkalmazásra kattintva megnyílik egy
+                                parancsértelmező ablak.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_005.png" />
+                        <ul>
+                            <li>
+                                A File New File menüpontra egy olyan
+                                szerkesztőablakot, felületet kapunk, ahol már
+                                nem csak soronként tudjuk megadni a
+                                programunkat, hanem nagyobb kódmennyiséget is
+                                tudunk szerkeszteni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_006.png" />
+                        <img src="./images/kep_007.png" />
+                        <ul>
+                            <li>
+                                Mentsük el a programot. Majd kattintsunk a Run
+                                menüpontra és azon belül az Run Module pontra,
+                                vagy csak nyomjuk meg az F5 gombot. A futás
+                                eredménye a következő. Hasznos lehet, ha a két
+                                ablak egymás mellé van rakva a képernyőn!
+                            </li>
+                        </ul>
+                        <img src="./images/kep_008.png" />
+                        <img src="./images/kep_009.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.python.org/s"
+                                    target="_blank"
+                                    >Python.org</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Milyen egyéb lehetőségeink vannak?
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                Használhatjuk a PyCharm szerkesztőt. Link a
+                                Forrásoknál.
+                            </li>
+                        </ul>
+                        <img src="./images/image8.png" />
+                        <ul>
+                            <li>
+                                Használhatjuk még a Thonny szerkesztőt is. Link
+                                a Forrásoknál.
+                            </li>
+                        </ul>
+                        <img src="./images/image9.png" />
+                        <ul>
+                            <li>
+                                Használhatjuk még a Visual Studio Code
+                                szerkesztőt is.
+                            </li>
+                        </ul>
+                        <img src="./images/image10.png" />
+
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.jetbrains.com/pycharm/"
+                                    target="_blank"
+                                    >PyCharm</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.youtube.com/watch?v=TfZzPjMJDeY"
+                                    target="_blank"
+                                    >PyCharm telepítése Windows-on</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://thonny.org/"
+                                    target="_blank"
+                                    >Thonny</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.youtube.com/watch?v=2Hva0Se0e_c"
+                                    target="_blank"
+                                    >Thonny telepítése Windows-on</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.youtube.com/watch?v=Od3ItO2aKAY"
+                                    target="_blank"
+                                    >Python telepítése Visual Studio Code-ra</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>
