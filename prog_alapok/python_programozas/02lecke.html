@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Második lecke - Változók és adattípusok a Python-ban</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Második lecke - Változók és adattípusok a Python-ban</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mi az a változó?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_008.png" />
+                        <ul>
+                            <li>
+                                A változók adatértékek tárolására szolgáló
+                                tárolók.
+                            </li>
+                            <li>
+                                A Pythonnak nincs parancsa a változók
+                                deklarálására.
+                            </li>
+                            <li>
+                                A változó abban a pillanatban jön létre, amikor
+                                először értéket rendelünk hozzá.
+                            </li>
+                            <li>
+                                A változókat nem kell semmilyen konkrét típussal
+                                deklarálni, sőt a beállításuk után változhatnak
+                                típust is.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_009.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_010.png" />
+                        <ul>
+                            <li>
+                                Egy változó típusát a type() függvény
+                                segítségével kaphatjuk meg. <br />
+                                Típusát kasztolással (típuskényszerítéssel)
+                                változtathatjuk meg.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_011.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_012.png" />
+                        <ul>
+                            <li>
+                                A karakterláncokat sima (') és dupla (")
+                                idézőjele közé és rakhatjuk.
+                            </li>
+                            <li>
+                                A változók kis- és nagybetű érzékenyek. Például:
+                                alma &ne; Alma
+                            </li>
+                        </ul>
+                        <img src="./images/kep_013.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_014.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_variables.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    A változók nevei, az azonosítók tulajdonságai.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_015.png" />
+                        <img src="./images/kep_016.png" />
+                        <ul>
+                            <li>
+                                Az azonósítok csak betűvel, vagy _-sal
+                                kezdődhetnek. SZÁMMAL NEM!
+                            </li>
+                            <li>
+                                Az azonósítok csak alfanumerikus és
+                                _-karaktereket tartalmazhatnak (0-9, a-Z, A-Z,
+                                _).
+                            </li>
+                            <li>Nem lehetnek Python kulcsszavak (keyword)!</li>
+                            <li>Több szóból álló azonosítók képzése:</li>
+                        </ul>
+                        <img src="./images/kep_017.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_ref_keywords.asp"
+                                    target="_blank"
+                                    >w3schools - Python kulcsszavak</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Értékadás
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_018.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_019.png" />
+                        <ul>
+                            <li>
+                                Helytakarékosság szempontjából fontos, hogy egy
+                                sorban egyszerre több változónak is adhatunk
+                                értéket vesszővel elválasztva. Ügyeljünk, hogy
+                                az egyenlőségjel mindkét oldalán ugyanannyi
+                                érték legyen!
+                            </li>
+                        </ul>
+                        <img src="./images/kep_020.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_021.png" />
+                        <ul>
+                            <li>
+                                Vagy akár egyszerre több változónak is oda tudom
+                                adni ugyanazt az értéket.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_022.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_023.png" />
+                        <ul>
+                            <li>
+                                Egy kicsit előre mutatólag említsük meg a
+                                kicsomagolást (unpacking). Ekkor az adott
+                                listából egyenként kivehetem az értékeket és
+                                eltárolhatom változókban.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Definiáljunk legalább 20 változót a fenti szabályokat
+                    figyelembevéve!
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+                <li>
+                    Változók adattípusai a Pythonban.
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                A programozásban az adattípus fontos fogalom.
+                                <br />
+                                A változók különböző típusú adatokat
+                                tárolhatnak, és a különböző típusok különböző
+                                dolgokat hajthatnak végre. <br />A Python
+                                alapértelmezés szerint a következő adattípusokat
+                                tartalmazza a következő kategóriákban:
+                            </li>
+                        </ul>
+                        <img src="./images/kep_039.png" />
+                        <ul>
+                            <li>
+                                A Pythonban az adattípust akkor állítja be, ha
+                                értéket rendel egy változóhoz:
+                            </li>
+                        </ul>
+                        <img src="./images/kep_040.png" />
+                        <ul>
+                            <li>
+                                Ha konstruktorral (egy speciális függvény)
+                                szeretnénk megadni a típus:
+                            </li>
+                        </ul>
+                        <img src="./images/kep_041.png" />
+                        <ul>
+                            <li>
+                                Vagy akár egyszerre több változónak is oda tudom
+                                adni ugyanazt az értéket.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_022.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_023.png" />
+                        <ul>
+                            <li>
+                                Egy kicsit előre mutatólag említsük meg a
+                                kicsomagolást (unpacking). Ekkor az adott
+                                listából egyenként kivehetem az értékeket és
+                                eltárolhatom változókban.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

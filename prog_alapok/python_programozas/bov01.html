@@ -12,13 +12,13 @@
         />
         <style>
             nav {
-                background-color: var(--proghatter);
+                background-color: var(--raadas);
             }
 
             ol > li {
-                color: var(--proghatter);
-                border: 1px solid var(--proghatter);
-                box-shadow: 5px 5px 5px var(--proghatter);
+                color: var(--raadas);
+                border: 1px solid var(--raadas);
+                box-shadow: 5px 5px 5px var(--raadas);
             }
 
             a {
@@ -31,14 +31,14 @@
             href="../../src/images/logo.png"
             type="image/x-icon"
         />
-        <title>Első lecke - Szintaktikai szabályok</title>
+        <title>Bővítő lecke - A global kulcsszó</title>
     </head>
     <body>
         <nav>
             <a
                 href="./index.html"
                 style="color: white"
-                >Első lecke - Szintaktikai szabályok</a
+                >Bővítő lecke - A global kulcsszó</a
             >
         </nav>
         <div class="tarto">
@@ -58,7 +58,7 @@
             </p>
             <ol>
                 <li>
-                    Mire a jó behúzás?
+                    Mi az a hatókör (scope) változók esetén?
                     <p>
                         <button
                             onclick="felfed(0)"
@@ -74,54 +74,66 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_001.png" />
+                        <img src="./images/kep_024.png" />
                         <ul>
                             <li>A fenti kód eredménye.</li>
                         </ul>
-                        <img src="./images/kep_002.png" />
+                        <img src="./images/kep_025.png" />
                         <ul>
                             <li>
-                                A Python a behúzást (indentation) a hatókörök
-                                (scope), kódblokkok kijelölésére használja.
-                            </li>
-                            <li>
-                                Azt, hogy hány karakteres behúzást használunk,
-                                mi dönthetjük el szabadon.
-                            </li>
-                            <li>
-                                Látható, hogy a def-es rész után a következő
-                                sorban behúzás van, azaz új hatókört jelölünk
-                                ki. <br />
-                                Ebbe az új hatókörbe csak akkor fog belépni az
-                                értelmező, ha eléri a kiir() kódrészt. <br />
-                                Kilépni ebből a hatókörből csak akkor fog, ha
-                                megszűnik a behúzás.<br />
-                                Addig a program fő hatókörében tartozkodik, ahol
-                                nincs behúzás.
-                            </li>
-                            <li>
-                                A BEHÚZÁS ÉRTÉKE MINDIG UGYANANNYI KARAKTER
-                                LEGYEN EGY HATÓKÖRÖN BELÜL! Egyébként új
-                                hatókört próbál nyítni az értelmező!
+                                Az x-változó hatóköre az egész állomány azaz
+                                globális, tehát bármi hozzá tud férni, még a
+                                fuggveny() is.
                             </li>
                         </ul>
-                        <img src="./images/kep_003.png" />
+                        <img src="./images/kep_026.png" />
                         <ul>
                             <li>A fenti kód eredménye.</li>
                         </ul>
-                        <img src="./images/kep_002.png" />
+                        <img src="./images/kep_025.png" />
                         <ul>
                             <li>
-                                Ha nem megfelelő, vagy nincs behúzás, akkor
-                                hibát (IndentationError) kapunk.
+                                Az x-változó hatóköre most a fuggveny()
+                                kódblokkja azaz lokákis, ez a behúzásból is
+                                látszik.
                             </li>
                         </ul>
-                        <img src="./images/kep_004.png" />
+                        <img src="./images/kep_027.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_028.png" />
+                        <ul>
+                            <li>
+                                Látható, hogy az x-értékéhez a fuggveny()
+                                hatókörén kívűl nem tudunk hozzáférni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_029.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_030.png" />
+                        <ul>
+                            <li>
+                                Mivel a Python értelmezett nyelv, tehát
+                                soronként kerül kiértékelésre, ezért már a
+                                print(x) sem hajtódik végre.
+                            </li>
+                            <li>Nézzük a jó programot.</li>
+                        </ul>
+                        <img src="./images/kep_031.png" />
+                        <img src="./images/kep_032.png" />
+                        <ul>
+                            <li>És fordítva.</li>
+                        </ul>
+                        <img src="./images/kep_033.png" />
+                        <img src="./images/kep_034.png" />
                         <ul>
                             <li>
                                 Forrás:
                                 <a
-                                    href="https://www.w3schools.com/python/python_syntax.asp"
+                                    href="https://www.w3schools.com/python/python_variables_global.asp"
                                     target="_blank"
                                     >w3schools</a
                                 >
@@ -129,8 +141,9 @@
                         </ul>
                     </div>
                 </li>
+
                 <li>
-                    Kommentek
+                    A global kulcsszó.
                     <p>
                         <button
                             onclick="felfed(1)"
@@ -146,49 +159,32 @@
                         </button>
                     </p>
                     <div class="rejtett">
-                        <img src="./images/kep_005.png" />
+                        <img src="./images/kep_035.png" />
                         <ul>
                             <li>A fenti kód eredménye.</li>
                         </ul>
-                        <img src="./images/kep_006.png" />
+                        <img src="./images/kep_036.png" />
                         <ul>
                             <li>
-                                Mint minden programozási nyelvben, a Pythonban
-                                is van lehetőség a kommentre. Ehhez a #-jelet
-                                használjuk, és az értelmező az utána következő
-                                szöveget figyelmenkívűl hagyja.
-                            </li>
-                            <li>
-                                A kommenteket használhatjuk emlékeztetők és
-                                figyelmeztetések elhelyezésére. <br />
-                                De kódsorokat is kikommentálhatunk
-                                tesztelésképpen.
+                                A lokális hatókört x-re a fuggveny() kódblokkon
+                                belül a global kulcsszóval tehetem globálissá.
                             </li>
                         </ul>
-                        <img src="./images/kep_007.png" />
+                        <img src="./images/kep_037.png" />
+                        <img src="./images/kep_036.png" />
                         <ul>
-                            <li>A fenti kód eredménye.</li>
+                            <li>És fordítva.</li>
                         </ul>
-                        <img src="./images/kep_006.png" />
+                        <img src="./images/kep_038.png" />
+                        <img src="./images/kep_032.png" />
                         <ul>
-                            <li>
-                                Többsoros kommentre a fenti két lehetőség van.
-                            </li>
-
-                            <li>
-                                Forrás:
-                                <a
-                                    href="https://www.w3schools.com/python/python_comments.asp"
-                                    target="_blank"
-                                    >w3schools</a
-                                >
-                            </li>
+                            <li>Ismét a kódsorok sorrendjét vizsgáltuk.</li>
                         </ul>
                     </div>
                 </li>
-                <!-- <li>
-                    Keressünk legalább öt példát az interneten mind a fordított,
-                    mind az interpretált nyelvekre!
+                <li>
+                    Legalább 5 változó viselkedését módosítsuk a global
+                    kulcsszóval. Nézzünk meg minden lehetőséget!
                     <p>
                         <button
                             onclick="felfed(2)"
@@ -204,7 +200,7 @@
                         </button>
                     </p>
                     <div class="rejtett"></div>
-                </li> -->
+                </li>
             </ol>
         </div>
         <script src="../../src/js/mozgat.js"></script>
