@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Harmadik lecke - A print() függvény</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Harmadik lecke - A print() függvény</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Mire jó a print() függvény?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python03.jpg" />
+                        <ul>
+                            <li>
+                                A Python eredetileg csak konzolos alkalmazások
+                                írására volt alkalmas, ahol a szabvány kimenet
+                                (standard output) a konzol. Erre a print()
+                                függvényt használja.
+                            </li>
+                            <li>
+                                A print() függvény csak karakterlánc (string)
+                                típusú adatokat fogad paraméterként.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_042.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_043.png" />
+                        <ul>
+                            <li>
+                                Több karakterláncot egymás mellé kétféleképpen
+                                írhatunk.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_044.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_045.png" />
+                        <ul>
+                            <li>
+                                Látható, hogy a +-esetben plusz szóközöket
+                                kellett elhelyezni a karakterláncok végére, mert
+                                alapból nem teszi meg.
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/ref_func_print.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    A print() függvény paraméterei.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_046.png" />
+                        <ul>
+                            <li>
+                                Az objektumok azok a dolgok, amiket meg akarok
+                                jeleníteni.
+                            </li>
+                            <li>
+                                sep-az a karakter amellyel elválasztom őket.
+                            </li>
+                            <li>
+                                end-az a karakter, amellyel le akarom zárni a
+                                sort. Alapból sortörésel írja ki az
+                                objektumokat!
+                            </li>
+                            <li>
+                                file-ki is írathatom az objektumokat egy
+                                állományba. Ezzel később foglalkozunk.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_047.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_048.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.programiz.com/python-programming/methods/built-in/print"
+                                    target="_blank"
+                                    >programiz</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Írassunk ki legalább 10 karakterláncsorozatot különböző sep
+                    és end karaktereket használva!
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

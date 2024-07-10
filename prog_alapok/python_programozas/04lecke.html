@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Negyedik lecke - Számok és aritmetikai operátorok</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Negyedik lecke - Számok és aritmetikai operátorok</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Milyen számtípusok vannak a Python-ban?
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python03.jpg" />
+                        <ul>
+                            <li>
+                                A Python-ban három szám típus van: <br />
+                                int-egész szám <br />
+                                float-lebegőpontos szám <br />complex-komplex
+                                szám
+                            </li>
+                            <li>
+                                A type() függvényt használjuk, hogy ellenőrizzük
+                                a változó típusát.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_050.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_051.png" />
+                        <ul>
+                            <li>
+                                Az int-egész szám (integer) lehet pozitív,
+                                negatív vagy 0 tizedesjegy nélkül. <br />
+                                Nincs alsó és felső határ a Python-ban az
+                                értékekre.
+                            </li>
+                            <li>
+                                A float-lebegőpontos szám lehet pozitív, negatív
+                                vagy 0.0 egy vagy több tizedesjeggyel. <br />
+                                Az egészt rész a tört résztől ponttal (.)
+                                választjuk el. <br />
+                                Nincs alsó és felső határ a Python-ban az
+                                értékekre. <br />
+                                Az e vagy E szimbolumokkal tudományos jelölést
+                                használhatunk.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_052.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_053.png" />
+                        <ul>
+                            <li>
+                                A complex-szám a képzetes rész jelöléséhez a
+                                j-betűt használja. Nem fogjuk használni!
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_numbers.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    A típus konverzió számok között.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                Néha szükséges lehet az egyik típusú számot
+                                átalakítani egy másikra, mert csak így tudunk
+                                vele dolgozni.
+                            </li>
+                            <li>
+                                Lehetséges átalakítások, konverziók: <br />int
+                                => float
+                                <br />
+                                int => complex <br />
+                                float => int <br />
+                                float => complex
+                            </li>
+                            <li>
+                                Ehhez az adott típus konstruktor függvényét
+                                használja. Ezek különböző egész szám és
+                                lebegőpontos szám literálokat, vagy azokat
+                                tartalmazó változókat fogadnak paraméterként!
+                            </li>
+                            <li>A komplex számokat nem lehet átalakítani!</li>
+                        </ul>
+                        <img src="./images/kep_054.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_055.png" />
+                        <ul>
+                            <li>
+                                Nagyon sokszor hasznos lesz a számunkra, hogy
+                                karakterláncsorozatot is át tudunk alakítani
+                                számmá!
+                            </li>
+                        </ul>
+                        <img src="./images/kep_056.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_057.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_casting.asp"
+                                    target="_blank"
+                                    >wschools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Adjunk meg 10 egész és 10 lebegőpontos számot és 10 számot
+                    reprezentáló karakterláncsorozatot! Alakítsuk át őket minden
+                    lehetséges módon!
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+                <li>
+                    Aritmetikai operátorok
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_058.png" />
+                        <ul>
+                            <li>
+                                A számokkal műveleteket (operation) szeretnénk
+                                végrehajtani. Ezekhez operandusként számokból
+                                képzett változókat és/vagy literálokat
+                                használunk. A műveleti jeleket nevezzük
+                                aritmetikai operátoroknak.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_059.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_060.png" />
+                        <ul>
+                            <li>
+                                Az úgynevezett rövidített értékadás során egy
+                                váltó értékét változtatjuk meg az adott szám
+                                értékét, és adjuk vissza a változónak ezt a
+                                módosított értéket! <br />
+                                Ehhez a hozzárendelés (assignment) operátorát
+                                (=) dolgozzuk át egy kicsit.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_061.png" />
+                        <img src="./images/kep_062.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_063.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_operators.asp"
+                                    target="_blank"
+                                    >wschools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Oldjunk meg matematikai feladatokat a fenti eszközök
+                    segítségével!
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--raadas);
+            }
+
+            ol > li {
+                color: var(--raadas);
+                border: 1px solid var(--raadas);
+                box-shadow: 5px 5px 5px var(--raadas);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Bővítő lecke - String-es kiegészítő dolgok</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Bővítő lecke - String-es kiegészítő dolgok</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Az in és a not in kulcsszavak.
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_068.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_069.png" />
+                        <ul>
+                            <li>
+                                Ha szeretnénk megvizsgálni, hogy egy
+                                karakterlánc szerepel-e egy másik string-ben,
+                                akkor az in kulcsszót használjuk.
+                            </li>
+                            <li>
+                                Ha viszont azt szeretnénk megvizsgálni, hogy egy
+                                karakterlánc nem szerepel egy másik string-ben,
+                                akkor a not in kulcsszót használjuk.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_026.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_025.png" />
+                        <ul>
+                            <li>
+                                Az x-változó hatóköre most a fuggveny()
+                                kódblokkja azaz lokákis, ez a behúzásból is
+                                látszik.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_027.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_028.png" />
+                        <ul>
+                            <li>
+                                Látható, hogy az x-értékéhez a fuggveny()
+                                hatókörén kívűl nem tudunk hozzáférni.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_029.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_030.png" />
+                        <ul>
+                            <li>
+                                Mivel a Python értelmezett nyelv, tehát
+                                soronként kerül kiértékelésre, ezért már a
+                                print(x) sem hajtódik végre.
+                            </li>
+                            <li>Nézzük a jó programot.</li>
+                        </ul>
+                        <img src="./images/kep_031.png" />
+                        <img src="./images/kep_032.png" />
+                        <ul>
+                            <li>És fordítva.</li>
+                        </ul>
+                        <img src="./images/kep_033.png" />
+                        <img src="./images/kep_034.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_variables_global.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    A global kulcsszó.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_035.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_036.png" />
+                        <ul>
+                            <li>
+                                A lokális hatókört x-re a fuggveny() kódblokkon
+                                belül a global kulcsszóval tehetem globálissá.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_037.png" />
+                        <img src="./images/kep_036.png" />
+                        <ul>
+                            <li>És fordítva.</li>
+                        </ul>
+                        <img src="./images/kep_038.png" />
+                        <img src="./images/kep_032.png" />
+                        <ul>
+                            <li>Ismét a kódsorok sorrendjét vizsgáltuk.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Legalább 5 változó viselkedését módosítsuk a global
+                    kulcsszóval. Nézzünk meg minden lehetőséget!
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett"></div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="../../src/css/stilus.css"
+        />
+        <style>
+            nav {
+                background-color: var(--proghatter);
+            }
+
+            ol > li {
+                color: var(--proghatter);
+                border: 1px solid var(--proghatter);
+                box-shadow: 5px 5px 5px var(--proghatter);
+            }
+
+            a {
+                color: var(--proghatter);
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="../../src/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>Ötödik lecke - Karakterláncok (string-ek)</title>
+    </head>
+    <body>
+        <nav>
+            <a
+                href="./index.html"
+                style="color: white"
+                >Ötödik lecke - Karakterláncok (string-ek)</a
+            >
+        </nav>
+        <div class="tarto">
+            <p>
+                <button
+                    onclick="mindenFelfed()"
+                    class="mindenfelfed-gomb"
+                >
+                    Minden Felfed
+                </button>
+                <button
+                    onclick="mindenElrejt()"
+                    class="mindenelrejt-gomb"
+                >
+                    Minden Elrejt
+                </button>
+            </p>
+            <ol>
+                <li>
+                    Karakterláncok
+                    <p>
+                        <button
+                            onclick="felfed(0)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(0)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python05.png" />
+                        <ul>
+                            <li>
+                                A Python-ban is használunk karakterláncokat,
+                                amelyeket string-eknek nevezünk.
+                            </li>
+                            <li>
+                                Külön karakter adattípus nincs, csak 1 hosszú
+                                string-ek.
+                            </li>
+                            <li>
+                                A string típusú literálokat egyes idézőjelek
+                                ('), vagy dupla idézőjelek (") közé tesszük.
+                                <br />
+                                A hármas idézőjel ('''), (""") is használatos,
+                                főleg többsoros szövegekhez. Ilyenkor megőrzi a
+                                sortörést. <br />
+                                Egymásba is ágyazhatjuk őket, de ekkor figyelni
+                                kell arra, hogy az idézőjelek helyesen legyenek
+                                lezárva!
+                            </li>
+                        </ul>
+                        <img src="./images/kep_064.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_065.png" />
+                        <ul>
+                            <li>
+                                A karakterláncok a nevükből következően
+                                "karakter"-ek egy sorozata (valójában egy
+                                mátrix), ezért indexálható. Így minden
+                                karakterhez hozzáférhetünk az indexe
+                                sagítségével. az indexálás 0-tól indul!
+                            </li>
+                            <li>
+                                A később tanulandó for ciklus segítségével végig
+                                tudunk menni az összes karakteren.
+                            </li>
+                            <li>
+                                És mivel a string egy "sorozat", ezért van
+                                hossza is neki, ami a benne lévő karakterek
+                                száma.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_066.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_067.png" />
+                        <ul>
+                            <li>
+                                A complex-szám a képzetes rész jelöléséhez a
+                                j-betűt használja. Nem fogjuk használni!
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_numbers.asp"
+                                    target="_blank"
+                                    >w3schools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Műveletek string-ekkel: részsztring.
+                    <p>
+                        <button
+                            onclick="felfed(1)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(1)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/python06.jpg" />
+                        <ul>
+                            <li>
+                                A részsztring a string, mint karakterlánc egy
+                                része.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_070.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_071.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_strings_slicing.asp"
+                                    target="_blank"
+                                    >wschools</a
+                                >
+                            </li>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_ref_string.asp"
+                                    target="_blank"
+                                    >wschools - Python string methods</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Műveletek string-ekkel: módosítások string-eken.
+                    <p>
+                        <button
+                            onclick="felfed(2)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(2)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <img src="./images/kep_072.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_073.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_strings_modify.asp"
+                                    target="_blank"
+                                    >wschools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Műveletek string-ekkel: szétdarabolás és egyesítés.
+                    <p>
+                        <button
+                            onclick="felfed(3)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(3)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                Darabolni a split() metódussal tudunk, ahol a
+                                paraméter egy speciális karakter, amely mentén
+                                szeletelünk. Ezt hívják elválasztó karakternek
+                                (separator) is.
+                            </li>
+                            <li>
+                                Egyesíteni a join() metódussal tudunk egy
+                                speciális karaktert felhasználva.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_074.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_075.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_strings_concatenate.asp"
+                                    target="_blank"
+                                    >wschools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    Escape karakterek.
+                    <p>
+                        <button
+                            onclick="felfed(4)"
+                            class="felfed-gomb"
+                        >
+                            Felfed
+                        </button>
+                        <button
+                            onclick="elrejt(4)"
+                            class="elrejt-gomb"
+                        >
+                            Elrejt
+                        </button>
+                    </p>
+                    <div class="rejtett">
+                        <ul>
+                            <li>
+                                Ha szabálytalan karaktert szeretnénk beszúrni
+                                egy karakterláncba, escape karaktert kell
+                                használnunk.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_076.png" />
+                        <ul>
+                            <li>
+                                Az escape karaktereket egy \ után helyezzük el.
+                            </li>
+                        </ul>
+                        <img src="./images/kep_077.png" />
+                        <ul>
+                            <li>A fenti kód eredménye.</li>
+                        </ul>
+                        <img src="./images/kep_078.png" />
+                        <ul>
+                            <li>Az escape karakterek a Python-ban.</li>
+                        </ul>
+                        <img src="./images/kep_079.png" />
+                        <ul>
+                            <li>
+                                Forrás:
+                                <a
+                                    href="https://www.w3schools.com/python/python_strings_escape.asp"
+                                    target="_blank"
+                                    >wschools</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <script src="../../src/js/mozgat.js"></script>
+    </body>
+</html>
